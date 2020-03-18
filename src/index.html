@@ -32,4 +32,32 @@
 <body>
   <app-root></app-root>
 </body>
+<script>
+  $(document).ready(function() {
+$('.horizontals').pagepiling({
+   menu: null,
+     direction: 'horizontal',
+     verticalCentered: true,
+     sectionsColor: [],
+     anchors: [],
+     scrollingSpeed: 700,
+     easing: 'swing',
+     loopBottom: false,
+     loopTop: false,
+     css3: true,
+     menu: '#menu',
+    normalScrollElements: null,
+     normalScrollElementTouchThreshold: 5,
+     touchSensitivity: 5,
+     keyboardScrolling: true,
+     sectionSelector: '.section',
+     animateAnchor: false,
+
+ //events
+ onLeave: function(index, nextIndex, direction){},
+ afterLoad: function(anchorLink, index){},
+ afterRender: function(){},
+});
+});
+</script>
 </html>

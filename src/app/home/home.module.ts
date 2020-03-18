@@ -26,6 +26,11 @@ import { StudentcenterComponent } from './knowlagebase/studentcenter/studentcent
 import { CaseComponent } from './casestudy/case/case.component';
 import { AllproductComponent } from './product/allproduct/allproduct.component';
 import { MainproductComponent } from './product/mainproduct/mainproduct.component';
+import { Slidehome1Component } from './slidehome1/slidehome1.component';
+import { Slidehome2Component } from './slidehome2/slidehome2.component';
+import { Slidehome3Component } from './slidehome3/slidehome3.component';
+import { Slidehome4Component } from './slidehome4/slidehome4.component';
+import { Slidehome5Component } from './slidehome5/slidehome5.component';
 
 
 @NgModule({
@@ -53,7 +58,12 @@ import { MainproductComponent } from './product/mainproduct/mainproduct.componen
     StudentcenterComponent,
     CaseComponent,
     AllproductComponent,
-    MainproductComponent],
+    MainproductComponent,
+    Slidehome1Component,
+    Slidehome2Component,
+    Slidehome3Component,
+    Slidehome4Component,
+    Slidehome5Component],
   imports: [
     CommonModule,
     HomeRoutingModule

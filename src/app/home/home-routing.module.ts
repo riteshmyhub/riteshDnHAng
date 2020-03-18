@@ -26,6 +26,11 @@ import { StudentcenterComponent } from './knowlagebase/studentcenter/studentcent
 import { CaseComponent } from './casestudy/case/case.component';
 import { BlogComponent } from './blogs/blog/blog.component';
 import { AllproductComponent } from './product/allproduct/allproduct.component';
+import { Slidehome1Component } from './slidehome1/slidehome1.component';
+import { Slidehome5Component } from './slidehome5/slidehome5.component';
+import { Slidehome4Component } from './slidehome4/slidehome4.component';
+import { Slidehome3Component } from './slidehome3/slidehome3.component';
+import { Slidehome2Component } from './slidehome2/slidehome2.component';
 
 
 const routes: Routes = [
@@ -34,6 +39,17 @@ const routes: Routes = [
     children: [
     {path: '', component: DashboardComponent},
     {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+
+
+
+    // slide home component
+    {path: 'slide1' , component: Slidehome1Component},
+    {path: 'slide2' , component: Slidehome2Component},
+    {path: 'slide3' , component: Slidehome3Component},
+    {path: 'slide4' , component: Slidehome4Component},
+    {path: 'slide5' , component: Slidehome5Component},
+    // 
+
 
     // componenet product
     {path: 'product' , component: ProductComponent},
