@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --main-parent-colorOne: #C82230;
+    --main-parent-colorTwo: #F5F5F5;
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+}
+.god_css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

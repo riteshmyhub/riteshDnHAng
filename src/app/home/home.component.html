@@ -1,0 +1,98 @@
+<div class="fixed-top">     
+        <!-- home_contact_bar_ css -->
+<div class="container-fluid" style="background-color: #DDDDDD;">
+    <div class="row flex-column-reverse flex-md-row">
+        <div class="col-md-11">
+            <h6>
+                <a class="home_contact_bar_link" target="_blank" href="https://wa.me/919833550505"><i class="fab fa-whatsapp"></i> +91 9833550505
+                &nbsp;&nbsp;</a>
+
+                <a class="home_contact_bar_link"  href="mailto: info@dnhsecheron.com"><i class="far fa-envelope"></i> info@dnhsecheron.com</a>
+            </h6>      
+        </div>
+        <div class="col-md-1">
+            <h6 style="text-align: end;">
+                <a class="home_contact_bar_link"  href=""><i class="fas fa-language mr-2">English</i></a>
+            </h6>     
+        </div>
+    </div>
+</div>
+
+<!-----------------------home nav bar--------------------->
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <!-- Brand -->
+    
+    <a class="navbar-brand" href="#"><img class="img-fluid" src="./../../assets/D&H_logo.png" alt="" srcset=""></a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler manu_icon" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span> <img src="./../../assets/manu_icon.png" class="" alt="" width="60px" srcset=""></span>
+      </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['./product']">
+                <h4 class="navbar_link_sub_home pt-1">products</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['./industries']">
+              <h4 class="navbar_link_sub_home pt-1">industries</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['./Career']">
+              <h4 class="navbar_link_sub_home pt-1">career</h4>
+            </a>
+          </li>
+    
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="['./network']">
+                <h4 class="navbar_link_sub_home pt-1">network</h4>
+              </a>
+          </li>
+    
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="['./contact']">
+                <h4 class="navbar_link_sub_home pt-1">contact</h4>
+              </a>
+          </li>
+
+          <li class="nav-item pb-2">
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Search...">
+            <button href="#" class="btn search_icon"><i class="fas fa-search"></i></button>
+          </div>
+        </li>
+
+        </ul>
+      </div>
+  </nav>
+</div> 
+
+<!--  -->
+<!-- <div style="background-color: cadetblue;">
+    
+    <a [routerLink]="['./Search']">
+        <h2>6 search</h2>
+    </a>
+    <a [routerLink]="['./blogs']">
+        <h2>7 blogs</h2>
+    </a>
+    <a [routerLink]="['./Casestudy']">
+        <h2>8 Case study</h2>
+    </a>
+    <a [routerLink]="['./aboutus']">
+        <h2>9 about us</h2>
+    </a>
+    <a [routerLink]="['./overview']">
+        <h2>10 overview</h2>
+    </a>
+    <a [routerLink]="['./Knowlagebase']">
+        <h2>11 Knowlage base</h2>
+    </a> 
+</div> -->
+<router-outlet></router-outlet>
