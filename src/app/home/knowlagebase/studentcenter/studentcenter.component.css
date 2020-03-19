@@ -1,0 +1,122 @@
+.Student_Center_BG{
+    background-color: rgb(236, 234, 234);
+   }
+   .Student_Center_img{
+       background-image: url(../../../../assets/Knowledg_Base/img_student_center.png);
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;
+       width: 100%;
+       height: auto;
+   }
+   
+   .Student_Center_heading{
+       text-align: center;
+       font-size: 55px;
+       font-weight: 700;
+       color: white;
+   }
+   .student_Categories{
+       font-size: 1.2vw;
+       font-weight: 700;
+       cursor: pointer;
+   }
+   .student_Tags{
+       font-size: 1.2vw;
+       font-weight: 700;
+       cursor: pointer;
+   }
+   .student_search_bg{
+       background-color: white;
+       width: 94% !important;
+       position: relative;
+       top: -124px;
+   }
+   .student_search_bar{
+    border: none !important;
+    box-shadow: none !important;
+   }
+   .S_search_bg{
+       background: transparent!important;
+       border: none !important;
+   }
+   /* all card */
+   .card_ui{
+   
+   }
+   .No_blue_line{
+       text-decoration: none !important;
+   }
+   .card_date{
+       text-align: start;
+       font-size: 1.1vw;
+       font-weight: 500;
+       text-decoration: none;
+       color: gray;
+     }
+     .card_heading{
+       text-align: start;
+       font-size: 1.6vw;
+       font-weight: 600;
+       color: black;
+   }
+   .scrollbar
+   {
+       height: 100px;
+       width: 100%;
+       background: white;
+     overflow-y: scroll;
+     cursor: pointer;
+   }
+   
+   .force-overflow
+   {
+       min-height: 200px;
+   }
+   
+   
+   #style-3::-webkit-scrollbar-track
+   {
+       -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+       background-color: #F5F5F5;
+   }
+   
+   #style-3::-webkit-scrollbar
+   {
+       width: 4px;
+       background-color: #F5F5F5;
+   }
+   
+   #style-3::-webkit-scrollbar-thumb
+   {
+       background-color: #E31E24;
+   }
+   .card_description{
+       font-size: 1.2vw;
+       font-weight: 450;
+   }
+   .read_more{
+       text-align: start; 
+       font-size: 1.2vw;
+       color: #E31E24;
+       font-weight: bolder;
+   }
+   /* Student_All_Resources_btn */
+   .Student_All_Resources_btn{
+       background-color: white;
+       border: 1px solid #E31E24 !important;
+       border-radius: 22px !important;
+       color: #E31E24;
+       box-shadow: none !important;
+       font-weight: 700 !important;
+   }
+   .Student_All_Resources_btn:hover{
+       background-color: #E31E24;
+       color: white;
+   }
+   .Knowledge_path{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: gray;
+}

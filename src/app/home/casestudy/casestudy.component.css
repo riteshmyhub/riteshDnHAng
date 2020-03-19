@@ -1,0 +1,115 @@
+.god_css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Case_Studies_BG{
+    background-color: rgb(247, 247, 247);
+    height: auto;
+}
+.Case_Studies_link{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.Case_main_heading{
+  color: #E31E24;
+  text-align: center;
+  font-size: 3.3vw;
+  font-weight: 700;
+}
+.Case_Studies_first_grid{
+    background-image: url(../../../assets/casestudy/casebgi.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+.grid_first_box{
+    height: 180px;
+}
+.first_col_heading{
+   font-weight: 500;
+}
+.sec_case_img{
+    
+    border-radius: 12px;
+}
+.Case_btn{
+    background: transparent;
+    box-shadow: none !important;
+    font-weight: 500 !important;
+    color: gray;
+    padding: 0px !important;
+}
+/* scroll bar */
+.scrollbar
+{
+	height: 80px;
+	width: 100%;
+	background: #F7F7F7;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.force-overflow
+{
+	min-height: 80px;
+}
+
+
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+	background-color: #F7F7F7;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F7F7F7;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #E31E24;
+}
+.card_description{
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+/*  */
+.Read_Case_Study{
+    color: #E31E24;
+    font-weight: bold;
+}
+.btnForCase{
+    color: #E31E24;
+    font-weight: 700 !important;
+    border: 1px solid #E31E24 !important;
+    border-radius: 20px !important;
+   
+}
+.btnForCase:hover{
+    color: #E31E24; 
+}
+.nav_bar_case{
+    background: white;
+    border-radius: 30px;
+}
+.Industry_case_container{
+    border: 1px solid transparent;
+    border-right: 1px solid gray;
+    cursor: pointer;
+}
+.custom_case_searchBar{
+    border: none !important;
+    box-shadow: none !important;
+}
+.search_ico_case{
+    color: #E73A3F;
+}

@@ -61,4 +61,9 @@
     text-decoration:none;
     padding: 0px !important;
     background-color: transparent;
+    box-shadow: none;
+    }
+
+    .a_t_r{
+        color: var(--main-parent-colorOne);   
     }

@@ -1,0 +1,87 @@
+.RnD_bg{
+    background-color: white;
+}
+.RnD_section{
+    background-color: #e4e4e4;
+    height: auto;
+}
+.top_margin_RnD{
+    height: 160px;
+  }
+  .RnD_heading_path{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: bold;
+   }
+   .RnD_heading{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding: 8px;
+    font-size: 3.5vw;
+    }
+   .RnD_building_text{
+        font-weight: 450;
+        line-height: 40px;
+        text-align: justify;
+   }
+   .god_css{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .RnD_grid_rigth{
+       padding: 15px;
+   }
+   .RnD_sec_row_text{
+       color: white;
+       font-weight: 400;
+       text-align: justify;
+   }
+   .RnD_sec_row_text_padding{
+      
+   }
+   .NABL_for_RnD{
+     width: 140px;
+   }
+    .NABL_heading{
+        text-align: center;
+        color: white;
+        font-weight: 600;
+    }
+    .NABL_sub_text{
+        color: white;
+         font-size: 1vw; 
+    }
+    .NABL_btn{
+         background-color: blue;
+         text-align: start;
+    }
+    .RnD_test_heading{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .RnD_sub_test{
+        font-size: 1.2vw;
+        text-align: justify;
+        color: rgb(131, 128, 128);
+        font-weight: 400;
+    }
+    .RnD_test_card{
+        border: 2px solid rgb(209, 205, 205);
+        padding: 7px;
+    }
+    .RnD_main_Tests_heading{
+        height: 150px;
+    }
+    /* Equipments_heading */
+    .RnD_Equipments_heading{
+        height: 180px;
+    }
+    .Equipments_name{
+        text-align: center;
+        font-size: 1.7vw;
+        font-weight: bolder;
+    }
+    

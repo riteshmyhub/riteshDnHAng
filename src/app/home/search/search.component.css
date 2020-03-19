@@ -1,0 +1,66 @@
+
+.searchPage_bg{
+    background: rgb(245, 244, 244);
+    padding-top: 40px;
+}
+.custom_main_case_searchBar{
+    background-color: transparent!important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 2vw !important;
+}
+.main_search_box{
+    border: 1px solid rgb(201, 198, 198) !important;
+    border-radius: 50px !important;
+}
+.search_page_bar_ico{
+    font-size: 30px;
+    color: #E31E24;
+}
+.custom_main_case_searchBar::placeholder{
+    font-size: 2vw !important;
+    color: rgb(29, 29, 29) !important;
+    font-weight: 400 !important;
+}
+.search_paragraph{
+   font-size: 17px;
+   color: rgb(65, 63, 63);
+   font-weight: 400;
+   text-align: justify;
+}
+.search_list{
+    font-size: 17px;
+    color: rgb(65, 63, 63);
+   font-weight: 400;
+   text-align: justify;
+     
+}
+.search_list:hover{
+    color: #E31E24;    
+}
+a{
+    text-decoration: none !important;
+}
+.search_topic_heading{
+    font-size: 20px;
+    color: black;
+}
+.search_topic_heading:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.search_product_img{
+    padding: 40px;
+    border-radius:45px;
+}
+.search_topic_par{
+    font-size: 15px;
+    font-weight: 400;
+}
+.search_path{
+    font-size: 15px;
+    color: #E31E24; 
+}
+.search_results_container{
+    background-color: white;
+}

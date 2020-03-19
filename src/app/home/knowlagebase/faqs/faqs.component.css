@@ -1,0 +1,51 @@
+.FAQs_heading{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #E31E24;
+}
+.Knowledge_heading{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #E31E24;
+}
+.Knowledge_path{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: gray;
+}
+.FAQs_bg{
+    background-image: url(../../../../assets/Knowledg_Base/FQsBg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+.FAQs_Q{
+    font-size: 18px;
+    font-weight: 650;
+    color: rgb(48, 46, 46);
+    cursor: pointer;
+}
+.Student_FQs_btn{
+    background-color: #F6F6F6;
+    border: 1px solid #E31E24 !important;
+    border-radius: 22px !important;
+    color: #E31E24;
+    box-shadow: none !important;
+    font-weight: 700 !important;
+}
+.Student_FQs_btn:hover{
+    background-color: #E31E24;
+    border-radius: 22px !important;
+    color: white;
+}
+.FAQs_path{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: gray;
+}

@@ -1,0 +1,116 @@
+.god_css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.careers_bg{
+    background-color: rgb(240, 237, 240);
+}
+.careers_section{
+    background-color: rgb(240, 237, 240);
+    height: auto;
+}
+.top_margin_careers{
+    height: 160px;
+  }
+  .careers_heading_path{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: bold;
+   }
+   .careers_heading{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding: 8px;
+    font-size: 3.5vw;
+    }
+   
+   .careers_tagLine{
+       color: rgb(68, 67, 67);
+       font-size: 1.5vw;
+       text-align: center;
+   }
+   .careers_card_heading{
+       font-size: 1.4vw;
+       font-weight: bold;
+   }
+   .careers_card_sub_text{
+    font-size: 1.1vw;
+    color: gray;
+   }
+   .god_css{
+       display: flex;
+       justify-content: start;
+       align-items: center;
+   }
+ .Careers_card_grid{
+     padding-left: 40px;
+     padding-right: 40px;
+ }
+   
+ .Careers_card_img{
+    border-radius: 14px;
+ }
+ /*  */
+ .cv_aria{
+     background: white;
+ }
+ .CV_img{
+    width: 100%; 
+    padding: 40px; 
+ } /*  */
+
+ 
+ .custom_input_cv{
+    border: 1px solid #C82230; 
+    margin-right: 60px; 
+    border-radius: 4px;  
+ }
+  .cv_text_heading{
+      font-size: 1.6vw;
+      font-weight: 500;
+  } 
+  
+  .god_cssd{
+    display: flex;
+    align-items: center;
+}
+.CV_form_container{
+    margin-top: 70px;
+}
+
+/* file upload */
+input[type="file"] {  
+    display: none;     
+}  
+.custom-file-upload {   
+    display: inline-block;  
+    padding: 6px 12px;  
+    cursor: pointer; 
+    color: #C82230;  
+}
+.cv_custom_btn {
+    background: rgb(235, 232, 232);
+    color: #C82230;
+}  
+/*  */
+@media screen and (max-width: 767px){
+    .Careers_card_grid{
+        padding-left: 0px;
+        padding-right: 0px;
+    } 
+}
+@media screen and (max-width: 800px){
+    .CV_form_container{
+        margin-top: 50px;
+    }
+    .custom_input_cv{
+        margin-right: 0px; 
+     }
+     .CV_img{
+        width: 70%; 
+        padding: 0px; 
+     }
+}

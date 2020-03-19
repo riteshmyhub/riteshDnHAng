@@ -64,7 +64,7 @@
           <li class="nav-item pb-2">
           <div class="searchbar" id="ico_search_bar_moving">
             <input class="search_input" type="text" name="" placeholder="Search...">
-            <button href="#" class="btn search_icon"><i class="fas fa-search"></i></button>
+            <button href="#" class="btn search_icon"><a [routerLink]="['./Search']" class="a_t_r"><i class="fas fa-search"></i></a></button>
           </div>
         </li>
 
@@ -76,9 +76,6 @@
 <!--  -->
 <!-- <div style="background-color: cadetblue;">
     
-    <a [routerLink]="['./Search']">
-        <h2>6 search</h2>
-    </a>
     <a [routerLink]="['./blogs']">
         <h2>7 blogs</h2>
     </a>

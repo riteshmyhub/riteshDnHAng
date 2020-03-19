@@ -20,3 +20,6 @@ a{
 .home_margin_container{
     height: 100px;
 }
+#pp-nav{
+    display: none;
+}

@@ -1,0 +1,45 @@
+.god_css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Testimonial_bg{
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+.page_testimonal_path{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: gray;
+}
+.testimonal_heading{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: black;
+}
+.testimonal_logo{
+   padding: 45px;
+}
+/* .testimonal_logo:hover{
+    position: relative;
+    padding: 35px;
+    transition-property: padding;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+ } */
+/* MQ */
+@media screen and (max-width: 600px){
+    .testimonal_logo{
+        padding: 20px;
+     } 
+    
+}
