@@ -15,3 +15,8 @@ a{
     justify-content: center;
     align-items: center;
 }
+/* css for home slide 1 2 3 4 5 */
+
+.home_margin_container{
+    height: 100px;
+}

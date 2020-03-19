@@ -54,37 +54,11 @@ a{
         width: 100%;
         height: 100vh;
     }
-    .home_margin_container{
-        height: 100px;
-    }
-    .home_custom_search_bar {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: var(--main-parent-colorOne);
-        background-color: #fff;
-        background-clip: padding-box;
-        border: 1px solid white;
-        border-radius: 2.25rem;
-        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-        font-size: 2vw;
-    }
-    .home_custom_search_bar_aria {
-        background-color: white;
-        border-radius: 2.25rem;
-    }
+  
     input:focus, textarea:focus, select:focus{
         outline: none;
     }
-    .search_home_link{
-    font-size: 1.3vw;
-    text-transform: capitalize;
-    margin-left: 10px;
-    color: #7B7B7A;
-    font-weight: 500;
-    }
+   
 
     input::placeholder {
         color: black;
@@ -101,16 +75,7 @@ a{
         color: var(--main-parent-colorOne);
         font-weight: 600;
     }
-    .search_bar_icon{
-        font-size: 2vw;
-        color: var(--main-parent-colorOne);
-        margin-left: 12px;
-    }
-
-
-
-
-
+  
     .language_bar_for_sub_home_two{
         background-color: #FAFAFA;
     }
@@ -270,51 +235,7 @@ a{
     .logo_control_home_product_finder{
         width: 170px;
     }
-    .easy_product_finder_page{
-        width: 100%;
-        height: 100vh;
-        background-color: var(--main-parent-colorTwo);
-    }
-    /*  */
-    .easy_product_finder_heading{
-        color: var(--main-parent-colorOne);
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 2.3vw;
-        font-weight: bold;
-        margin-top: 28px;
-    }
-    .easy_product_finder_tagline{
-        color: var(--main-parent-colorOne);
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 1.1vw;
-    }
-    /* nav module */
-    .nav_module_aria{
-        height: auto;
-        background-color: var(--main-parent-colorOne);
-        padding: 25px;
-        border-radius: 50px;
-    }
-    .nav_module_link_aria{
-        background: white;
-        padding: 14px;
-        border-radius: 35px;
-        z-index: 2;
-    }
-
-    .finder_nav_number{
-    background-color: var(--main-parent-colorOne);
-    border-radius: 25px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: white;
-
-    }
-
+    
     .cat1{
         background-color: var(--main-parent-colorOne);
         position: relative;
@@ -325,29 +246,6 @@ a{
     }
     .link_E_P_F:hover{
         color: black;
-    }
-    .nav_number{
-        color: white;
-        font-size: 1.5vw;
-    }
-    .find_link_container{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .finder_nav_link{
-        font-size: 1.5vw;
-        text-transform: capitalize;
-        color: black;
-
-    }
-    .product_finder_img{
-        width: 250px;
-        position: absolute;
-        left: 120px;
-        top: 277px;
-        z-index: 1;
-
     }
     .product_finder_pading_control{
         padding: 100px;
@@ -364,94 +262,7 @@ a{
         text-align: center;
         font-size: 1.3vw;
     }
-
-    .fourth_home_main_page{
-        background-color: var(--main-parent-colorTwo);
-        height: 100vh;
-    }
-    .fourth_home_grid{
-        height: auto;
-        background-color: var(--main-parent-colorTwo);
-        padding: 40px;
-    }
-    .fourth_home_top_margin{
-        height: 130px;
-    }
-    .fourth_home_heading{
-        text-align: center;
-        color: rgb(71, 67, 67);
-        font-style: italic;
-        font-size: 2vw;
-    }
-    .fourth_home_sub_text{
-        text-align: center;
-        margin-top: 30px;
-        font-weight: 400;
-        font-size: 1.3vw;
-    }
-    .person_name{
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--main-parent-colorOne);
-    margin-top: 20px;
-    font-size: 1.4vw;
-    font-weight: bolder;
-    }
-    .person_post{
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.5vw;
-        font-weight: 400;
-        font-style: italic;
-    }
-    .fourth_home_icon_row{
-    height: auto;
-    background-color: var(--main-parent-colorTwo);
-    padding: 40px;
-    }
-
-    .fourth_home_grid_icon{
-        width: 4.7vw;
-        background: white;
-        border-radius: 40px;
-        padding: 6px;
-    }
-
-
-
-    .home_five_footer{
-        height: 100vh;
-        background-color: #EEE9E9;
-    }
-    .five_home_top_margin{
-        height: 130px;
-    }
-    .back_to_home{
-        text-align: center;
-        font-size: 1.2vw;
-        text-transform: uppercase;
-    }
-    .icon_back_to_home{
-        text-align: center;
-        font-size: 2.5vw;
-    }
-    .table_box{
-        height: auto;
-        background-color: transparent;
-    }
-    tr{
-        color: black;
-        font-weight: 400;
-    }
-    .table td, .table th {
-        padding: .75rem;
-        vertical-align: top;
-        border:none !important;
-    }
-    th{
-        color: var(--main-parent-colorOne);
-        text-transform: uppercase;
-    }
+    
     .table_text{
         color: #E31E24;
         text-transform: uppercase;
@@ -463,12 +274,7 @@ a{
     .home_social_link{
         text-align: start;
     }
-    .table_link{
-        text-align: start;
-        font-weight: 400;
-
-    }
-
+    
     .link_pf{
         background: #E31E24;
         padding-left:20px ;
