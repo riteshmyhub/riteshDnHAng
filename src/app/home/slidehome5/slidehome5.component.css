@@ -212,10 +212,12 @@ a{
         text-align: center;
         font-size: 1.3vw;
     }
-
     .home_five_footer{
+     background-image: url(../../../assets/contactbghome.png);
+     background-size: cover;
+  background-position: center center;
+        background-repeat: no-repeat;
         height: 100vh;
-        background-color: #EEE9E9;
     }
     .five_home_top_margin{
         height: 130px;
