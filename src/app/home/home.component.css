@@ -69,3 +69,23 @@
     .a_t_r{
         color: var(--main-parent-colorOne);   
     }
+
+    /*  in media css nav bar full size*/
+    @media screen and (max-width: 992px){
+        .search_input{
+            color: black;
+            border: 0;
+            outline: 0;
+            background: none;
+            width: 80%;
+            caret-color:transparent;
+            transition: width 0.4s linear;
+            }
+        
+            .searchbar:hover > .search_input{
+            width: 80%;
+            caret-color:var(--main-parent-colorOne);
+            transition: width 0.4s linear;
+            padding-left: 12px;
+            }
+    }
