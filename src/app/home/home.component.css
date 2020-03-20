@@ -8,7 +8,9 @@
 
 
 /*--------------- main nav bar css---------------*/
-
+.logo_res{
+    width: 180px;
+}
 .navbar_link_sub_home {
     text-transform: uppercase;
     font-size: 15px;
