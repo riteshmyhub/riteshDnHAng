@@ -9,6 +9,8 @@
     font-weight: 700;
     color: gray;
 }
+
+
 .products_heading{
     text-align: center;
     font-size: 55px;
@@ -218,13 +220,13 @@
 #style-3::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
-	background-color: #F5F5F5;
+	background-color: #FFFFFF;
 }
 
 #style-3::-webkit-scrollbar
 {
 	width: 4px;
-	background-color: #F5F5F5;
+	background-color: #FFFFFF;
 }
 
 #style-3::-webkit-scrollbar-thumb
