@@ -1,0 +1,94 @@
+.Case_BG{
+    background-color: var(--main-parent-colorTwo);
+}
+.case_path{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: grey;
+}
+.caseHeading_part{
+    text-align: center;
+    color: var(--main-parent-colorOne);
+    font-size: 50px;
+    font-weight: 700;
+}
+.type_and_group{
+  text-align: center;
+  color: rgb(156, 154, 154);
+}
+/*  */
+.Analysis_table{
+    background-color: white;
+    
+}
+.Analysis_heading{
+    text-align: center;
+    color: var(--main-parent-colorOne);
+}
+.Analysis_text{
+    text-align: center;
+    color: rgb(156, 154, 154);
+}
+.Analysis_text_dark{
+  color: black;
+  font-weight: 600;
+}
+.Procedure_list{
+    font-size: 17px;
+    color: rgb(85, 84, 84);
+    text-align: justify;
+    margin-top: 12px;
+}
+/*  */
+.Further_case{
+    font-size: 30px;
+    color: rgb(48, 47, 47);
+}
+.Case_btn{
+    background: transparent;
+    box-shadow: none !important;
+    font-weight: 500 !important;
+    color: gray;
+    padding: 0px !important;
+}
+.scrollbar
+{
+	height: 80px;
+	width: 100%;
+	background: #F7F7F7;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.force-overflow
+{
+	min-height: 80px;
+}
+
+
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+	background-color: var(--main-parent-colorTwo);
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: var(--main-parent-colorTwo);
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: var(--main-parent-colorTwo);
+}
+.Read_Case_Study{
+    color: #E31E24;
+    font-weight: bold;
+}
+.card_description{
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: gray;
+}
