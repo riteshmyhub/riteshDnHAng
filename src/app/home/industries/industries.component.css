@@ -1,0 +1,51 @@
+.Power_Sector_img_bg{
+  background-image: url(../../../assets/INDUSTRIES/INDUSTRIES_bg.png);
+  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.POWER_SECTOR_link{
+  text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    color: gray;
+}
+.Power_Sector_heading{
+  color: white;
+  font-size: 55px;
+}
+.Power_Sector_paragraph{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.Coal_Handling_Plant_heading{
+  font-size: 22px;
+  text-align: center;
+
+}
+
+/**/
+
+.table_num{
+  color: #7B7B7A;
+}
+th {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #7B7B7A;
+  border-left: none;
+  border-right: none;
+}
+td{
+  text-align: center;
+  font-size: 14px;
+   border-left: none;
+  border-right: none;
+}
+.Recommended_num{
+ font-weight: 700;
+}
