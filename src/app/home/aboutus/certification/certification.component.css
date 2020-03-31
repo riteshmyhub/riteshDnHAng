@@ -1,0 +1,69 @@
+.CERTIFICATIONS_paragraph_bg{
+    background: rgba(226,226,226,1);
+background: -moz-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+background: linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+}
+.CERTIFICATIONS_path{
+    font-size: 0.9vw;
+    text-align: center;
+    color: gray;
+    font-weight: 700;
+}
+.CERTIFICATIONS_heading{
+    font-size: 3.5vw;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.Certifications_paragraph_text{
+    font-size: 1.6vw;
+    text-align: center;
+    font-weight: 450;
+}
+/* card name */
+
+.Certifications_main_card_bg{
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(241, 241, 241);
+}
+.Certifications_card_name{
+ color: #E31E24;
+ text-align: start;
+ font-size: 1.9vw;
+ font-weight: 750;
+}
+.Certi_card_table_heading{
+    font-size: 1.5vw;
+    font-weight: 650;
+}
+.td_text{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.row_border{
+    border-bottom: 2px solid rgb(235, 232, 232);
+}
+.Certifications_btn{
+    background: rgb(247, 247, 247);
+    color: #E52B30;
+    font-weight: 500 !important;
+    border: 1px solid #E52B30 !important;
+    border-radius: 18px !important;
+    box-shadow: none !important;
+}
+.Certifications_btn:hover{
+    background: #E52B30;
+    color: white;
+    font-weight: 500 !important;
+    border: 1px solid #E52B30 !important;
+    border-radius: 18px !important;
+    box-shadow: none !important;
+}
+.Logo_card_padding{
+   padding: 20px;
+}
