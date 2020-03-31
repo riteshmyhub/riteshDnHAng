@@ -1,0 +1,93 @@
+.top_margin_overview{
+    height: 160px;
+}
+.overview_bg{
+background: #E7E7E7;
+}
+.overview_linkpath{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.overview_heading{
+    text-align: center;
+    color: var(--main-parent-colorOne);
+    font-weight: 700;
+    font-size: 50px;
+}
+.overview_para_heading{
+    font-size: 23px;
+    text-align: center;
+    font-weight: 600;
+}
+.overview_para{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(68, 67, 67);
+}
+.VMV_bg{
+    background-color: var(--main-parent-colorOne);
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.overview_ico_img{
+    width: 140px;
+}
+.VMV_text{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+}
+.icon_heading{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Our_Committment_heading */
+
+.Our_Committment_heading{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 45px;
+}
+.Our_Committment_card{
+  border: 1px solid rgb(209, 208, 208);
+  height: 250px;
+}
+.Our_Committment_card:hover{
+    border: 1px solid var(--main-parent-colorOne);
+    height: 250px;
+  }
+.Our_Committment_card_heading{
+ text-align: center;
+ font-size: 21px;
+}
+.Our_Committment_card_text{
+    color: rgb(145, 143, 143);
+    text-align: center;
+}
+/* Board of Directors */
+.Board_of_Directors_heading{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 45px;
+}
+.directors_card{
+    height: 200px;
+}
+.name_of_directors{
+    text-align: center;
+    font-size: 23px;
+}
+.directors_post{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(168, 167, 167);
+}
