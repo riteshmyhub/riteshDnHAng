@@ -118,7 +118,7 @@ font-size: 3.5vw;
 
 .scrollbar
 {
-	height: 100px;
+	height: 80px;
 	width: 100%;
 	background: white;
   overflow-y: scroll;
