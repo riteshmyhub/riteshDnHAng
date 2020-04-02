@@ -36,37 +36,62 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['./product']">
+
+            <a class="nav-link" 
+             data-toggle="collapse" data-target=".navbar-collapse.show" 
+             [routerLink]="['./product']">
                 <h4 class="navbar_link_sub_home pt-1">products</h4>
             </a>
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['./industries']">
+
+            <a class="nav-link"
+            data-toggle="collapse" data-target=".navbar-collapse.show"
+            [routerLink]="['./industries']">
               <h4 class="navbar_link_sub_home pt-1">industries</h4>
             </a>
+
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['./Career']">
+
+            <a class="nav-link" 
+            data-toggle="collapse" data-target=".navbar-collapse.show"
+            [routerLink]="['./Career']">
               <h4 class="navbar_link_sub_home pt-1">career</h4>
             </a>
+
           </li>
 
           <li class="nav-item">
-              <a class="nav-link" [routerLink]="['./network']">
+
+              <a class="nav-link"
+              data-toggle="collapse" data-target=".navbar-collapse.show"
+              [routerLink]="['./network']">
                 <h4 class="navbar_link_sub_home pt-1">network</h4>
               </a>
+
           </li>
 
           <li class="nav-item">
-              <a class="nav-link" [routerLink]="['./contact']">
+
+              <a class="nav-link"
+              data-toggle="collapse" data-target=".navbar-collapse.show"
+              [routerLink]="['./contact']">
                 <h4 class="navbar_link_sub_home pt-1">contact</h4>
               </a>
+
           </li>
 
           <li class="nav-item pb-2">
           <div class="searchbar" id="ico_search_bar_moving">
             <input class="search_input" type="text" name="" placeholder="Search...">
-            <button href="#" class="btn search_icon"><a [routerLink]="['./Search']" class="a_t_r"><i class="fas fa-search"></i></a></button>
+            <button href="#" class="btn search_icon">
+              
+              <a data-toggle="collapse" data-target=".navbar-collapse.show"
+              [routerLink]="['./Search']" class="a_t_r"><i class="fas fa-search"></i></a>
+            
+            </button>
           </div>
         </li>
 
