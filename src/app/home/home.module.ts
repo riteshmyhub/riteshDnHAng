@@ -31,6 +31,7 @@ import { Slidehome2Component } from './slidehome2/slidehome2.component';
 import { Slidehome3Component } from './slidehome3/slidehome3.component';
 import { Slidehome4Component } from './slidehome4/slidehome4.component';
 import { Slidehome5Component } from './slidehome5/slidehome5.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { Slidehome5Component } from './slidehome5/slidehome5.component';
     Slidehome2Component,
     Slidehome3Component,
     Slidehome4Component,
-    Slidehome5Component],
+    Slidehome5Component,
+    FooterComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
