@@ -1,0 +1,174 @@
+/* body{
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: hidden;
+  } */
+
+.time_line_bg {
+  background-image: url(../../../assets/timeline/timelinebg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.wheel span {
+  border-radius: 2px;
+  background-color: transparent;
+  color: transparent;
+}
+a {
+  font-size: 22px;
+  text-decoration: none !important;
+  color: #9D9D9D;
+  font-weight: 500;
+  transition: all;
+  transition-duration: 0.2s;
+}
+a:hover {
+  font-size: 25px;
+  text-decoration: none !important;
+  color: black !important;
+  font-weight: 700;
+}
+.change_time_line_heading {
+  color: #ec1c24;
+  font-size: 45px;
+  font-weight: 700;
+}
+.change_time_line_text {
+  color: black;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+/* ---------------time line custom -------------*/
+
+.wheel span {
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  padding: 10px;
+  width: 50px;
+  box-sizing: border-box;
+}
+.circle-menu__circle__item.position--top span {
+  left: -18px;
+  bottom: 20px;
+  text-align: center;
+}
+
+.circle-menu__circle__item.position--top-right span {
+  left: 20px;
+  bottom: 20px;
+  text-align: left;
+}
+
+.circle-menu__circle__item.position--right span {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.circle-menu__circle__item.position--bottom-right span {
+  left: 20px;
+  top: 20px;
+  text-align: left;
+}
+
+.circle-menu__circle__item.position--bottom span {
+  left: -18px;
+  top: 20px;
+  text-align: center;
+}
+
+.circle-menu__circle__item.position--bottom-left span {
+  right: 20px;
+  top: 20px;
+  text-align: right;
+}
+
+.circle-menu__circle__item.position--left span {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.circle-menu__circle__item.position--top-left span {
+  right: 20px;
+  bottom: 20px;
+  text-align: right;
+}
+
+/* jq_time_line_css */
+
+.circle-menu.is-draggable-horizontal {
+  cursor: e-resize;
+}
+
+.circle-menu.is-draggable-vertical {
+  cursor: n-resize;
+}
+
+.circle-menu__circle {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-image: url(../../../assets/timeline/timelineCircle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #E1E1E1;
+}
+
+.circle-menu__circle__item {
+  width: 0;
+  height: 91%;
+  position: absolute;
+  margin: 0 50%;
+  cursor: auto;
+}
+
+.circle-menu__circle__item__inner {
+  position: absolute;
+  left: 50%;
+  bottom: 99%;
+  margin-left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.circle-menu__circle__svg {
+  height: 100%;
+  overflow: visible;
+}
+
+.circle-menu__circle{
+  fill: transparent;
+  stroke-width: 1;
+  background: transparent;
+}
+
+.circle-menu__circle__svg__line {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 1;
+  stroke-dasharray: 315;
+  stroke-dashoffset: 315;
+  -webkit-transition: stroke-dashoffset 1s;
+  transition: stroke-dashoffset 1s;
+}
+.img{
+    position: absolute;
+    z-index: 1;
+}

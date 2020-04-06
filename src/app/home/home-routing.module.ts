@@ -34,6 +34,7 @@ import { Slidehome4Component } from './slidehome4/slidehome4.component';
 import { Slidehome3Component } from './slidehome3/slidehome3.component';
 import { Slidehome2Component } from './slidehome2/slidehome2.component';
 import { MainproductComponent } from './product/mainproduct/mainproduct.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 
 
@@ -119,7 +120,8 @@ const routes: Routes = [
     {path: 'overview' , component: OverviewComponent},
     // child component
 
-     
+  // componenet
+    {path: 'timeline' , component: TimelineComponent},
 
     // componenet
   {path: 'Knowlagebase' , component: KnowlagebaseComponent},
