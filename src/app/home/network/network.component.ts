@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./network.component.css']
 })
 export class NetworkComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
