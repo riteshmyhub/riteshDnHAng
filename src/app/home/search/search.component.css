@@ -1,66 +1,101 @@
+.searchPage_bg {
+  background: rgb(245, 244, 244);
+  padding-top: 40px;
+}
+.custom_main_case_searchBar {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 2vw !important;
+}
 
-.searchPage_bg{
-    background: rgb(245, 244, 244);
-    padding-top: 40px;
+.main_search_box {
+  border: 1px solid rgb(201, 198, 198) !important;
+  border-radius: 50px !important;
 }
-.custom_main_case_searchBar{
-    background-color: transparent!important;
-    border: none !important;
-    box-shadow: none !important;
-    font-size: 2vw !important;
+.search_page_bar_ico {
+  font-size: 30px;
+  color: #e31e24;
 }
-.main_search_box{
-    border: 1px solid rgb(201, 198, 198) !important;
-    border-radius: 50px !important;
+.custom_main_case_searchBar::placeholder {
+  font-size: 2vw !important;
+  color: rgb(29, 29, 29) !important;
+  font-weight: 400 !important;
 }
-.search_page_bar_ico{
-    font-size: 30px;
-    color: #E31E24;
+.search_paragraph {
+  font-size: 17px;
+  color: rgb(65, 63, 63);
+  font-weight: 400;
+  text-align: justify;
 }
-.custom_main_case_searchBar::placeholder{
-    font-size: 2vw !important;
-    color: rgb(29, 29, 29) !important;
-    font-weight: 400 !important;
+.search_list {
+  font-size: 17px;
+  color: rgb(65, 63, 63);
+  font-weight: 400;
+  text-align: justify;
 }
-.search_paragraph{
-   font-size: 17px;
-   color: rgb(65, 63, 63);
-   font-weight: 400;
-   text-align: justify;
+.search_list:hover {
+  color: #e31e24;
 }
-.search_list{
+a {
+  text-decoration: none !important;
+}
+.search_topic_heading {
+  font-size: 20px;
+  color: black;
+}
+.search_topic_heading:hover {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.search_product_img {
+  padding: 40px;
+  border-radius: 45px;
+}
+.search_topic_par {
+  font-size: 15px;
+  font-weight: 400;
+}
+.search_path {
+  font-size: 15px;
+  color: #e31e24;
+}
+.search_results_container {
+  background-color: white;
+}
+/* mQ */
+
+@media screen and (max-width: 767px) {
+  .custom_main_case_searchBar {
+    font-size: 16px !important;
+  }
+  .custom_main_case_searchBar::placeholder {
+    font-size: 16px !important;
+  }
+  .search_page_bar_ico {
+    font-size: 16px;
+  }
+  .search_paragraph {
+    font-size: 14px;
+    margin-top: 16px !important;
+  }
+  .search_list {
+    font-size: 14px;
+  }
+  .search_product_img {
+    padding: 10px;
+    border-radius: 0px;
+  }
+  .search_topic_heading {
     font-size: 17px;
-    color: rgb(65, 63, 63);
-   font-weight: 400;
-   text-align: justify;
-     
-}
-.search_list:hover{
-    color: #E31E24;    
-}
-a{
-    text-decoration: none !important;
-}
-.search_topic_heading{
-    font-size: 20px;
-    color: black;
-}
-.search_topic_heading:hover{
-    font-size: 20px;
-    text-decoration: underline;
-}
-.search_product_img{
-    padding: 40px;
-    border-radius:45px;
-}
-.search_topic_par{
-    font-size: 15px;
-    font-weight: 400;
-}
-.search_path{
-    font-size: 15px;
-    color: #E31E24; 
-}
-.search_results_container{
-    background-color: white;
+  }
+  .search_topic_heading:hover {
+    font-size: 17px;
+  }
+  .search_path {
+    font-size: 12px;
+  }
+  .search_topic_par {
+    font-size: 12px;
+  }
 }

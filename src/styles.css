@@ -1,29 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --main-parent-colorOne: #C82230;
-    --main-parent-colorTwo: #F5F5F5;
-  }
-body{
-    margin: 0;
-    padding: 0;
+  --main-parent-colorOne: #c82230;
+  --main-parent-colorTwo: #f5f5f5;
 }
-a{
-    text-decoration: none !important;
+body {
+  margin: 0;
+  padding: 0;
 }
-.god_css{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a {
+  text-decoration: none !important;
+}
+.god_css {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center_v {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 /* css for home slide 1 2 3 4 5 */
 
-.home_margin_container{
-    height: 100px;
+.home_margin_container {
+  height: 100px;
 }
-#pp-nav{
+#pp-nav {
+  display: none;
+}
+
+/* desktop and mobile element control 767px */
+
+@media screen and (max-width: 768px) {
+  .will_only_desktop {
     display: none;
+  }
+  .will_only_mobile {
+    display: block;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .will_only_desktop {
+    display: block;
+  }
+  .will_only_mobile {
+    display: none;
+  }
 }
 
-/* Custom Scrollbar   */
-
-
+/* home bottom navigation  */
+.bottom_navigation_right {
+  text-align: end;
+  font-size: 1.1vw;
+}
+.bottom_navigation_right span {
+  font-weight: 400;
+  font-size: 1.3vw;
+  color: rgb(168, 163, 163);
+}
+.bottom_arrow {
+  width: 1.3vw;
+  color: rgb(168, 163, 163);
+}
+.bottom_navigation_left {
+  text-align: start;
+  font-size: 1.1vw;
+}
+.bottom_navigation_center {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1vw;
+  color: rgb(168, 163, 163);
+}

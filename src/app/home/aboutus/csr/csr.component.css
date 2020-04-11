@@ -1,82 +1,161 @@
-.god_css{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.CSR_Policy_bg {
+  background-image: url(../../../../assets/csr/CSR_bg_img.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.CSR_Policy_bg{
-    background-image: url(../../../../assets/csr/CSR_bg_img.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
+.CSR_Policy_heading {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 8px;
+  font-size: 55px;
 }
-.CSR_Policy_heading{
-    color: white;
-    text-align: center;
-    font-size: 45px;
+.CSR_Policy_path {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
 }
-.CSR_Policy_path{
-    color: white;
-    font-size: 0.8vw;
-    text-align: center;
+.CSR_Policy_paragraph {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 450;
 }
-.CSR_Policy_paragraph{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 450;
-}
-.CSR_paragraph_bg{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: rgba(254,254,254,1);
-background: -moz-linear-gradient(45deg, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(209,209,209,1)));
-background: -webkit-linear-gradient(45deg, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 100%);
-background: -o-linear-gradient(45deg, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 100%);
-background: linear-gradient(45deg, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d1d1d1', GradientType=1 );
+.CSR_paragraph_bg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgba(254, 254, 254, 1);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(209, 209, 209, 1) 100%
+  );
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(0%, rgba(254, 254, 254, 1)),
+    color-stop(100%, rgba(209, 209, 209, 1))
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(209, 209, 209, 1) 100%
+  );
+  background: -o-linear-gradient(
+    45deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(209, 209, 209, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(209, 209, 209, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(209, 209, 209, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d1d1d1', GradientType=1 );
 }
 
-.CSR_block_paddnig{
-    padding-top: 40px;
-    padding-bottom: 40px;
+.CSR_block_paddnig {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.CSR_pvt_text{
-    font-size: 1.4vw;
+.CSR_pvt_text {
+  font-size: 19.1px;
+  text-align: center;
+  color: white;
+}
+.CSR_pvt_text_sub {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+.CSR_pvt_bg {
+  background: var(--main-parent-colorOne);
+}
+.Our_Activities_heading {
+  font-size: 34.1px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.Our_Activities_sub_text {
+  font-size: 17.7px;
+  text-align: center;
+}
+.Activities_highlight {
+  color: var(--main-parent-colorOne);
+  font-weight: 700;
+}
+.Activities_container_bg {
+  background-image: url(../../../../assets/csr/partpo.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* mq */
+@media screen and (max-width: 767px) {
+  .CSR_Policy_path {
+    text-transform: uppercase;
     text-align: center;
-    color: white;
-}
-.CSR_pvt_text_sub{
-    font-size: 1.1vw;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .CSR_Policy_heading {
+    font-size: 50px;
+  }
+  .CSR_Policy_bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .CSR_Policy_paragraph {
     text-align: center;
-    color: white;
-    font-weight: 300;
-}
-.CSR_pvt_bg{
-    background: #E4292F;
-}
-.Our_Activities_heading{
-    font-size: 2.5vw;
+    font-size: 16px;
+    font-weight: 450;
+  }
+  .CSR_paragraph_bg {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .CSR_pvt_text {
+    font-size: 16px;
+  }
+  .CSR_pvt_text_sub {
+    font-size: 12px;
+  }
+  .CSR_block_paddnig {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Our_Activities_heading {
+    font-size: 31px;
     font-weight: 700;
     text-align: center;
-}
-.Our_Activities_sub_text{
-    font-size: 1.3vw;
-    text-align: center;
-}
-.Activities_highlight{
-    color: #E4292F;
-    font-weight: 700;
-}
-.Activities_container_bg{
-    background-image: url(../../../../assets/csr/partpo.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
+  }
+  .Our_Activities_sub_text {
+    font-size: 13px;
+    text-align: justify;
+  }
+  .Our_Activities_heading {
+    font-size: 34.1px;
+    margin-bottom: 24px;
+  }
+  .Activities_container_bg {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
