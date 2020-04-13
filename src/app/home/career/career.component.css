@@ -4,10 +4,13 @@
   align-items: center;
 }
 .careers_bg {
-  background-color: rgb(240, 237, 240);
+  background-image: url(./../../../assets/career/career_bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 .careers_section {
-  background-color: rgb(240, 237, 240);
   height: auto;
 }
 
@@ -23,71 +26,63 @@
 .careers_heading {
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: var(--main-parent-colorOne);
   padding: 8px;
   font-size: 55px;
 }
-
 .careers_tagLine {
   color: rgb(68, 67, 67);
   font-size: 20px;
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 24px;
 }
-.careers_card_heading {
-  font-size: 19.1px;
-  font-weight: bold;
+/*-------------career section--------------------------*/
+.form_section {
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
-.careers_card_sub_text {
-  font-size: 15px;
-  color: gray;
+.form_card {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.god_css {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+.card_padding {
+  padding: 18px;
 }
-.Careers_card_grid {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.Careers_card_img {
-  border-radius: 14px;
-  width: 100px !important;
-}
-.Job_bottom_margin {
-  height: 100px;
-}
-/*  */
-.cv_aria {
-  background: white;
-}
-.CV_img_top_aria {
-  height: 80px;
-}
-.CV_img {
+.main_card {
   width: 100%;
-  padding: 40px;
-} /*  */
-
+  padding: 44px;
+  background: var(--main-parent-colorOne);
+  border-radius: 15px;
+}
+.career_card_heading {
+  text-align: center;
+  font-size: 21px;
+  color: white;
+}
+.icon_padding {
+  width: 100px;
+  padding: 15px;
+}
+/* form css */
+.custom_input_cv,
+.form-control {
+  background-color: white;
+  box-shadow: none !important;
+  border-radius: 20px;
+  border: none;
+}
 .custom_input_cv {
-  border: 1px solid #c82230;
-  margin-right: 60px;
-  border-radius: 4px;
+  padding: 5px;
 }
-.cv_text_heading {
-  font-size: 21.8px;
-  font-weight: 500;
+.form_heading {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 17px;
 }
-
-.god_cssd {
-  display: flex;
-  align-items: center;
-}
-.CV_form_container {
-  margin-top: 70px;
-}
-
+/* upload file */
 /* file upload */
 input[type="file"] {
   display: none;
@@ -98,65 +93,112 @@ input[type="file"] {
   cursor: pointer;
   color: #c82230;
 }
-.cv_custom_btn {
-  background: rgb(235, 232, 232);
-  color: #c82230;
+.custom_btn {
+  font-size: 14px;
+  border-radius: 19px;
 }
-.bottom_aria {
-  height: 70px;
+/* Aptitude Test */
+.Aptitude_container {
+  border: 1px solid var(--main-parent-colorOne);
+  margin-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+.Aptitude_h1,
+.Aptitude_h2 {
+  text-align: center;
+}
+.Aptitude_h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.Aptitude_h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--main-parent-colorOne);
+}
+.Aptitude_btn_padding_control {
+  padding: 20px;
+}
+.Aptitude_btn {
+  font-size: 14px;
+  border-radius: 19px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 14px;
+  box-shadow: none !important;
 }
 /*  */
 @media screen and (max-width: 767px) {
-  .Careers_card_grid {
-    padding-left: 0px;
-    padding-right: 0px;
+  .careers_bg {
+    background-image: none;
+    background: white;
   }
   .careers_heading {
-    padding: 8px;
+    padding: 0px;
     font-size: 52px;
   }
   .careers_tagLine {
     font-size: 14px;
-    margin-top: 9px !important;
+    margin-bottom: 15px;
+    margin-top: 10px;
   }
-  .careers_card_heading {
-    font-size: 16.1px;
-    font-weight: bold;
+  .main_card {
+    width: 100%;
+    padding: 35px;
+    border-radius: 15px;
   }
-  .cv_text_heading {
-    font-size: 18px;
-    margin-bottom: 12px !important;
+  .card_padding {
+    padding: 4px;
   }
-  .bottom_aria {
-    height: 20px;
-  }
-  .cv_custom_btn {
-    margin-top: 7px !important;
-  }
-  .CV_img_top_aria {
-    height: 20px;
-  }
-  .CV_img {
-    width: 95% !important;
+  .icon_padding {
+    width: 90px;
     padding: 0px;
+    margin-bottom: 12px;
   }
-  .Job_bottom_margin {
-    height: 20px;
+  .career_card_heading {
+    text-align: center;
+    font-size: 12px;
   }
-}
-@media screen and (max-width: 800px) {
-  .CV_form_container {
-    margin-top: 50px;
+  /* form */
+  .form_section {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .form_card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .form_heading {
+    font-size: 17px;
+    padding-top: 6px;
+    padding-bottom: 10px;
   }
   .custom_input_cv {
-    margin-right: 0px;
-  }
-  .CV_img {
-    width: 70%;
     padding: 0px;
   }
-  .careers_card_sub_text {
-    font-size: 12px;
-    color: gray;
+  /* .Aptitude*/
+
+  .Aptitude_container {
+    border: 1px solid var(--main-parent-colorOne);
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .Aptitude_h1 {
+    font-size: 25px;
+  }
+  .Aptitude_h2 {
+    font-size: 25px;
+  }
+  .Aptitude_btn_padding_control {
+    padding: 5px;
+  }
+  .Aptitude_btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
   }
 }

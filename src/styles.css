@@ -20,6 +20,9 @@ a {
   justify-content: start;
   align-items: center;
 }
+.row_rev {
+  flex-direction: row-reverse;
+}
 /* css for home slide 1 2 3 4 5 */
 
 .home_margin_container {
@@ -38,7 +41,6 @@ a {
   .will_only_mobile {
     display: block;
   }
-  
 }
 @media screen and (min-width: 768px) {
   .will_only_desktop {

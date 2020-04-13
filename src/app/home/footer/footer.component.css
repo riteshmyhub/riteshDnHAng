@@ -92,7 +92,7 @@ td {
     display: block;
   }
 }
-
+/* mQ */
 @media screen and (max-width: 768px) {
   .table_padding {
     padding: 10px;
@@ -100,5 +100,21 @@ td {
   .copyright_text,
   .TPC p {
     text-align: center;
+    font-size: 13px;
+  }
+  th {
+    font-size: 12px;
+  }
+  td{
+    font-size: 12px;
+  }
+  .circleSize {
+    font-size: 27px;
+  }
+  .footer_copyright_bar {
+    padding: 25px;
+  }
+  .social_media_icons_grid{
+    padding-top: 12px;
   }
 }

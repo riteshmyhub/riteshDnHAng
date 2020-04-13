@@ -1,72 +1,103 @@
-<div class="container-fluid Case_Studies_BG p-0" onmouseover="navBarColorBefore()">
-  
-    <div class="container-fluid">
-      <!--  -->
-      <div style="height: 150px;"></div>
-      <!--  -->
+<div
+  class="container-fluid Knowledge_header p-0"
+  onmouseover="navBarColorBefore()"
+>
+  <div class="container-fluid">
+    <!--  -->
+    <div style="height: 170px;"></div>
+    <!--  -->
     <h1 class="FAQs_path">
-      HOME
-      &nbsp;
-      &nbsp;
-      <i class="fa fa-circle" style="font-size: 8px;"></i>
-      &nbsp;<span style="color: black;">
-      CERTIFICATIONS
-    </span> 
+      HOME •
+      <span style="color: black;">
+        KNOWLEDGE BASE
+      </span>
     </h1>
     <!--  -->
     <h1 class="Knowledge_heading mt-4">Knowledge Base</h1>
 
-    <!-- row -->
-    <div class="container-fluid Knowledge_row mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="../../../assets/Knowledg_Base/KnowledgeBase_grid_img.png" class="img-fluid KnowledgeBase_grid_img" alt=""  srcset="">
-      </div>
-      <div class="col-md-6 god_css">
-          <div class="p-3" style="background: rgb(24, 23, 23);">
-            <h1 class="Knowledge_row_paragraph mt-4">As the welding profession continues to mature and evolve, so does the
-            </h1>
-            <h1 class="Knowledge_row_paragraph">definition of knowing how to weld. These days, employers require</h1>
-            <h1 class="Knowledge_row_paragraph">experience with more types of welds than ever before as well as</h1>
-            <h1 class="Knowledge_row_paragraph">exposure to robotic automation, advanced welding equipment, exotic</h1>
-            <!-- btn -->
-
-            <a [routerLink]="['../Knowlagebase/studentCenter']">
-            <button class="btn btn-sm Access_Student_btn mt-4 mb-4">Access Student Center <span><img src="../../../assets/Knowledg_Base/arrow.svg" class="Access_Student_ico ml-3" alt="" srcset=""></span></button>
-          </a>
-            <!-- btn -->
-          </div>
-      </div>
-    </div>
-   </div>
-    <!-- /// -->
+    <h1 class="Knowledge_tagline">
+      <span style="font-weight: 600;">D&H Sécheron Electrodes Pvt. Ltd. </span
+      >has been amongst the <br />
+      pioneers in setting up an independent R&D Centre.
+    </h1>
   </div>
-  <!--  -->
-  <div class="container-fluid Asked_Questions_container mb-5 mt-5 p-3">
-    <div class="row">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-8">
 
-        <div class="row">
-          <div class="col-lg-2 god_css">
-            <img class="Information_ico mt-3" src="../../../assets/Knowledg_Base/information.svg" alt="" srcset="">
-          </div>
-          <div class="col-lg-10 god_css">
-         <span>
-        <h1 class="Asked_Questions_text mt-3">Looking for Frequently Asked Questions</h1>
+  <!-- Knowledge navigation section -->
+  <div class="container-fluid k_padding_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="container-fluid Know_navigationCard">
+            <div class="row">
+              <div class="col-sm-5">
+                <!-- img -->
+                <img
+                  src="../../../assets/Knowledg_Base/FAQimg.png"
+                  alt=""
+                  class="FAQs_img img-fluid mx-auto d-block"
+                  srcset=""
+                />
+              </div>
+              <div class="col-sm-7 center_v">
+                <div>
+                  <h1 class="k_navigation_heading">FAQs</h1>
+                  <h1 class="k_navigation_text">
+                    D&H Sécheron Electrodes Pvt. Ltd. has <br />
+                    been amongst the pioneers in setting <br />
+                    up an independent R&D Centre.
+                  </h1>
 
-        <a [routerLink]="['../Knowlagebase/FAQ']" style="text-decoration: none;">
-        <h1 class="Go_to_Area">Go to Area <i class="fa fa-chevron-right"></i> </h1>
-        </a>
-
-        </span>
+                  <a
+                    [routerLink]="['../Knowlagebase/FAQ']"
+                    style="text-decoration: none;"
+                  >
+                    <h1 class="k_navigation_link">Go to Area ></h1>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="col-lg-6">
+          <div class="container-fluid Know_navigationCard">
+            <div class="row">
+              <div class="col-sm-5">
+                <!-- img -->
+                <img
+                  src="../../../assets/Knowledg_Base/student_card.png"
+                  alt=""
+                  class="FAQs_img img-fluid mx-auto d-block"
+                  srcset=""
+                />
+              </div>
+              <div class="col-sm-7 center_v">
+                <div>
+                  <h1 class="k_navigation_heading">Student Center</h1>
+                  <h1 class="k_navigation_text">
+                    D&H Sécheron Electrodes Pvt. Ltd. has <br />
+                    been amongst the pioneers in setting <br />
+                    up an independent R&D Centre.
+                  </h1>
 
+                  <a [routerLink]="['../Knowlagebase/studentCenter']">
+                    <h1 class="k_navigation_link">Go to Area ˃</h1>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-2"></div>
     </div>
   </div>
-  <!--  -->
-  </div>
-  <app-footer></app-footer>
+</div>
+
+<!-- <a [routerLink]="['../Knowlagebase/studentCenter']">
+            <button class="btn btn-sm Access_Student_btn mt-4 mb-4">Access Student Center <span><img src="../../../assets/Knowledg_Base/arrow.svg" class="Access_Student_ico ml-3" alt="" srcset=""></span></button>
+          </a> -->
+
+<!-- <a [routerLink]="['../Knowlagebase/FAQ']" style="text-decoration: none;">
+        <h1 class="Go_to_Area">Go to Area <i class="fa fa-chevron-right"></i> </h1>
+        </a> -->
+
+<app-footer></app-footer>

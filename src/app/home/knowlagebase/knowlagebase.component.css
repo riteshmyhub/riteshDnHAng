@@ -1,94 +1,99 @@
-.god_css{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Knowledge_header {
+  background-image: url(../../../assets/Knowledg_Base/knowageBg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.Knowledge_path{
-    text-align: center;
-    font-size: 10px;
-    font-weight: 700;
-    color: gray;
+.Knowledge_path {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  color: gray;
 }
-.Knowledge_heading{
-    text-align: center;
-    font-size: 55px;
-    font-weight: 700;
-    color: #E31E24;
-}
-.Knowledge_row{
-  width: 95% !important;
-  background: rgba(255,255,255,1);
-background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 23%, rgba(24,23,23,1) 24%, rgba(24,23,23,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(23%, rgba(246,246,246,1)), color-stop(24%, rgba(24,23,23,1)), color-stop(100%, rgba(24,23,23,1)));
-background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 23%, rgba(24,23,23,1) 24%, rgba(24,23,23,1) 100%);
-background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 23%, rgba(24,23,23,1) 24%, rgba(24,23,23,1) 100%);
-background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 23%, rgba(24,23,23,1) 24%, rgba(24,23,23,1) 100%);
-background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 23%, rgba(24,23,23,1) 24%, rgba(24,23,23,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#181717', GradientType=1 );
-
-}
-.Knowledge_row_paragraph{
-    font-size: 20px;
-    text-align: start;
-    color: white;
-    font-weight: 350;
-}
-.Access_Student_btn{
-    background-color: #E31E24;
-    border-radius: 30px !important;
-    color: white;
-    font-size: 20px !important;
-    font-weight: 500 !important;
-    padding-left: 28px !important;
-    padding-right: 12px !important;
-    box-shadow: none !important;
-}
-.Access_Student_btn:hover{
-    background-color: white;
-    border-radius: 30px !important;
-    color: #E31E24;
-    font-size: 20px !important;
+.Knowledge_heading {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--main-parent-colorOne);
 }
 
-.Access_Student_ico{
-  background: white;
-  width: 40px;
-  padding: 8px;
-  border-radius: 25px;
+.FAQs_path {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: gray;
 }
-.button_text{
-    text-align: center;
-    font-size: 1.5vw;
+.Knowledge_tagline {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  font-weight: 400;
 }
-.KnowledgeBase_grid_img{
-    width: 100% !important;
+.Knowledge_navigation {
 }
-.Asked_Questions_container{
-    width: 91% !important;
-    background: rgba(235,235,235,1);
-background: -moz-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(235,235,235,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%);
-background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff', GradientType=1 );
+.k_padding_section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
-.Asked_Questions_text{
- color: rgb(22, 22, 22);
- font-size: 2.4vw;
+/*  navigation card */
+.FAQs_img {
+  width: 200px;
+  border-radius: 6px;
+  margin-top: 13px;
+  padding-bottom: 16px;
 }
-.Go_to_Area{
-  color: #E8484D;
-  font-size: 1.9vw;
-  font-weight: 650;
+.Know_navigationCard {
+  background-color: white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
 }
-.Information_ico{
- width: 6.9vw;
+.student_card {
+  width: 200px;
 }
-.FAQs_path{
-    text-align: center;
-    font-size: 10px;
-    font-weight: 700;
-    color: gray;
+.k_navigation_heading {
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.k_navigation_text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.k_navigation_link {
+  font-size: 18px;
+  color: var(--main-parent-colorOne);
+}
+/* mq */
+@media screen and (max-width: 767px) {
+  .Knowledge_header {
+    background-color: #f6f6f6;
+  }
+  .Knowledge_heading {
+    font-size: 43px;
+  }
+  .Knowledge_tagline {
+    font-size: 17px;
+    margin-top: 22px;
+  }
+  .k_padding_section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .FAQs_img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 13px;
+    padding-bottom: 16px;
+  }
+  .Know_navigationCard {
+     margin-bottom: 20px;
+  }
 }
