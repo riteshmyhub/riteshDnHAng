@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./casestudy.component.css']
 })
 export class CasestudyComponent implements OnInit {
-
+  casedata: any[] = [
+    {heading:' The Morgan Stanley Global Consumer & Retail Investor Conference'},
+    {heading:' The Morgan Stanley Global Consumer & Retail Investor Conference'},
+    {heading:' The Morgan Stanley Global Consumer & Retail Investor Conference'},
+    {heading:' The Morgan Stanley Global Consumer & Retail Investor Conference'},
+    {heading:' The Morgan Stanley Global Consumer & Retail Investor Conference'},
+    {heading:' The Morgan Stanley Global Consumer & Retail Investor Conference'}
+  ]
   constructor() { }
 
   ngOnInit(): void {
