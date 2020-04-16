@@ -6,46 +6,62 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./career.component.css"],
 })
 export class CareerComponent implements OnInit {
-  card: any[] = [
+  Filtercard: any[] = [
     // card data 1
     {
-      ImageUrl: "../../../assets/career/c1.png",
-      heading: "Sales & Marketing",
+      dropdownId: "one",
+      dropdownHref: "#one",
+      postname: "Sales & Marketing",
+      reqId: "00001",
+      location: "india",
+      category: "Finance",
+      posted: "April 15 ,2020",
+      dropdowntext:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
     },
-    // card data 2
     {
-      ImageUrl: "../../../assets/career/c2.png",
-      heading: "Production & Planning",
+      dropdownId: "two",
+      dropdownHref: "#two",
+      postname: "Area Sales Professional for Distributed Generation",
+      reqId: "00002",
+      location: "Algier, Alger Algeria ",
+      category: "Sales",
+      posted: "March 5, 2020",
+      dropdowntext:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
     },
-    // card data 3
     {
-      ImageUrl: "../../../assets/career/c3.png",
-      heading: "Research Development",
+      dropdownId: "three",
+      dropdownHref: "#three",
+      postname: "Software Engineer Solutions O&G",
+      reqId: "00003",
+      location: "Chennai, Tamil Nadu India",
+      category: "Engineering",
+      posted: "November 7, 2019",
+      dropdowntext:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
     },
-    // card data 4
     {
-      ImageUrl: "../../../assets/career/c4.png",
-      heading: "Quality Control",
+      dropdownId: "four",
+      dropdownHref: "#four",
+      postname: "Technical Lead",
+      reqId: "00004",
+      location: "Chennai, Tamil Nadu India",
+      category: "Research & Development",
+      posted: "January 14, 2020",
+      dropdowntext:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
     },
-    // card data 5
     {
-      ImageUrl: "../../../assets/career/c5.png",
-      heading: "Logistics & Supply",
-    },
-    // card data 6
-    {
-      ImageUrl: "../../../assets/career/c6.png",
-      heading: "Information Technology",
-    },
-    // card data 7
-    {
-      ImageUrl: "../../../assets/career/c7.png",
-      heading: "Legals & Corporate Affairs",
-    },
-    // card data 8
-    {
-      ImageUrl: "../../../assets/career/c8.png",
-      heading: "Finance & Customer Support",
+      dropdownId: "five",
+      dropdownHref: "#five",
+      postname: "Executive - Projects",
+      reqId: "00005",
+      location: "Chennai, Tamil Nadu India",
+      category: "Project Management",
+      posted: "March 18, 2020",
+      dropdowntext:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
     },
   ];
   constructor() {}

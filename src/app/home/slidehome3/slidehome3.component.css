@@ -7,7 +7,6 @@ a {
   background-color: transparent;
 }
 
-
 /* css main home page */
 
 .pf_outer_box {
@@ -53,7 +52,6 @@ a {
 }
 /* nav module */
 
-
 .finder_nav_number {
   background-color: var(--main-parent-colorOne);
   border-radius: 25px;
@@ -69,6 +67,7 @@ a {
   color: gray;
   display: inline-block;
   padding-top: 6px;
+  cursor: pointer;
 }
 .link_E_P_F:hover {
   color: black;
@@ -77,7 +76,6 @@ a {
   color: white;
   font-size: 1.5vw;
 }
-
 
 body,
 html {
@@ -199,7 +197,7 @@ html {
 }
 /* media query */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .easy_product_finder_heading {
     font-size: 4.6vw;
   }
@@ -209,7 +207,7 @@ html {
   .pf_outer_box {
     padding: 8px;
     border-radius: 0px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
   }
   .pf_inner_box {
     padding: 8px;
@@ -218,8 +216,8 @@ html {
   .easy_product_finder_tagline {
     margin-bottom: 60px;
   }
-   /* home bottom navigation  */
-   .bottom_navigation_right {
+  /* home bottom navigation  */
+  .bottom_navigation_right {
     font-size: 3vw;
   }
   .bottom_navigation_right span {
@@ -233,5 +231,20 @@ html {
   }
   .bottom_navigation_center {
     font-size: 3vw;
+  }
+  .sysdown {
+    float: right;
+    padding-right: 12px;
+  }
+  .link_E_P_F {
+    display: block;
+    background: var(--main-parent-colorOne);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 11px;
+  }
+  .finder_nav_number {
+    background-color: transparent;
+    color: white;
   }
 }

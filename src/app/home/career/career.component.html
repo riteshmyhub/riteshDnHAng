@@ -1,126 +1,168 @@
 <div class="container-fluid careers_bg p-0" onmouseover="navBarColorBefore()">
-  <!-- blog scetion -->
-  <div class="container-fluid careers_section">
-    <!-- top margin -->
-
-    <div class="top_margin_careers"></div>
-    <!-- top margin -->
-    <h6 class="careers_heading_path mt-2">
-      <span style="color: grey;">HOME • </span>
-      CAREERS
-    </h6>
-    <h1 class="careers_heading mt-1">Careers</h1>
+  <div class="top_margin_careers"></div>
+  <!-- top margin -->
+  <div class="container-fluid careers_bg_img god_css">
+    <span>
+      <h6 class="careers_heading_path mt-2">
+        <span style="color: white;">HOME • </span>
+        CAREERS
+      </h6>
+      <h1 class="careers_heading mt-1">Careers</h1>
+    </span>
   </div>
-
-  <!-- Careers grid -->
-  <div class="container-fluid">
+  <!-- fiter / search nav bar -->
+  <div class="container">
     <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <h1 class="careers_tagLine">
-          <span style="color: black;">D&H Sécheron</span> n is a great place to
-          work, offering excellent opportunities sure to give your <br>
-          career the required direction and a definitive environment that it
-          needs to grow in.
-        </h1>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-          <div class="container-fluid">
-            <div class="row">
-
-              <!---------note - todo here in ngFor in card render-------------->
-
-              <div *ngFor="let career of card" class="col-lg-4 col-md-6 col-6 god_css card_padding">
-                <div class="main_card">
-                  <img [src]=career.ImageUrl class="icon_padding img-fluid mx-auto d-block" alt="" srcset="" />
-                  <h1 class="career_card_heading">{{career.heading}}</h1>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!---------------------form section-------------------------- -->
-          <div class="container-fluid form_section" style="background: #F1F1F1;">
-            <div class="container-fluid form_card">
-              <form action="">
-                <h1 class="form_heading">Send us your CV and we will get back to you</h1>
-                <div class="form-group custom_input_cv">
-                  <input type="email" class="form-control" id="name" placeholder="Name" name="Name"
-                    style="background: transparent;" />
-                </div>
-
-                <div class="form-group">
-                  <select class="form-control" id="sel1" name="sellist1">
-                    <option>Select Job Profile</option>
-                    <option>option here</option>
-                    <option>option here</option>
-                    <option>option here</option>
-                    <option>option here</option>
-                  </select>
-                </div>
-
-                <div class="form-group custom_input_cv">
-                  <input type="email" class="form-control" id="name" placeholder="Email id" name="Name"
-                    style="background: transparent;" />
-                </div>
-
-                <div class="form-group custom_input_cv">
-                  <input type="email" class="form-control" id="name" placeholder="Mobile Number" name="Name"
-                    style="background: transparent;" />
-                </div>
-
-                <div class="custom-file mb-3">
-                  <label for="file-upload" class="custom-file-upload">
-                    <h6>
-                      Upload your CV*
-                    </h6>
-                  </label>
-                  <input id="file-upload" type="file" />
-                </div>
-
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-5">
-                      <button type="submit" class="btn btn-danger btn-lg btn-block custom_btn">
-                        SUBMIT
-                      </button>
-                    </div>
-                    <div class="col-md-3"></div>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-          </div>
-          <!-- ------------------ Aptitude Test container--------------------->
-          <div class="container-fluid Aptitude_container god_css">
-            <div>
-              <h1 class="Aptitude_h1">You could also</h1>
-              <h1 class="Aptitude_h2">take an Aptitude Test</h1>
-
-              <div class="Aptitude_btn_padding_control">
-                <button type="submit" [routerLink]="['../Career/aptitude']" class="btn btn-lg btn-block Aptitude_btn">
-                  GO TO TEST
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- -------------------------------------------------------------->
+      <div class="col-md-6 p-0">
+        <div class="input-group search_bar ippadding">
+          <input
+            type="text"
+            class="form-control full_radius"
+            placeholder="Search new opportunities"
+            id="usr"
+            name="username"
+          />
         </div>
-        <div class="col-lg-2"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-7 col-6 p-0">
+            <div class="input-group ippadding">
+              <input
+                type="text"
+                class="form-control radius_l"
+                placeholder="Search Locations"
+                id="mail"
+                name="email"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text map_btn">
+                  <i
+                    class="fa fa-map-marker"
+                    style="color: var(--main-parent-colorOne);"
+                  ></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6 p-0">
+            <div class="form-group ippadding">
+              <select class="form-control radius_r" id="sel1" name="sellist1">
+                <option>Exact</option>
+                <option>15</option>
+                <option>25</option>
+                <option>30</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-12 p-0">
+            <div class="input-group-append ippadding">
+              <span class="input-group-text btn_padding full_radius">
+                <i class="fa fa-search"></i>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="container-fluid center_v">
+      <h1 class="filters_bar">
+        <i class="fa fa-filter"></i>
+        filters &nbsp;&nbsp;&nbsp;|
+
+        <a href=""
+          >Locations&nbsp;
+          <i class="fa fa-sort-desc"></i>
+        </a>
+
+        <a href=""
+          >Job Family&nbsp;
+          <i class="fa fa-sort-desc"></i>
+        </a>
+
+        <a href=""
+          >Organization&nbsp;
+          <i class="fa fa-sort-desc"></i>
+        </a>
+
+        <a href=""
+          >Experience Level&nbsp;
+          <i class="fa fa-sort-desc"></i>
+        </a>
+      </h1>
+    </div>
+
+    <!--  -->
   </div>
+
+  <div class="container toast_Results_box">
+    <span>5 Results </span>
+  </div>
+  <!-- result  -->
+  <div class="container result_box">
+    <!-- todo use ngFor -->
+    <div *ngFor="let Filters of Filtercard">
+      <a
+        data-toggle="collapse"
+        [href]="Filters.dropdownHref"
+        role="button"
+        aria-expanded="false"
+      >
+        <div class="row tableRow">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-2 god_css">
+                <span class="down_mark">⌵</span>
+              </div>
+              <div class="col-10">
+                <span class="post_name">{{ Filters.postname }}</span
+                ><br />
+                <span class="rQ_id">{{ Filters.reqId }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <span class="heading_table">Location</span><br />
+            <span class="table_data">{{ Filters.location }}</span>
+          </div>
+          <div class="col-md-2">
+            <span class="heading_table">Category</span><br />
+            <span class="table_data">{{ Filters.category }}</span>
+          </div>
+          <div class="col-md-2">
+            <span class="heading_table">Posted</span><br />
+            <span class="table_data">{{ Filters.posted }}</span>
+          </div>
+          <div class="col-md-2 god_css">
+            <button class="btn btn-danger">Apply Now</button>
+          </div>
+        </div>
+      </a>
+      <!-- collapse -->
+      <div class="collapse" [id]="Filters.dropdownId">
+        <div class="container-fluid mt-3">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+              <h6>1</h6>
+            </div>
+            <div class="col-md-2">
+              <h6>Job Profile</h6>
+            </div>
+            <div class="col-md-7">
+              <h6>{{ Filters.dropdowntext }}</h6>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!-- collapse /// -->
+    </div>
+    <!-- ngFor ////-->
+  </div>
+
   <!--  -->
 </div>
 
