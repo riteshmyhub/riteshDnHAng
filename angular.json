@@ -28,7 +28,8 @@
             ],
             "scripts": [
               "src/assets/js/network.js",
-              "src/assets/js/custom.js"
+              "src/assets/js/custom.js",
+              "src/assets/js/fullpage.js"
             ]
           },
           "configurations": {
