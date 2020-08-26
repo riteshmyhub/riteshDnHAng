@@ -11,7 +11,8 @@
 ## Web Technology :
 
 #### Angular 9 ( java script framework )
-#### bootstrap 4 (UI framework library)
+#### bootstrap 4 (UI library)
+#### fullpage.js (JavaScript animation library)
 #### three.js ( java script 3D  library )
 
 ---
