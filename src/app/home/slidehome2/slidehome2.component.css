@@ -140,17 +140,6 @@ input::placeholder {
 .sub_home_grid_six_padding {
   padding: 14px;
 }
-.sub_home_grid_six_number {
-  text-align: center;
-  color: var(--main-parent-colorOne);
-  font-weight: bolder;
-  font-size: 3.2vw;
-}
-.sub_home_grid_six_text {
-  color: #7b7b7a;
-  text-align: center;
-  font-size: 1vw;
-}
 .sub_grid_padding {
   padding: 40px;
 }
@@ -396,12 +385,6 @@ html {
   }
   .sub_home_left_icon_sub_text {
     font-size: 2.4vw;
-  }
-  .sub_home_grid_six_text {
-    font-size: 2vw;
-  }
-  .sub_home_grid_six_number {
-    font-size: 6.4vw;
   }
   .sub_grid_padding {
     padding: 10px;

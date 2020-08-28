@@ -95,9 +95,9 @@ const routes: Routes = [
     
 
     // componenet
-    {path: 'blogs' , component: BlogsComponent},
+    {path: 'blogs' , component: BlogsComponent },
     // child component
-    {path: 'blogs/blog' , component: BlogComponent},
+    {path: 'blog' , component: BlogComponent},
     
 
     // componenet
@@ -108,12 +108,14 @@ const routes: Routes = [
     
 
     // componenet
-    {path: 'aboutus' , component: AboutusComponent},
-    // child component
-    {path: 'aboutus/CSR' , component: CsrComponent},
-    {path: 'aboutus/certification' , component: CertificationComponent},
-    {path: 'aboutus/RNDCenter' , component: RndcenterComponent},
-    {path: 'aboutus/testimonial' , component: TestimonialComponent},
+    {path: 'aboutus' , component: AboutusComponent,children:[
+      // child component
+      {path: 'CSR' , component: CsrComponent},
+      {path: 'certification' , component: CertificationComponent},
+      {path: 'RNDCenter' , component: RndcenterComponent},
+      {path: 'testimonial' , component: TestimonialComponent},
+    ]},
+   
     
 
     // componenet

@@ -33,6 +33,8 @@ import { Slidehome4Component } from './slidehome4/slidehome4.component';
 import { Slidehome5Component } from './slidehome5/slidehome5.component';
 import { FooterComponent } from './footer/footer.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { CouterPartComponent } from './slidehome2/couter-part/couter-part.component';
+
 
 
 @NgModule({
@@ -67,7 +69,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     Slidehome4Component,
     Slidehome5Component,
     FooterComponent,
-    TimelineComponent],
+    TimelineComponent,
+    CouterPartComponent],
   imports: [
     CommonModule,
     HomeRoutingModule

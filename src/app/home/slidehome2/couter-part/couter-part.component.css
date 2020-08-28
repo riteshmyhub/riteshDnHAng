@@ -1,0 +1,19 @@
+.sub_home_grid_six_number {
+  text-align: center;
+  color: var(--main-parent-colorOne);
+  font-weight: bolder;
+  font-size: 3.2vw;
+}
+.sub_home_grid_six_text {
+  color: #7b7b7a;
+  text-align: center;
+  font-size: 1vw;
+}
+@media screen and (max-width: 768px) {
+  .sub_home_grid_six_number {
+    font-size: 6.4vw;
+  }
+  .sub_home_grid_six_text {
+    font-size: 2vw;
+  }
+}

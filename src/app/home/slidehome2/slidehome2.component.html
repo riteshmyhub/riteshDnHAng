@@ -19,21 +19,8 @@
             <!--  -->
             <div class="container-fluid p-4">
               <div class="row">
-                <div class="col-3">
-                  <img src="../../../assets/10 Bureau Veritas.png"
-                    class="img-fluid sub_home_two_grid_icon mx-auto d-block" alt="" srcset="">
-                </div>
-                <div class="col-3">
-                  <img src="../../../assets/dnv.png" class="img-fluid sub_home_two_grid_icon mx-auto d-block" alt=""
-                    srcset="">
-                </div>
-                <div class="col-3">
-                  <img src="../../../assets/03 Nuclear Power Corporation of India Ltd.png"
-                    class="img-fluid sub_home_two_grid_icon mx-auto d-block" alt="" srcset="">
-                </div>
-                <div class="col-3">
-                  <img src="../../../assets/07 Indian Register of Shipping.png"
-                    class="img-fluid sub_home_two_grid_icon mx-auto d-block" alt="" srcset="">
+                <div class="col-3" *ngFor="let imglink of Manufacturers">
+                  <img [src]="imglink" class="img-fluid sub_home_two_grid_icon mx-auto d-block" alt="" srcset="">
                 </div>
               </div>
             </div>
@@ -48,18 +35,12 @@
             <div class="container-fluid row_one">
               <div class="row">
                 <div class="col-6 sub_home_grid_six_padding">
-
-                  <h1 class="text-center" style="color: var(--main-parent-colorOne);"><span id="count1"
-                      class="sub_home_grid_six_number">54</span>+</h1>
-
-                  <h6 class="sub_home_grid_six_text">years of experience</h6>
+                  <app-couter-part couterName='years of experience' end=50>
+                  </app-couter-part>
                 </div>
                 <div class="col-6 sub_home_grid_six_padding grid_left">
-
-                  <h1 class="text-center" style="color: var(--main-parent-colorOne);"><span id="count2"
-                      class="sub_home_grid_six_number">54</span>+</h1>
-
-                  <h6 class="sub_home_grid_six_text">industries catered</h6>
+                  <app-couter-part couterName='industries catered' end=200>
+                  </app-couter-part>
                 </div>
               </div>
             </div>
@@ -67,18 +48,12 @@
             <div class="container-fluid row_two">
               <div class="row">
                 <div class="col-6 sub_home_grid_six_padding">
-
-                  <h1 class="text-center" style="color: var(--main-parent-colorOne);"><span id="count3"
-                      class="sub_home_grid_six_number">54</span>+</h1>
-
-                  <h6 class="sub_home_grid_six_text">countries covered</h6>
+                  <app-couter-part couterName='countries covered' end=30>
+                  </app-couter-part>
                 </div>
                 <div class="col-6 sub_home_grid_six_padding grid_left">
-
-                  <h1 class="text-center" style="color: var(--main-parent-colorOne);"><span id="count4"
-                      class="sub_home_grid_six_number">54</span>+</h1>
-
-                  <h6 class="sub_home_grid_six_text">employer</h6>
+                  <app-couter-part couterName='employer' end=600>
+                  </app-couter-part>
                 </div>
               </div>
             </div>
@@ -86,19 +61,12 @@
             <div class="container-fluid row_three">
               <div class="row">
                 <div class="col-6 sub_home_grid_six_padding">
-
-                  <h1 class="text-center" style="color: var(--main-parent-colorOne);"><span id="count5"
-                      class="sub_home_grid_six_number">54</span>+</h1>
-
-                  <h6 class="sub_home_grid_six_text">products</h6>
+                  <app-couter-part couterName='products' end=200>
+                  </app-couter-part>
                 </div>
                 <div class="col-6 sub_home_grid_six_padding grid_left">
-
-                  <h1 class="text-center" style="color: var(--main-parent-colorOne);"><span id="count6"
-                      class="sub_home_grid_six_number">54</span>+</h1>
-
-
-                  <h6 class="sub_home_grid_six_text">SKUs</h6>
+                  <app-couter-part couterName='SKUs' end=400>
+                  </app-couter-part>
                 </div>
               </div>
             </div>

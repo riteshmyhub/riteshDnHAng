@@ -18,14 +18,14 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="row god_css">
-              
+
               <!-- todo use ngFor here -->
               <div class="col-lg-3 col-md-3 col-4">
-              <a href="" style="text-decoration: none;">
+                <a href="" style="text-decoration: none;">
                   <h6 class="blog_link">Welding</h6>
                 </a>
               </div>
-             <!--  -->
+              <!--  -->
 
             </div>
           </div>
@@ -37,294 +37,37 @@
       <div class="card_container p-3">
         <div class="row">
           <!-- todo use ngFor card 1 -->
-          <div class="col-md-4 card_ui">
+          <div class="col-md-4 card_ui" *ngFor="let card of blog">
             <!-- card -->
             <h5 class="card_date mt-3">
 
-              <a href="">Dec 14, 2019</a>
+              <a href="">{{card.date}}</a>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <a href="">Topic</a>
 
             </h5>
             <h5 class="card_heading mt-3">
-              Aviation’s Quick Six with Advanced Technology Engineering
+             {{card.heading}}
             </h5>
             <!-- scroll bar -->
             <div class="scrollbar" id="style-3">
               <!-- blog description here  -->
               <h6 class="card_description mt-2">
-                This week, we hosted our annual Best of Brand Awards during our
-                North America Brand Summit to recognize
+                {{card.info}}
               </h6>
               <!--  -->
               <div class="force-overflow"></div>
             </div>
             <!-- scroll bar// -->
             <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
+            <a [routerLink]="[card.link]">
+              <h6 class="read_more mb-4 mt-1">{{card.linkText}}</h6>
             </a>
             <!--  -->
             <!-- -->
             <hr />
           </div>
-          <!-- card 2 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
 
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              The Morgan Stanley Global Consumer & Retail Investor Conference
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                Today celebrating International Day of Persons with Disabilities
-                across our global sites. We recognize this important day and
-                reflect on the ways in which our
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
-          <!-- card 3 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              Celebrating The Best Of The Best: 2019 Best Of Brand Awards
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                All abilities since our founding. We’re lighting up our
-                buildings and digital sites in purple on December 3,
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- card 4 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              Celebrating The Best Of The Best: 2019 Best Of Brand Awards
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                Today celebrating International Day of Persons with Disabilities
-                across our global sites. We recognize this important day and
-                reflect on the ways in which our
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
-          <!-- card 5 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              The Morgan Stanley Global Consumer & Retail Investor Conference
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                All abilities since our founding. We’re lighting up our
-                buildings and digital sites in purple on December 3,
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
-          <!-- card 6 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              Aviation’s Quick Six with Advanced Technology Engineering
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                This week, we hosted our annual Best of Brand Awards during our
-                North America Brand Summit to recognize
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- card 7 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              Aviation’s Quick Six with Advanced Technology Engineering
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                This week, we hosted our annual Best of Brand Awards during our
-                North America Brand Summit to recognize
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
-          <!-- card 8 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              The Morgan Stanley Global Consumer & Retail Investor Conference
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                All abilities since our founding. We’re lighting up our
-                buildings and digital sites in purple on December 3,
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
-          <!-- card 9 -->
-          <div class="col-md-4 card_ui">
-            <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">Dec 14, 2019</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-              Celebrating The Best Of The Best: 2019 Best Of Brand Awards
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                Today celebrating International Day of Persons with Disabilities
-                across our global sites. We recognize this important day and
-                reflect on the ways in which our
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
-            </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="['../blogs/blog']">
-              <h6 class="read_more mb-4 mt-1">Read more</h6>
-            </a>
-            <!-- -->
-            <hr />
-          </div>
         </div>
       </div>
       <!--  -->
