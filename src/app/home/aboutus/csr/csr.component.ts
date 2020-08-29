@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./csr.component.css']
 })
 export class CsrComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {

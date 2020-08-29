@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slidehome2.component.css']
 })
 export class Slidehome2Component implements OnInit {
+  
   Manufacturers: any[] = [
      '../../../assets/10 Bureau Veritas.png' ,
      '../../../assets/dnv.png',

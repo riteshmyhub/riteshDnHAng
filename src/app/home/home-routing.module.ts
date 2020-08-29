@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { DashboardComponent } from '../home/dashboard/dashboard.component';
 import { BlogsComponent } from './blogs/blogs.component';
-import { ProductComponent } from './product/product.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { CareerComponent } from './career/career.component';
 import { NetworkComponent } from './network/network.component';
@@ -15,20 +14,11 @@ import { CasestudyComponent } from './casestudy/casestudy.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { KnowlagebaseComponent } from './knowlagebase/knowlagebase.component';
 import { OverviewComponent } from './overview/overview.component';
-import { CsrComponent } from './aboutus/csr/csr.component';
-import { CertificationComponent } from './aboutus/certification/certification.component';
-import { RndcenterComponent } from './aboutus/rndcenter/rndcenter.component';
-import { TestComponentRenderer } from '@angular/core/testing';
-import { TestimonialComponent } from './aboutus/testimonial/testimonial.component';
 import { AptitudetestComponent } from './career/aptitudetest/aptitudetest.component';
 import { FaqsComponent } from './knowlagebase/faqs/faqs.component';
 import { StudentcenterComponent } from './knowlagebase/studentcenter/studentcenter.component';
 import { CaseComponent } from './casestudy/case/case.component';
 import { BlogComponent } from './blogs/blog/blog.component';
-
-import { AllproductComponent } from './product/allproduct/allproduct.component';
-
-import { MainproductComponent } from './product/mainproduct/mainproduct.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { Slidehome1Component } from './dashboard/slides/slidehome1/slidehome1.component';
 import { Slidehome2Component } from './dashboard/slides/slidehome2/slidehome2.component';
@@ -55,14 +45,8 @@ const routes: Routes = [
     {path: 'slide5' , component: Slidehome5Component},
     // 
 
-
-    // componenet product
-    {path: 'product' , component: ProductComponent},
-    // child component
-    {path: 'product/allproduct' , component: AllproductComponent},
-    {path: 'mainproduct' , component: MainproductComponent},
-    
-
+    { path: "products", loadChildren: () => import('./product/product.module').then(m => m.ProductModule) },
+ 
     // componenet
     {path: 'industries' , component: IndustriesComponent},
     // child component
@@ -107,16 +91,9 @@ const routes: Routes = [
 
     
 
-    // componenet
-    {path: 'aboutus' , component: AboutusComponent,children:[
-      // child component
-      {path: 'CSR' , component: CsrComponent},
-      {path: 'certification' , component: CertificationComponent},
-      {path: 'RNDCenter' , component: RndcenterComponent},
-      {path: 'testimonial' , component: TestimonialComponent},
-    ]},
-   
-    
+    // componenet AboutusModule
+    { path: "aboutus", loadChildren: () => import('./aboutus/aboutus.module').then(m => m.AboutusModule) },
+       
 
     // componenet
     {path: 'overview' , component: OverviewComponent},

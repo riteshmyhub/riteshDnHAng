@@ -14,7 +14,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CouterPartComponent implements OnInit {
   @Input('end') numbers: number;
   @Input('couterName') couterName: number;
-
   end;
   count: number = 1;
   constructor() { }

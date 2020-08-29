@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slidehome1.component.css']
 })
 export class Slidehome1Component implements OnInit {
-
+  loadImg = false;
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loadImg = true;
+    }, 500);
   }
 
 }

@@ -1,0 +1,148 @@
+<!-- Certifications logo container -->
+<div class="container-fluid" onmouseover="navBarColorBefore()">
+  <div class="row">
+    <div class="col-lg-5 p-5">
+      <!-- logo icon row 1 -->
+      <div class="row">
+        <div *ngFor="let item of allCard" class="col-4">
+          <a (click)="NavCard(item.id)">
+            <img class="img-fluid p-2" [src]="item.link" alt="" srcset="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-7 god_css">
+      <!-- main card for logo -->
+      <ng-container *ngIf="placeholder">
+        <img
+          src="../../../../../assets/certication_img/placeholder.png"
+          class="img-fluid placeholder"
+          width="300"
+          alt=""
+        />
+      </ng-container>
+      <ng-container *ngFor="let item of allCard">
+        <ng-container *ngIf="item.id == cardId">
+          <div class="Certifications_main_card_bg p-3 animated fadeIn">
+            <div class="row Logo_card_padding">
+              <div class="col-md-3">
+                <img
+                  class="img-fluid Certifications_card_img d-block mx-auto"
+                  [src]="item.link"
+                  width="100px"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="col-md-9">
+                <p>{{ item.Brands }}</p>
+                <h1 class="Certifications_card_name mb-4">
+                  DET NORSKE VERITAS
+                </h1>
+                <!-- table -->
+                <div class="row">
+                  <div class="col-6">
+                    <h1 class="Certi_card_table_heading">Our Brands Names</h1>
+                  </div>
+                  <div class="col-6">
+                    <h1 class="Certi_card_table_heading">AWS Codes</h1>
+                  </div>
+                </div>
+                <!-- tr 1 -->
+                <div class="row p-1 row_border">
+                  <div class="col-6">
+                    <h1 class="td_text">Exobel</h1>
+                  </div>
+                  <div class="col-6">
+                    <h1 class="td_text">E6013</h1>
+                  </div>
+                </div>
+                <!--  -->
+                <!-- tr 2 -->
+                <div class="row p-1 row_border">
+                  <div class="col-6">
+                    <h1 class="td_text">Indotherme</h1>
+                  </div>
+                  <div class="col-6">
+                    <h1 class="td_text">E6013</h1>
+                  </div>
+                </div>
+                <!--  -->
+                <!-- tr 3 -->
+                <div class="row p-1 row_border">
+                  <div class="col-6">
+                    <h1 class="td_text">Medio</h1>
+                  </div>
+                  <div class="col-6">
+                    <h1 class="td_text">E6013</h1>
+                  </div>
+                </div>
+                <!--  -->
+                <!-- tr 4 -->
+                <div class="row p-1 row_border">
+                  <div class="col-6">
+                    <h1 class="td_text">Norma</h1>
+                  </div>
+                  <div class="col-6">
+                    <h1 class="td_text">E6013</h1>
+                  </div>
+                </div>
+                <!--  -->
+                <!-- tr 5 -->
+                <div class="row p-1">
+                  <div class="col-6">
+                    <h1 class="td_text">Supratherme</h1>
+                  </div>
+                  <div class="col-6">
+                    <h1 class="td_text">E6013</h1>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+
+            <!-- tr btn -->
+            <div class="row p-1">
+              <div class="col-md-2"></div>
+              <div class="col-md-5">
+                <button
+                  type="button"
+                  (click)="popup()"
+                  class="btn btn-sm btn-block mt-2 Certifications_btn"
+                >
+                  DNV CERTIFICATION #1
+                </button>
+              </div>
+              <div class="col-md-5">
+                <button
+                  type="button"
+                  (click)="popup()"
+                  class="btn btn-sm btn-block mt-2 Certifications_btn pulse"
+                >
+                  DNV CERTIFICATION #1
+                </button>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </ng-container>
+      </ng-container>
+      <!--  -->
+    </div>
+  </div>
+</div>
+<!--  -->
+<!-- main Certifications     -->
+<div
+  *ngIf="Certifications"
+  class="container-fluid popup animated fadeIn"
+  (click)="closed()"
+>
+  <img
+    src="../../../../assets/certication_img/Main_certication.png"
+    class="img-fluid"
+    alt=""
+    srcset=""
+  />
+</div>
+<!--  -->

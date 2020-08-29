@@ -15,17 +15,11 @@ import { CasestudyComponent } from './casestudy/casestudy.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { OverviewComponent } from './overview/overview.component';
 import { KnowlagebaseComponent } from './knowlagebase/knowlagebase.component';
-import { CsrComponent } from './aboutus/csr/csr.component';
-import { CertificationComponent } from './aboutus/certification/certification.component';
-import { RndcenterComponent } from './aboutus/rndcenter/rndcenter.component';
-import { TestimonialComponent } from './aboutus/testimonial/testimonial.component';
 import { AptitudetestComponent } from './career/aptitudetest/aptitudetest.component';
 import { BlogComponent } from './blogs/blog/blog.component';
 import { FaqsComponent } from './knowlagebase/faqs/faqs.component';
 import { StudentcenterComponent } from './knowlagebase/studentcenter/studentcenter.component';
 import { CaseComponent } from './casestudy/case/case.component';
-import { AllproductComponent } from './product/allproduct/allproduct.component';
-import { MainproductComponent } from './product/mainproduct/mainproduct.component';
 import { FooterComponent } from './footer/footer.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { Slidehome1Component } from './dashboard/slides/slidehome1/slidehome1.component';
@@ -34,6 +28,7 @@ import { Slidehome3Component } from './dashboard/slides/slidehome3/slidehome3.co
 import { Slidehome4Component } from './dashboard/slides/slidehome4/slidehome4.component';
 import { Slidehome5Component } from './dashboard/slides/slidehome5/slidehome5.component';
 import { CouterPartComponent } from './dashboard/slides/slidehome2/couter-part/couter-part.component';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -49,17 +44,11 @@ import { CouterPartComponent } from './dashboard/slides/slidehome2/couter-part/c
     AboutusComponent,
     OverviewComponent,
     KnowlagebaseComponent,
-    CsrComponent,
-    CertificationComponent,
-    RndcenterComponent,
-    TestimonialComponent,
     AptitudetestComponent,
     BlogComponent,
     FaqsComponent,
     StudentcenterComponent,
     CaseComponent,
-    AllproductComponent,
-    MainproductComponent,
     Slidehome1Component,
     Slidehome2Component,
     Slidehome3Component,
@@ -70,7 +59,8 @@ import { CouterPartComponent } from './dashboard/slides/slidehome2/couter-part/c
     CouterPartComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    AngularFullpageModule
   ]
 })
 export class HomeModule { }
