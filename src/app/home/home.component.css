@@ -20,6 +20,10 @@
 .logo_res {
   width: 180px;
 }
+.H_manu {
+  color: #e74c3c;
+  font-size: 50px;
+}
 .navbar_link_sub_home {
   text-transform: uppercase;
   font-size: 15px;
@@ -28,7 +32,7 @@
   font-weight: bold;
 }
 .manu_icon {
-  box-shadow: none !important;
+  outline: none;
   background-color: transparent;
   border: none;
 }

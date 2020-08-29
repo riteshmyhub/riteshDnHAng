@@ -44,7 +44,7 @@ a {
 }
 /* css main home page */
 .main_home_page {
-  background-image: url(../../../assets/bgi.PNG);
+  background-image: url(../../../../../assets/bgi.PNG);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

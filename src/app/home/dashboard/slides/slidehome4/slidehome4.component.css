@@ -191,7 +191,7 @@ input::placeholder {
   padding: 100px;
 }
 .fourth_home_main_page {
-  background-image: url(../../../assets/home/bg_slide4.png);
+  background-image: url(../../../../../assets/home/bg_slide4.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

@@ -28,13 +28,13 @@ import { BlogComponent } from './blogs/blog/blog.component';
 
 import { AllproductComponent } from './product/allproduct/allproduct.component';
 
-import { Slidehome1Component } from './slidehome1/slidehome1.component';
-import { Slidehome5Component } from './slidehome5/slidehome5.component';
-import { Slidehome4Component } from './slidehome4/slidehome4.component';
-import { Slidehome3Component } from './slidehome3/slidehome3.component';
-import { Slidehome2Component } from './slidehome2/slidehome2.component';
 import { MainproductComponent } from './product/mainproduct/mainproduct.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { Slidehome1Component } from './dashboard/slides/slidehome1/slidehome1.component';
+import { Slidehome2Component } from './dashboard/slides/slidehome2/slidehome2.component';
+import { Slidehome3Component } from './dashboard/slides/slidehome3/slidehome3.component';
+import { Slidehome4Component } from './dashboard/slides/slidehome4/slidehome4.component';
+import { Slidehome5Component } from './dashboard/slides/slidehome5/slidehome5.component';
 
 
 
