@@ -64,6 +64,12 @@
 
 /* card */
 .card_ui {
+  padding: 12px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 14px -6px rgba(0,0,0,0.75);
+  border-radius: 8px;
 }
 .card_date {
   text-align: start;

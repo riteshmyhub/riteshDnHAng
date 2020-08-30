@@ -25,6 +25,7 @@ import { Slidehome2Component } from './dashboard/slides/slidehome2/slidehome2.co
 import { Slidehome3Component } from './dashboard/slides/slidehome3/slidehome3.component';
 import { Slidehome4Component } from './dashboard/slides/slidehome4/slidehome4.component';
 import { Slidehome5Component } from './dashboard/slides/slidehome5/slidehome5.component';
+import { VacanciesComponent } from './career/vacancies/vacancies.component';
 
 
 
@@ -32,84 +33,86 @@ const routes: Routes = [
   {
     path: 'home', component: HomeComponent,
     children: [
-    {path: '', component: DashboardComponent},
-    {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+      { path: '', component: DashboardComponent },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
 
 
 
-    // slide home component
-    {path: 'slide1' , component: Slidehome1Component},
-    {path: 'slide2' , component: Slidehome2Component},
-    {path: 'slide3' , component: Slidehome3Component},
-    {path: 'slide4' , component: Slidehome4Component},
-    {path: 'slide5' , component: Slidehome5Component},
-    // 
+      // slide home component
+      { path: 'slide1', component: Slidehome1Component },
+      { path: 'slide2', component: Slidehome2Component },
+      { path: 'slide3', component: Slidehome3Component },
+      { path: 'slide4', component: Slidehome4Component },
+      { path: 'slide5', component: Slidehome5Component },
+      // 
 
-    { path: "products", loadChildren: () => import('./product/product.module').then(m => m.ProductModule) },
- 
-    // componenet
-    {path: 'industries' , component: IndustriesComponent},
-    // child component
+      { path: "products", loadChildren: () => import('./product/product.module').then(m => m.ProductModule) },
 
-    
+      // componenet
+      { path: 'industries', component: IndustriesComponent },
+      // child component
 
-    // componenet
-    {path: 'Career' , component: CareerComponent},
-    {path: 'Career/aptitude' , component: AptitudetestComponent},
-    // child component
 
+
+      // componenet
+      { path: '',children:[
+        {path: 'Career', component: CareerComponent},
+        {path:'vacancies',component:VacanciesComponent},
+        { path: 'aptitude', component: AptitudetestComponent },
+      ]},
      
+      // child component
 
-    // componenet
-    {path: 'network' , component: NetworkComponent},
-    // child component
 
-    
 
-    // componenet
-    {path: 'contact' , component: ContactComponent},
-    // child component
+      // componenet
+      { path: 'network', component: NetworkComponent },
+      // child component
 
-    
 
-    // componenet
-    {path: 'Search' , component:  SearchComponent},
-    // child component
 
-    
+      // componenet
+      { path: 'contact', component: ContactComponent },
+      // child component
 
-    // componenet
-    {path: 'blogs' , component: BlogsComponent },
-    // child component
-    {path: 'blog' , component: BlogComponent},
-    
 
-    // componenet
-    {path: 'Casestudy' , component: CasestudyComponent},
-    // child component
-    {path: 'Casestudy/case' , component: CaseComponent},
 
-    
+      // componenet
+      { path: 'Search', component: SearchComponent },
+      // child component
 
-    // componenet AboutusModule
-    { path: "aboutus", loadChildren: () => import('./aboutus/aboutus.module').then(m => m.AboutusModule) },
-       
 
-    // componenet
-    {path: 'overview' , component: OverviewComponent},
-    // child component
 
-  // componenet
-    {path: 'timeline' , component: TimelineComponent},
+      // componenet
+      { path: 'blogs', component: BlogsComponent },
+      // child component
+      { path: 'blog', component: BlogComponent },
 
-    // componenet
-  {path: 'Knowlagebase' , component: KnowlagebaseComponent},
-    // child component
-    {path: 'Knowlagebase/FAQ' , component: FaqsComponent},
-    {path: 'Knowlagebase/studentCenter' , component: StudentcenterComponent},
-    
-    
-        ]
+
+      // componenet
+      { path: 'Casestudy', component: CasestudyComponent },
+      // child component
+      { path: 'Casestudy/case', component: CaseComponent },
+
+
+
+      // componenet AboutusModule
+      { path: "aboutus", loadChildren: () => import('./aboutus/aboutus.module').then(m => m.AboutusModule) },
+
+
+      // componenet
+      { path: 'overview', component: OverviewComponent },
+      // child component
+
+      // componenet
+      { path: 'timeline', component: TimelineComponent },
+
+      // componenet
+      { path: 'Knowlagebase', component: KnowlagebaseComponent },
+      // child component
+      { path: 'Knowlagebase/FAQ', component: FaqsComponent },
+      { path: 'Knowlagebase/studentCenter', component: StudentcenterComponent },
+    ]
 
   }
 ];

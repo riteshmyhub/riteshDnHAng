@@ -6,65 +6,17 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./career.component.css"],
 })
 export class CareerComponent implements OnInit {
-  Filtercard: any[] = [
-    // card data 1
-    {
-      dropdownId: "one",
-      dropdownHref: "#one",
-      postname: "Sales & Marketing",
-      reqId: "00001",
-      location: "india",
-      category: "Finance",
-      posted: "April 15 ,2020",
-      dropdowntext:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
-    },
-    {
-      dropdownId: "two",
-      dropdownHref: "#two",
-      postname: "Area Sales Professional for Distributed Generation",
-      reqId: "00002",
-      location: "Algier, Alger Algeria ",
-      category: "Sales",
-      posted: "March 5, 2020",
-      dropdowntext:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
-    },
-    {
-      dropdownId: "three",
-      dropdownHref: "#three",
-      postname: "Software Engineer Solutions O&G",
-      reqId: "00003",
-      location: "Chennai, Tamil Nadu India",
-      category: "Engineering",
-      posted: "November 7, 2019",
-      dropdowntext:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
-    },
-    {
-      dropdownId: "four",
-      dropdownHref: "#four",
-      postname: "Technical Lead",
-      reqId: "00004",
-      location: "Chennai, Tamil Nadu India",
-      category: "Research & Development",
-      posted: "January 14, 2020",
-      dropdowntext:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
-    },
-    {
-      dropdownId: "five",
-      dropdownHref: "#five",
-      postname: "Executive - Projects",
-      reqId: "00005",
-      location: "Chennai, Tamil Nadu India",
-      category: "Project Management",
-      posted: "March 18, 2020",
-      dropdowntext:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Reiciendis unde omnis, harum sint temporibus quibusdam optio accusamus voluptatum at illum voluptatem quam beatae debitis aliquam maxime. Pariatur ut dolorum iusto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid quae debitis quisquam commodi quas quos porro esse ipsam sunt alias. Nostrum consequatur alias voluptatem, incidunt earum quisquam sed est?",
-    },
-  ];
-  constructor() {}
+  CareerCard: any[] = [
+    { img: '../../../assets/career/c1.png', cardName: 'Sales & Marketing' },
+    { img: '../../../assets/career/c2.png', cardName: 'Production & Planning' },
+    { img: '../../../assets/career/c3.png', cardName: 'Research Development' },
+    { img: '../../../assets/career/c4.png', cardName: 'Quality Control' },
+    { img: '../../../assets/career/c5.png', cardName: 'Logistics & Supply' },
+    { img: '../../../assets/career/c6.png', cardName: 'Information Technology' },
+    { img: '../../../assets/career/c7.png', cardName: 'Legals & Corporate Affairs' },
+    { img: '../../../assets/career/c8.png', cardName: 'Finance & Customer Support' },
+  ]
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

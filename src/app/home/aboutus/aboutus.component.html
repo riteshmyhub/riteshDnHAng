@@ -1,7 +1,7 @@
 <div class="container-fluid about_us_bg p-0" onmouseover="navBarColorBefore()">
-  <div style="height: 155px;"></div>
+  <div style="height: 155px"></div>
   <div>
-    <h1 class="About_link">HOME • <span style="color: black;">ABOUT</span></h1>
+    <h1 class="About_link">HOME • <span style="color: black">ABOUT</span></h1>
     <h1 class="About_heading">About D&H Sécheron</h1>
   </div>
   <!--  -->
@@ -57,14 +57,10 @@
     <div class="container btn_container">
       <div class="row">
         <div class="col-lg-4 god_css">
-          <button class="btn btn-lg custom_btn">
-            Welding Consumables
-          </button>
+          <button class="btn btn-lg custom_btn">Welding Consumables</button>
         </div>
         <div class="col-lg-4 god_css">
-          <button class="btn btn-lg custom_btn">
-            Service Welding
-          </button>
+          <button class="btn btn-lg custom_btn">Service Welding</button>
         </div>
         <div class="col-lg-4 god_css">
           <button class="btn btn-lg custom_btn">
@@ -116,7 +112,7 @@
             </div>
           </div>
         </section>
-        <div class="overlays "></div>
+        <div class="overlays"></div>
       </div>
       <div class="col-lg-2"></div>
     </div>
@@ -125,5 +121,13 @@
 </div>
 
 <router-outlet></router-outlet>
-
-
+<!-- child navbar -->
+<div class="child_navbar">
+  <span class="links" [routerLink]="['./CSR']"> csr</span>
+  <span class="links" [routerLink]="['./certification']"> 
+    certification</span>
+  <span class="links" [routerLink]="['./RNDCenter']"> RNDCenter</span>
+  <span class="links" [routerLink]="['./testimonial']"> 
+    testimonial</span>
+</div>
+<router-outlet></router-outlet>

@@ -250,6 +250,28 @@
     </div>
   </div>
   <br><br>
-</div>
 
-<app-footer></app-footer>
+</div>
+<!-- child navbar -->
+<div class="child_navbar">
+  <span [routerLink]="[ '../Casestudy']" class="links">&nbsp;&nbsp; Case Studies</span>
+</div>
+<!-- popup -->
+
+
+<!-- Modal -->
+<div *ngIf="popop" class="popup_alert show god_css">
+  <div class="modal-content p-3 bounceIn">
+      <img src="../../../assets/casestudy/case_popup.png" class="img-fluid" alt="">
+      <h5>Explore to Case Studies</h5>
+      <div class="row">
+        <div class="col-6">
+          <a (click)="noThanks(false)" class="btn popupBtn my-2">no thanks</a>
+        </div>
+        <div class="col-6">
+          <a class="btn popupBtn my-2" routerLink="../Casestudy">ok</a>
+        </div>
+      </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

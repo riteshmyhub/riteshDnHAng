@@ -37,8 +37,9 @@
       <div class="card_container p-3">
         <div class="row">
           <!-- todo use ngFor card 1 -->
-          <div class="col-md-4 card_ui" *ngFor="let card of blog">
-            <!-- card -->
+          <div class="col-md-4" *ngFor="let card of blog">
+           <div class="card_ui">
+              <!-- card -->
             <h5 class="card_date mt-3">
 
               <a href="">{{card.date}}</a>
@@ -66,6 +67,7 @@
             <!--  -->
             <!-- -->
             <hr />
+           </div>
           </div>
 
         </div>
@@ -73,6 +75,5 @@
       <!--  -->
     </div>
   </div>
-  <!--  -->
-  <app-footer></app-footer>
+
 </div>

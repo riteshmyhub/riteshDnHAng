@@ -1,169 +1,42 @@
-<div class="container-fluid careers_bg p-0" onmouseover="navBarColorBefore()">
-  <div class="top_margin_careers"></div>
-  <!-- top margin -->
-  <div class="container-fluid careers_bg_img god_css">
-    <span>
-      <h6 class="careers_heading_path mt-2">
-        <span style="color: white;">HOME • </span>
-        CAREERS
-      </h6>
-      <h1 class="careers_heading mt-1">Careers</h1>
-    </span>
-  </div>
-  <!-- fiter / search nav bar -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 p-0">
-        <div class="input-group search_bar ippadding">
-          <input
-            type="text"
-            class="form-control full_radius"
-            placeholder="Search new opportunities"
-            id="usr"
-            name="username"
-          />
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-7 col-6 p-0">
-            <div class="input-group ippadding">
-              <input
-                type="text"
-                class="form-control radius_l"
-                placeholder="Search Locations"
-                id="mail"
-                name="email"
-              />
-              <div class="input-group-append">
-                <span class="input-group-text map_btn">
-                  <i
-                    class="fa fa-map-marker"
-                    style="color: var(--main-parent-colorOne);"
-                  ></i>
-                </span>
-              </div>
-            </div>
-          </div>
+<div style="height: 150px;"></div>
+<!-- top margin -->
 
-          <div class="col-md-3 col-6 p-0">
-            <div class="form-group ippadding">
-              <select class="form-control radius_r" id="sel1" name="sellist1">
-                <option>Exact</option>
-                <option>15</option>
-                <option>25</option>
-                <option>30</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-12 p-0">
-            <div class="input-group-append ippadding">
-              <span class="input-group-text btn_padding full_radius">
-                <i class="fa fa-search"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid center_v">
-      <h1 class="filters_bar">
-        <i class="fa fa-filter"></i>
-        filters &nbsp;&nbsp;&nbsp;|
-
-        <a href=""
-          >Locations&nbsp;
-          <i class="fa fa-sort-desc"></i>
-        </a>
-
-        <a href=""
-          >Job Family&nbsp;
-          <i class="fa fa-sort-desc"></i>
-        </a>
-
-        <a href=""
-          >Organization&nbsp;
-          <i class="fa fa-sort-desc"></i>
-        </a>
-
-        <a href=""
-          >Experience Level&nbsp;
-          <i class="fa fa-sort-desc"></i>
-        </a>
-      </h1>
-    </div>
-
-    <!--  -->
-  </div>
-
-  <div class="container toast_Results_box">
-    <span>5 Results </span>
-  </div>
-  <!-- result  -->
-  <div class="container result_box">
-    <!-- todo use ngFor -->
-    <div *ngFor="let Filters of Filtercard">
-      <a
-        data-toggle="collapse"
-        [href]="Filters.dropdownHref"
-        role="button"
-        aria-expanded="false"
-      >
-        <div class="row tableRow">
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-2 god_css">
-                <span class="down_mark">⌵</span>
-              </div>
-              <div class="col-10">
-                <span class="post_name">{{ Filters.postname }}</span
-                ><br />
-                <span class="rQ_id">{{ Filters.reqId }}</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <span class="heading_table">Location</span><br />
-            <span class="table_data">{{ Filters.location }}</span>
-          </div>
-          <div class="col-md-2">
-            <span class="heading_table">Category</span><br />
-            <span class="table_data">{{ Filters.category }}</span>
-          </div>
-          <div class="col-md-2">
-            <span class="heading_table">Posted</span><br />
-            <span class="table_data">{{ Filters.posted }}</span>
-          </div>
-          <div class="col-md-2 god_css">
-            <button class="btn btn-danger">Apply Now</button>
-          </div>
-        </div>
-      </a>
-      <!-- collapse -->
-      <div class="collapse" [id]="Filters.dropdownId">
-        <div class="container-fluid mt-3">
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-2">
-              <h6>1</h6>
-            </div>
-            <div class="col-md-2">
-              <h6>Job Profile</h6>
-            </div>
-            <div class="col-md-7">
-              <h6>{{ Filters.dropdowntext }}</h6>
-            </div>
-          </div>
-          <!--  -->
-        </div>
-      </div>
-      <!-- collapse /// -->
-    </div>
-    <!-- ngFor ////-->
-  </div>
-
-  <!--  -->
+<div class="container-fluid careers_bg_img" onmouseover="navBarColorBefore()">
+  <h6 class="careers_heading_path">
+    <span style="color: grey;">HOME • CAREERS</span>
+  </h6>
+  <h1 class="careers_heading mt-2">Careers</h1>
 </div>
 
-<app-footer></app-footer>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <h1 class="Block_Career_text">
+        <span>D&H Sécheron</span> is a great place to work, offering excellent opportunities sure to give your career
+        the required direction and a definitive environment that it needs to grow in.
+      </h1>
+      <!-- todo this block for page - 17 -->
+
+      <div class="container-fluid mb-3" onmouseover="navBarColorBefore()">
+        <div class="row ioc_row">
+          <!-- card 1 -->
+          <div *ngFor="let Card of CareerCard" class="col-lg-4 col-6 card_padding">
+            <div class="main_card god_css">
+              <div class="p-4">
+                <a [routerLink]="[ '../vacancies' ]">
+                  <img [src]="Card.img" class="ico_img mx-auto d-block" alt="" srcset="" />
+                </a>
+                <h1 class="card_heading">
+                  {{Card.cardName}}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+<router-outlet></router-outlet>

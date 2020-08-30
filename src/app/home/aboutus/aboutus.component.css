@@ -333,3 +333,46 @@
     line-height: 20px;
   }
 }
+
+/* child_navbar */
+.child_navbar {
+  position: fixed;
+  top: 50%;
+  right: -135px;
+  z-index: 9999;
+  transform: translate(0%, -50%);
+  transition: all;
+}
+.child_navbar .links {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c82230;
+  display: block;
+  text-transform: uppercase;
+  background: #e6e6e6;
+  padding: 8px 10px 8px 20px;
+  margin: 8px 0px 8px 0px;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border-radius: 8px 0px 0px 8px;
+  -moz-border-radius: 8px 0px 0px 8px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+  border: 0px solid #000000;
+  outline: none;
+}
+.child_navbar .links::before {
+  font-family: FontAwesome;
+  content: "\f0c1";
+  font-size: 25px;
+}
+.child_navbar:hover {
+  right: 0;
+  transition-duration: 300ms;
+}
+.child_navbar .links:hover {
+  color: #e6e6e6;
+  background: #c82230;
+  transition-duration: 500ms;
+}

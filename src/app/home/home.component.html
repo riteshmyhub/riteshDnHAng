@@ -65,26 +65,25 @@
 
           </li>
 
-          <li class="nav-item">
-
-              <a class="nav-link"
-              data-toggle="collapse" data-target=".navbar-collapse.show"
-              [routerLink]="['./network']">
-                <h4 class="navbar_link_sub_home pt-1">network</h4>
-              </a>
-
-          </li>
 
           <li class="nav-item">
 
               <a class="nav-link"
               data-toggle="collapse" data-target=".navbar-collapse.show"
-              [routerLink]="['./contact']">
-                <h4 class="navbar_link_sub_home pt-1">contact</h4>
+              [routerLink]="['./blogs']">
+                <h4 class="navbar_link_sub_home pt-1">blogs</h4>
               </a>
 
           </li>
+          <li class="nav-item">
 
+            <a class="nav-link"
+            data-toggle="collapse" data-target=".navbar-collapse.show"
+            [routerLink]="['./aboutus']">
+              <h4 class="navbar_link_sub_home pt-1">about us</h4>
+            </a>
+
+        </li>
 
           <li class="nav-item pb-2">
           <div class="searchbar" id="ico_search_bar_moving">
@@ -123,3 +122,4 @@
     </a>
 </div> -->
 <router-outlet></router-outlet>
+<app-footer></app-footer>

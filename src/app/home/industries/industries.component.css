@@ -67,3 +67,90 @@ td {
     font-size: 19px;
   }
 }
+
+/* child_navbar */
+.child_navbar {
+  position: fixed;
+  top: 50%;
+  right: -135px;
+  z-index: 8888;
+  transform: translate(0%, -50%);
+  transition: all;
+}
+.child_navbar .links {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c82230;
+  display: block;
+  text-transform: uppercase;
+  background: #e6e6e6;
+  padding: 8px 10px 8px 20px;
+  margin: 8px 0px 8px 0px;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border-radius: 8px 0px 0px 8px;
+  -moz-border-radius: 8px 0px 0px 8px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+  border: 0px solid #000000;
+  outline: none;
+}
+.child_navbar .links::before {
+  font-family: FontAwesome;
+  content: "\f0c1";
+  font-size: 25px;
+}
+.child_navbar:hover {
+  right: 0;
+  transition-duration: 300ms;
+}
+.child_navbar .links:hover {
+  color: #e6e6e6;
+  background: #c82230;
+  transition-duration: 500ms;
+}
+
+/* popup */
+.popup_alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+  background: rgba(226,226,226,1);
+  background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,0.58) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,0.58)));
+  background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,0.58) 100%);
+  background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,0.58) 100%);
+  background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,0.58) 100%);
+  background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 0%, rgba(254,254,254,0.58) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+}
+
+.modal-content {
+  min-height: 300px;
+  width: 400px;
+  border-radius: 14px;
+  background-color: white;
+}
+
+.popupBtn {
+  width: 100%;
+  box-shadow: none;
+  background: white;
+  color: #2C91FE !important;
+  border-radius: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.popupBtn:hover {
+  color: white;
+}
+.modal-content h5 {
+  text-align: center;
+}
