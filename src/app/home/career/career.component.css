@@ -317,6 +317,27 @@
   font-size: 33px;
   left: 9px;
 }
+/* take an Aptitude Test */
+.aptitude {
+  border: 1px solid var(--main-parent-colorOne);
+  min-height: 300px;
+}
+.aptitude_heading_1,
+.aptitude_heading_1 {
+  text-align: center;
+}
+.aptitude_heading_2 {
+  color: #c82230;
+}
+.aptitude_btn {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}
+.aptitude_btn:hover {
+  background: #c82230;
+  color: white;
+}
 @media screen and (max-width: 767px) {
   .card_heading {
     font-size: 14px;
@@ -334,4 +355,25 @@
   .Current_ico {
     width: 80px;
   }
+}
+/* PopupModel */
+.PopupModel {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.modal-content {
+  border-radius: 12px;
+}
+.Popup_heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 12px;
+}
+button {
+  text-transform: uppercase;
+}
+.Popup_card {
+  padding: 30px;
 }

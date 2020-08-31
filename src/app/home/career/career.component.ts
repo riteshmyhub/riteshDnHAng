@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-
 @Component({
   selector: "app-career",
   templateUrl: "./career.component.html",
@@ -16,7 +15,24 @@ export class CareerComponent implements OnInit {
     { img: '../../../assets/career/c7.png', cardName: 'Legals & Corporate Affairs' },
     { img: '../../../assets/career/c8.png', cardName: 'Finance & Customer Support' },
   ]
+  aptitudeBtn = false;
+  aptitudeForm = true;
+  aptitudeImg = false;
+  submitBtn = true;
+  PopupModel = false;
+
   constructor() { }
+  Popup() {
+    this.PopupModel = true;
+  }
+  submit() {
+    setTimeout(() => {
+      this.aptitudeForm = false;
+      this.aptitudeImg = true;
+      this.submitBtn = false;
+      this.aptitudeBtn = true;
+    }, 2000);
+  }
 
   ngOnInit(): void { }
 }

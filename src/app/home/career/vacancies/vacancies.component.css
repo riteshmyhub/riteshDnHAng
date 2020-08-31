@@ -1,190 +1,148 @@
 .top_margin_careers {
-    height: 145px;
+  height: 145px;
+}
+.careers_heading_path {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+}
+.careers_heading {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 8px;
+  font-size: 55px;
+}
+.careers_tagLine {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 24px;
+}
+.careers_bg_img {
+  background-image: url(../../../../assets/career/career_bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* filter bar */
+
+.company {
+  color: gray;
+  font-weight: 600;
+}
+.heading_table {
+  color: gray;
+  font-weight: 600;
+}
+.table_data {
+  color: black;
+  font-weight: 600;
+}
+.post_name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-parent-colorOne);
+}
+/* toast_Results_box */
+.toast_Results_box {
+  margin-top: 26px;
+}
+.tableRow {
+  background: #f7f7f7;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #d1d1d1;
+  cursor: pointer;
+}
+.tableRow:hover {
+  background: #eeeeee;
+}
+.down_mark {
+  font-weight: 800;
+  font-size: 35px;
+  color: gray;
+}
+/*  */
+@media screen and (max-width: 767px) {
+  .careers_heading {
+    font-size: 48px;
   }
-  .careers_heading_path {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 11px;
-    font-weight: bold;
-    color: white;
+  .careers_bg {
+    background-image: none;
+    background: white;
   }
   .careers_heading {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    padding: 8px;
-    font-size: 55px;
+    padding: 0px;
+    font-size: 52px;
   }
   .careers_tagLine {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 24px;
-  }
-  .careers_bg_img {
-    background-image: url(../../../../assets/career/career_bg.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .search_bar {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .search_input {
-    background: transparent !important;
-    border: 1px solid red;
-  }
-  .btn_padding {
-    padding: 10px;
-    background: var(--main-parent-colorOne);
-    margin-left: 18px;
-  }
-  .btn_padding i {
-    color: white;
-  }
-  .full_radius,
-  .radius_l,
-  .radius_r,
-  .map_btn {
-    -webkit-box-shadow: 0px 4px 13px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 4px 13px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 4px 13px -5px rgba(0, 0, 0, 0.75);
-  }
-  
-  .full_radius {
-    border-radius: 18px;
-    border: none;
-  }
-  .radius_l {
-    border-radius: 20px 0px 0px 20px;
-    -moz-border-radius: 20px 0px 0px 20px;
-    -webkit-border-radius: 20px 0px 0px 20px;
-    border: none;
-  }
-  .radius_r {
-    border-radius: 0px 20px 20px 0px;
-    -moz-border-radius: 0px 20px 20px 0px;
-    -webkit-border-radius: 0px 20px 20px 0px;
-    border: none;
-  }
-  .ippadding {
-    padding-top: 26px;
-  }
-  .map_btn {
-    background: white;
-    border: none !important;
-  }
-  /* filter bar */
-  .filters_bar {
     font-size: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    margin-bottom: 15px;
+    margin-top: 10px;
   }
-  .filters_bar a {
-    margin-left: 22px;
-    color: black;
-    font-weight: 400;
+
+  .careers_bg_img {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  .filters_select {
-    display: inline;
-    margin-left: 18px;
-  }
-  .filters_select select {
-    border: none !important;
-    box-shadow: none;
-  }
-  .rQ_id {
-    color: gray;
-    font-weight: 600;
-  }
-  .heading_table {
-    color: gray;
-    font-weight: 600;
-  }
-  .table_data {
-    color: black;
-    font-weight: 600;
-  }
-  .post_name {
-    font-size: 23px;
-    font-weight: 600;
-    color: var(--main-parent-colorOne);
-  }
-  /* toast_Results_box */
-  .toast_Results_box {
-    margin-top: 26px;
-  }
-  .result_box {
-    background: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  .tableRow {
-    background: white;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom: 1px solid #d1d1d1;
-  }
-  .tableRow:hover {
-    background: #eeeeee;
-  }
-  .down_mark {
-    font-weight: 800;
-    font-size: 35px;
-    color: gray;
-  }
-  /*  */
-  @media screen and (max-width: 767px) {
-    .careers_heading {
-      font-size: 48px;
-    }
-    .careers_bg {
-      background-image: none;
-      background: white;
-    }
-    .careers_heading {
-      padding: 0px;
-      font-size: 52px;
-    }
-    .careers_tagLine {
-      font-size: 14px;
-      margin-bottom: 15px;
-      margin-top: 10px;
-    }
-    .search_bar {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-    .btn_padding {
-      padding: 5px;
-      width: 100%;
-    }
-    .btn_padding i {
-      padding-left: 30%;
-      color: transparent;
-      margin-bottom: 12px;
-    }
-    .btn_padding::after {
-      content: "Search now";
-      color: white;
-    }
-    .ippadding {
-      padding-top: 10px;
-    }
-    .careers_bg_img {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-  }
+}
+
+/* popup */
+.PopupModel {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.modal-content {
+  border-radius: 12px;
+}
+.Popup_heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: start;
+  margin-bottom: 8px;
+}
+button {
+  text-transform: uppercase;
+}
+.Popup_card {
+  padding: 30px;
+}
+.Popup_company_name {
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.Resume {
+  outline: none;
+  box-shadow: none;
+}
+.Popup_done {
+  border: none;
+  padding: 14px;
+  text-align: center;
+  position: relative;
+}
+.successfully {
+  font-size: 150px;
+  color: #14c32b;
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.successText {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: 50px;
+}

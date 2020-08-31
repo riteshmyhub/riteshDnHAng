@@ -1,7 +1,7 @@
 <div style="height: 150px;"></div>
 <!-- top margin -->
 
-<div class="container-fluid careers_bg_img" onmouseover="navBarColorBefore()">
+<div class="container-fluid careers_bg_img animated fadeIn" onmouseover="navBarColorBefore()">
   <h6 class="careers_heading_path">
     <span style="color: grey;">HOME • CAREERS</span>
   </h6>
@@ -35,8 +35,84 @@
           </div>
         </div>
       </div>
+      <!-- take an Aptitude Test -->
+      <div class="container-fluid aptitude my-4 god_css">
+       <span>
+        <h1 class="aptitude_heading_1 display-4">You could also</h1>
+        <h1 class="aptitude_heading_2">take an Aptitude Test</h1>
+        <button class="btn mt-3 aptitude_btn" (click)="Popup()">GO TO TEST</button>
+       </span>
+      </div>
     </div>
     <div class="col-lg-2"></div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div *ngIf="PopupModel" class="modal PopupModel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content animated Popup_card bounceInUp">
+      <div>
+        <h5 class="Popup_heading">Aptitude Test form</h5>
+      </div>
+      <form>
+      <!-- if when form not submit-->
+      <ng-container *ngIf="aptitudeForm">
+        <div class="modal-body p-0">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">choose job profile</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Sales &
+                Marketing</option>
+              <option>Production
+                & Planning</option>
+              <option>Research
+                Development</option>
+              <option>Quality
+                Control</option>
+                <option>
+                  Logistics & Supply
+                </option>
+                <option>
+                  Information Technology
+                </option> 
+                <option>
+                  Legals & Corporate Affairs
+                </option>
+                <option>
+                  Finance & Customer Support
+                </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Your email</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter email">
+          </div>    
+        </div>
+      </ng-container>
+      <!--  -->
+      <!-- than load Aptitude img-->
+      <ng-container *ngIf="aptitudeImg">
+        <img src="../../../assets/career/aptitude_img.png" class="img-fluid" alt="">
+      </ng-container>
+      <!-- img here -->
+      <!--  -->
+      <div class="p-0">
+        <div class="row">
+          <div *ngIf="submitBtn" class="col-12 pb-2">
+            <button type="button" (click)="submit()" class="btn btn-danger btn-block">Submit</button>
+          </div>
+          <div *ngIf="aptitudeBtn" class="col-12 pb-2">
+            <button routerLink='../aptitude' type="button"class="btn btn-success btn-block">getting started</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>

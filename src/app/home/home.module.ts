@@ -30,6 +30,7 @@ import { Slidehome5Component } from './dashboard/slides/slidehome5/slidehome5.co
 import { CouterPartComponent } from './dashboard/slides/slidehome2/couter-part/couter-part.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { VacanciesComponent } from './career/vacancies/vacancies.component';
+import { QuestionsComponent } from './career/aptitudetest/questions/questions.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -58,7 +59,8 @@ import { VacanciesComponent } from './career/vacancies/vacancies.component';
     FooterComponent,
     TimelineComponent,
     CouterPartComponent,
-    VacanciesComponent],
+    VacanciesComponent,
+    QuestionsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
