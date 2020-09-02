@@ -1,0 +1,79 @@
+<div
+  class="container-fluid Case_Studies_BG p-0"
+  onmouseover="navBarColorBefore()"
+>
+  <!-- top bar -->
+  <div style="height: 160px;"></div>
+  <!-- Case_Studies heading_bar -->
+  <div class="container-fluid">
+    <h1 class="Case_Studies_link mt-3">home • Power Sector • case studis</h1>
+
+    <h1 class="Case_main_heading mb-5">Power Sector Case Studies</h1>
+  </div>
+  <!-- ------------------------------------- -->
+  <div class="container-fluid">
+    <div class="row mt-5 mb-5">
+      <div class="col-md-4 sec_case_img_col">
+        <img
+          src="./../../assets/casestudy/sec_case_img.png"
+          class="img-fluid sec_case_img"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="col-md-8">
+        <!-- row 1 -->
+        <div class="row">
+          <!-- todo use ngFor caseStudy-->
+          <div *ngFor="let study of casedata" class="col-md-6">
+            <!-- card 1 -->
+            <div class="p-1">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <!-- Industry btn -->
+                <button type="button" class="btn btn-sm Case_btn">
+                  Industry
+                </button>
+
+                <!-- Category btn -->
+                <button type="button" class="btn btn-sm Case_btn ml-3">
+                  Category
+                </button>
+              </div>
+              <!-- text aria -->
+              <!-- scroll bar -->
+              <div class="scrollbar" id="style-3">
+                <!-- blog description here  -->
+                <h6 class="card_description mt-2">
+                  {{ study.heading }}
+                </h6>
+                <!--  -->
+                <div class="force-overflow"></div>
+              </div>
+              <!-- scroll bar//  -->
+              <a
+                [routerLink]="['../case']"
+                style="text-decoration: none;"
+              >
+                <h6 class="Read_Case_Study">Read Case Study</h6>
+              </a>
+              <hr />
+            </div>
+            <!--  -->
+          </div>
+        </div>
+
+        <a href="" class="btn btn-sm btnForCase pl-4 pr-4"
+          >View All Resources</a
+        >
+        <!--  -->
+      </div>
+    </div>
+    <!-- top margin -->
+    <div style="height: 40px;"></div>
+    <!--  -->
+  </div>
+  <!--  -->
+</div>
+<router-outlet></router-outlet>
+
+

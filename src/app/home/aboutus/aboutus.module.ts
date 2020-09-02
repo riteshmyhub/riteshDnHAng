@@ -7,10 +7,11 @@ import { CertificationComponent } from './certification/certification.component'
 import { CsrComponent } from './csr/csr.component';
 import { RndcenterComponent } from './rndcenter/rndcenter.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { OverviewComponent } from './overview/overview.component';
 
 
 @NgModule({
-  declarations: [MainCardsComponent, CertificationComponent, CsrComponent, RndcenterComponent, TestimonialComponent],
+  declarations: [MainCardsComponent, CertificationComponent, CsrComponent, RndcenterComponent, TestimonialComponent, OverviewComponent],
   imports: [
     CommonModule,
     AboutusRoutingModule

@@ -5,6 +5,8 @@ import { CsrComponent } from './csr/csr.component';
 import { CertificationComponent } from './certification/certification.component';
 import { RndcenterComponent } from './rndcenter/rndcenter.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { OverviewComponent } from './overview/overview.component';
+
 
 
 const routes: Routes = [
@@ -14,6 +16,7 @@ const routes: Routes = [
      {path: 'certification' , component: CertificationComponent},
      {path: 'RNDCenter' , component: RndcenterComponent},
      {path: 'testimonial' , component: TestimonialComponent},
+     {path:'Overview',component:OverviewComponent}
    ]}
 ];
 

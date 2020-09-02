@@ -11,15 +11,12 @@ import { CareerComponent } from './career/career.component';
 import { NetworkComponent } from './network/network.component';
 import { ContactComponent } from './contact/contact.component';
 import { SearchComponent } from './search/search.component';
-import { CasestudyComponent } from './casestudy/casestudy.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { OverviewComponent } from './overview/overview.component';
 import { KnowlagebaseComponent } from './knowlagebase/knowlagebase.component';
 import { AptitudetestComponent } from './career/aptitudetest/aptitudetest.component';
 import { BlogComponent } from './blogs/blog/blog.component';
 import { FaqsComponent } from './knowlagebase/faqs/faqs.component';
 import { StudentcenterComponent } from './knowlagebase/studentcenter/studentcenter.component';
-import { CaseComponent } from './casestudy/case/case.component';
 import { FooterComponent } from './footer/footer.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { Slidehome1Component } from './dashboard/slides/slidehome1/slidehome1.component';
@@ -42,15 +39,12 @@ import { QuestionsComponent } from './career/aptitudetest/questions/questions.co
     NetworkComponent,
     ContactComponent,
     SearchComponent,
-    CasestudyComponent,
     AboutusComponent,
-    OverviewComponent,
     KnowlagebaseComponent,
     AptitudetestComponent,
     BlogComponent,
     FaqsComponent,
     StudentcenterComponent,
-    CaseComponent,
     Slidehome1Component,
     Slidehome2Component,
     Slidehome3Component,
@@ -60,7 +54,7 @@ import { QuestionsComponent } from './career/aptitudetest/questions/questions.co
     TimelineComponent,
     CouterPartComponent,
     VacanciesComponent,
-    QuestionsComponent],
+    QuestionsComponent,],
   imports: [
     CommonModule,
     HomeRoutingModule,

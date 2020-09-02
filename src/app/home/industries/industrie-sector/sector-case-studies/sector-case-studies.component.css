@@ -8,7 +8,6 @@
   font-size: 11px;
   font-weight: bold;
 }
-
 .Case_main_heading {
   color: #e31e24;
   text-align: center;
@@ -16,22 +15,8 @@
   padding: 8px;
   font-size: 55px;
 }
-.Case_Studies_first_grid {
-  background-image: url(../../../assets/casestudy/casebgi.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-}
 .search_mode {
   background-color: var(--main-parent-colorOne);
-}
-.grid_first_box {
-  height: 180px;
-}
-.first_col_heading {
-  font-weight: 500;
 }
 .sec_case_img {
   border-radius: 12px;
@@ -101,16 +86,6 @@
   }
   .Case_main_heading {
     font-size: 48px;
-  }
-  .grid_first_box {
-    height: auto;
-  }
-  .first_col_heading {
-    text-align: center;
-    font-weight: 700;
-    font-size: 3vw;
-    padding-top: 18px;
-    padding-bottom: 18px;
   }
   .sec_case_img {
     margin-bottom: 20px;

@@ -1,148 +1,70 @@
-.Power_Sector_img_bg {
-  background-image: url(../../../assets/INDUSTRIES/INDUSTRIES_bg.png);
+.Case_Studies_link {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.Case_main_heading {
+  color: #e31e24;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 55px;
+}
+.Case_Studies_first_grid {
+  background-image: url(../../../assets/casestudy/casebgi.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: auto;
 }
-.POWER_SECTOR_link {
-  text-align: center;
-  font-size: 11px;
+.grid_first_box {
+  height: 180px;
+}
+
+.first_col_heading {
   font-weight: 400;
-  color: gray;
-}
-.Power_Sector_heading {
-  color: white;
-  font-size: 55px;
-}
-.Power_Sector_paragraph {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-}
-.Coal_Handling_Plant_heading {
-  font-size: 22px;
-  text-align: center;
-}
-
-/**/
-
-.table_num {
-  color: #7b7b7a;
-}
-th {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 400;
-  color: #7b7b7a;
-  border-left: none;
-  border-right: none;
-}
-td {
-  text-align: center;
-  font-size: 14px;
-  border-left: none;
-  border-right: none;
-}
-.Recommended_num {
-  font-weight: 700;
-}
-
-/* mQ */
-@media screen and (max-width: 767px) {
-  .Power_Sector_img_bg {
-    height: 200px;
-  }
-  .Power_Sector_heading {
-    font-size: 52px;
-  }
-  .Power_Sector_paragraph {
-    font-size: 13px;
-    margin-top: 8px !important;
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-  .Coal_Handling_Plant_heading {
-    font-size: 19px;
-  }
-}
-
-/* child_navbar */
-.child_navbar {
-  position: fixed;
-  top: 50%;
-  right: -135px;
-  z-index: 8888;
-  transform: translate(0%, -50%);
-  transition: all;
-}
-.child_navbar .links {
-  font-size: 18px;
-  font-weight: 600;
-  color: #c82230;
-  display: block;
-  text-transform: uppercase;
-  background: #e6e6e6;
-  padding: 8px 10px 8px 20px;
-  margin: 8px 0px 8px 0px;
-  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  border-radius: 8px 0px 0px 8px;
-  -moz-border-radius: 8px 0px 0px 8px;
-  -webkit-border-radius: 8px 0px 0px 8px;
-  border: 0px solid #000000;
-  outline: none;
+  color: rgb(133, 129, 129);
 }
-.child_navbar .links::before {
+.first_col_heading::before {
+  content: "\f0c1\00a0\00a0";
   font-family: FontAwesome;
-  content: "\f0c1";
-  font-size: 25px;
 }
-.child_navbar:hover {
-  right: 0;
-  transition-duration: 300ms;
+.first_col_heading:hover {
+  color: #c82230;
 }
-.child_navbar .links:hover {
-  color: #e6e6e6;
-  background: #c82230;
-  transition-duration: 500ms;
+.industries_img {
+  position: relative;
+  animation: fadeIn;
+  animation-duration: 1s;
 }
-
-/* popup */
-.popup_alert {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  overflow: hidden;
-  outline: 0;
-  background-color: rgb(0, 0, 0, 0.5);
-}
-.modal-content {
-  min-height: 300px;
-  width: 400px;
-  border-radius: 14px;
-  background-color: white;
-}
-
-.popupBtn {
-  width: 100%;
-  box-shadow: none;
-  background: white;
-  color: #2C91FE !important;
-  border-radius: 0px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-.popupBtn:hover {
+.industries_name {
+  position: absolute;
   color: white;
+  font-size: 30px;
+  font-weight: 700;
 }
-.modal-content h5 {
-  text-align: center;
+.industries_name:hover {
+  color: #e72233;
+}
+@media screen and (max-width: 767px) {
+  .Case_main_heading {
+    font-size: 48px;
+  }
+  .first_col_heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3vw;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .grid_first_box {
+    height: auto;
+  }
+  .industries_name {
+    font-size: 20px;
+  }
 }
