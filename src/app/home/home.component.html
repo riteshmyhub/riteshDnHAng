@@ -42,7 +42,7 @@
             <a class="nav-link" 
              data-toggle="collapse" data-target=".navbar-collapse.show" 
              [routerLink]="['./products']">
-                <h4 class="navbar_link_sub_home pt-1">products</h4>
+                <h4 routerLinkActive="active" class="navbar_link_sub_home pt-1">products</h4>
             </a>
             
           </li>
@@ -51,7 +51,7 @@
             <a class="nav-link"
             data-toggle="collapse" data-target=".navbar-collapse.show"
             [routerLink]="['./industries']">
-              <h4 class="navbar_link_sub_home pt-1">industries</h4>
+              <h4 routerLinkActive="active" class="navbar_link_sub_home pt-1">industries</h4>
             </a>
 
           </li>
@@ -60,7 +60,7 @@
             <a class="nav-link" 
             data-toggle="collapse" data-target=".navbar-collapse.show"
             [routerLink]="['./Career']">
-              <h4 class="navbar_link_sub_home pt-1">career</h4>
+              <h4 routerLinkActive="active" class="navbar_link_sub_home pt-1">career</h4>
             </a>
 
           </li>
@@ -69,9 +69,9 @@
           <li class="nav-item">
 
               <a class="nav-link"
-              data-toggle="collapse" data-target=".navbar-collapse.show"
+              data-toggle="collapse"  data-target=".navbar-collapse.show"
               [routerLink]="['./blogs']">
-                <h4 class="navbar_link_sub_home pt-1">blogs</h4>
+                <h4 routerLinkActive="active" class="navbar_link_sub_home pt-1">blogs</h4>
               </a>
 
           </li>
@@ -80,7 +80,7 @@
             <a class="nav-link"
             data-toggle="collapse" data-target=".navbar-collapse.show"
             [routerLink]="['./aboutus']">
-              <h4 class="navbar_link_sub_home pt-1">about us</h4>
+              <h4  routerLinkActive="active" class="navbar_link_sub_home pt-1">about us</h4>
             </a>
 
         </li>
@@ -121,5 +121,5 @@
         <h2>11 Knowlage base</h2>
     </a>
 </div> -->
-<router-outlet></router-outlet>
+<router-outlet (activate)="alwaysFromTop($event)"></router-outlet>
 <app-footer></app-footer>

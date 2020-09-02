@@ -1,3 +1,6 @@
+#bgNavBar {
+  transition: all;
+}
 /* home_contact_bar_ css */
 .home_contact_bar_link {
   color: #7e7e7e;
@@ -18,6 +21,7 @@
 /*--------------- main nav bar css---------------*/
 .logo_res {
   width: 180px;
+  transition-duration: 300ms;
 }
 .H_manu {
   color: #e74c3c;
@@ -29,6 +33,9 @@
   margin-right: 42px;
   color: #7e7e7e;
   font-weight: bold;
+}
+.active{
+  color: #e74c3c; 
 }
 .manu_icon {
   outline: none;

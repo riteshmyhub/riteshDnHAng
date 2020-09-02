@@ -25,4 +25,8 @@ export class IndustriesComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+  alwaysFromTop(event) {
+    window.scroll(0, 0);
+  }
 }

@@ -1,7 +1,7 @@
 <div class="container-fluid Case_Studies_BG p-0 animated fadeIn
 " onmouseover="navBarColorBefore()">
   <!--      page 1 Product Finder   -->
-  <div class="container-fluid Product_Finder_bg">
+  <div class="container-fluid product_category_bg">
     <!--  -->
     <div style="height: 150px;"></div>
     <!--  -->
@@ -9,171 +9,24 @@
       HOME &nbsp; &nbsp; • &nbsp;<span style="color: black;">PRODUCT CATEGORIES</span>
     </h1>
     <!-- Product heading -->
-    <h1 class="products_heading mt-4 mb-4">Product Finder</h1>
+    <h1 class="products_heading mt-4 mb-4">Product Category</h1>
     <!--  -->
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-10 Product_outer_navBar_box">
-        <div class="container-fluid Product_Finder_navBar pt-4 pb-3">
-          <div class="row">
-            <div class="col-md-3">
-              <h1 class="Product_Finder_navBar_font" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span
-                  class="nav_num pl-4 pr-4 pt-3 pb-3 rounded-circle">1</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product&nbsp;&nbsp;<i
-                  class="fa fa-angle-down arrow"></i>
-              </h1>
-
-              <div class="dropdown-menu mt-5 animated bounceIn" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" [routerLink]="['../Allproduct']">link here</a>
-
-                <a class="dropdown-item" [routerLink]="['../Allproduct']">link here</a>
-
-                <a class="dropdown-item" [routerLink]="['../Allproduct']">link here</a>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h1 class="Product_Finder_navBar_font" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span
-                  class="nav_num pl-4 pr-4 pt-3 pb-3 rounded-circle">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Process&nbsp;&nbsp;<i
-                  class="fa fa-angle-down arrow"></i>
-              </h1>
-
-              <div class="dropdown-menu mt-5 animated bounceIn" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">link here</a>
-                <a class="dropdown-item" href="#">link here</a>
-                <a class="dropdown-item" href="#">link here</a>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h1 class="Product_Finder_navBar_font" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span
-                  class="nav_num pl-4 pr-4 pt-3 pb-3 rounded-circle">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category&nbsp;&nbsp;<i
-                  class="fa fa-angle-down arrow"></i>
-              </h1>
-
-              <div class="dropdown-menu mt-5 animated bounceIn" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">link here</a>
-                <a class="dropdown-item" href="#">link here</a>
-                <a class="dropdown-item" href="#">link here</a>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h1 class="Product_Finder_navBar_font" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span
-                  class="nav_num pl-4 pr-4 pt-3 pb-3 rounded-circle">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sort&nbsp;&nbsp;<i
-                  class="fa fa-angle-down arrow"></i>
-              </h1>
-
-              <div class="dropdown-menu  mt-5 animated bounceIn" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">link here</a>
-                <a class="dropdown-item" href="#">link here</a>
-                <a class="dropdown-item" href="#">link here</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container py-3">
+      <div class="row">
+        <ng-container *ngFor="let category of categories">
+          <div class="col-12 col-md-4">
+            <a [routerLink]="['../Allproduct']">
+             <div class="category_card">
+               <img [src]="category.img" class="img-fluid category_img" alt="">
+              <h1 class="category_heading">{{category.name}}</h1>
+             </div>
+            </a>
+           </div>
+        </ng-container>
       </div>
-      <div class="col-lg-1"></div>
-    </div>
-    <br /><br />
-  </div>
-  <!--      page 1 Welding col   -->
-  <div class="container-fluid mt-5">
-    <div class="row">
-      <!-- card 1 -->
-      <div class="col-lg-3 p-4 p1_card">
-        <h1 class="page1_card_heading">SMAW/MMAW</h1>
-        <h1 class="page1_sub_heading_sub">Shielded Metal Arc Welding</h1>
 
-        <h1 class="page1_line mt-5">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Mild Steel Electrode
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>High Tensile
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Electrode Weathering
-          Steel
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Low Temp. Electrode
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Creep Electrode
-        </h1>
-      </div>
-      <!-- card 2 -->
-      <div class="col-lg-3 p-4 p1_card">
-        <h1 class="page1_card_heading">GMAW</h1>
-        <h1 class="page1_sub_heading_sub">Gas Metal Arc Welding</h1>
-
-        <h1 class="page1_line mt-5">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Solid Wire
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Autotherme ER700
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Autotherme ER761
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Autotherme ER978
-        </h1>
-      </div>
-      <!-- card 3 -->
-      <div class="col-lg-3 p-4 p1_card">
-        <h1 class="page1_card_heading">GTAW</h1>
-        <h1 class="page1_sub_heading_sub">Gas Tungsten Arc Welding</h1>
-
-        <h1 class="page1_line mt-5">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Mild Steel
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Low Alloy Stee
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Stainless Steel
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Nickel Alloys
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>FW 1223
-        </h1>
-      </div>
-      <!-- card 4 -->
-      <div class="col-lg-3 p-4 p1_card">
-        <h1 class="page1_card_heading">SAW</h1>
-        <h1 class="page1_sub_heading_sub">
-          Submerged Arc Welding Wires & Fluxes
-        </h1>
-
-        <h1 class="page1_line mt-5">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Submerged Arc Wire
-        </h1>
-
-        <h1 class="page1_line mt-3">
-          <span class="plus_ico">+&nbsp;&nbsp;&nbsp;</span>Flux
-        </h1>
-      </div>
     </div>
   </div>
-  <br /><br />
 </div>
 <router-outlet></router-outlet>
 <!-- back up routing -->

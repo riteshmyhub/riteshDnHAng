@@ -10,9 +10,9 @@
 
 .products_heading {
   text-align: center;
-  font-size: 55px;
+  font-size: 26px;
   font-weight: 700;
-  color: black;
+  color: #e31e24;
 }
 .nav_num {
   background: rgb(201, 198, 198);
@@ -138,7 +138,6 @@
   color: white !important;
   font-size: 13px !important;
   font-weight: 600 !important;
- 
 }
 .main_product_container {
   background: white;

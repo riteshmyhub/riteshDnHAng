@@ -24,6 +24,11 @@ a {
   justify-content: start;
   align-items: center;
 }
+.End_v {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 .row_rev {
   flex-direction: row-reverse;
 }

@@ -4,7 +4,9 @@
   font-size: 11px;
   font-weight: bold;
 }
-
+.active {
+  color: #e74c3c;
+}
 .Case_main_heading {
   color: #e31e24;
   text-align: center;
@@ -27,7 +29,6 @@
 .first_col_heading {
   font-weight: 400;
   cursor: pointer;
-  color: rgb(133, 129, 129);
 }
 .first_col_heading::before {
   content: "\f0c1\00a0\00a0";
