@@ -11,14 +11,18 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <h1 class="blog_heading mt-2">
-          A Pocket Full of Cellutherme and Stick Welding Tips
+          {{ IdBlog.title }}
         </h1>
       </div>
       <div class="col-md-2"></div>
     </div>
     <h1 class="posted_by">
-      Posted by <a href=""><span class="post_name">Saurabh Shakya</span></a> on
-      Jan 14, 2020
+      Posted by
+      <a href=""
+        ><span class="post_name">{{ IdBlog.blogger }}</span></a
+      >
+      on
+      {{ IdBlog.date }}
     </h1>
 
     <div class="row">
@@ -35,7 +39,7 @@
             <label
               class="custom-control-label"
               for="customRadio"
-              style="font-weight: 700;"
+              style="font-weight: 700"
               >Share</label
             >
           </div>
@@ -51,7 +55,7 @@
             <label
               class="custom-control-label"
               for="customRadio2"
-              style="font-weight: 700;"
+              style="font-weight: 700"
               >8 min</label
             >
           </div>
@@ -65,89 +69,16 @@
     <div class="row">
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
-        <div class="p1_text_container">
-          <h1 class="main_blog_text">
-            Have you ever had one of those days? You know, where you’ve got 6010
-            in one back pocket and 7018in the other and the metal seems to
-            stretch on for miles? Now that’s a welding work day many of uscan
-            relate to…
-          </h1>
-        </div>
-        <div class="p2_text_container">
-          <h1 class="main_blog_text">
-            For me, stick welding is where I feel my roots and the proud
-            memories of the dedication and discipline it took to become a pipe
-            fitter andwelder. I feel lucky that my firstwelding job was as a
-            hand on a pipe crew. The craftsmanship and masteryI witnessed there
-            have never leftme. I watched my welder make an orange peel bell
-            reduceronce, and that set me on the path oflearning layout… Of
-            course “Mr. Grinder” and I became very goodfriends at that point.
-          </h1>
-        </div>
         <div class="container-fluid img_container">
-          <img
-            src="../../../../assets/mainblog/blogimg1.png"
-            alt=""
-            style="width: 100%;"
-            srcset=""
-          />
+          <img [src]="IdBlog.Imgurl" alt="" style="width: 100%" srcset="" />
         </div>
         <!--  -->
         <div class="p1_text_container">
           <h1 class="main_blog_text">
-            Have you ever had one of those days? You know, where you’ve got 6010
-            in one back pocket and 7018 in the other and the metal seems to
-            stretch on for miles? Now that’s a welding work day many of us can
-            relate to…
+            {{ IdBlog.description }}
           </h1>
-        </div>
-        <div class="p2_text_container">
-          <h1 class="main_blog_text">
-            For me, stick welding is where I feel my roots and the proud
-            memories of the dedication and discipline it took to become a pipe
-            fitter and welder. I feel lucky that my first welding job was as a
-            hand on a pipe crew. The craftsmanship and mastery I witnessed there
-            have never left me. I watched my welder
-          </h1>
-        </div>
-        <div class="container-fluid img_container">
-          <img
-            src="../../../../assets/mainblog/blogimg2.png"
-            alt=""
-            style="width: 100%;"
-            srcset=""
-          />
         </div>
         <!--  -->
-        <div class="p1_text_container">
-          <h1 class="main_blog_text">
-            Have you ever had one of those days? You know, where you’ve got 6010
-            in one back pocket and 7018 in the other and the metal seems to
-            stretch on for miles? Now that’s a welding work day many of us can
-            relate to…
-          </h1>
-        </div>
-        <div class="p2_text_container">
-          <h1 class="main_blog_text">
-            For me, stick welding is where I feel my roots and the proud
-            memories of the dedication and discipline it took to become a pipe
-            fitter and welder. I feel lucky that my first welding job was as a
-            hand on a pipe crew. The craftsmanship and mastery I witnessed there
-            have never left me. I watched my welder make an orange peel bell
-            reducer once, and that set me on the path of learning layout… Of
-            course “Mr. Grinder” and I became very good friends at that point.
-          </h1>
-        </div>
-        <div class="p2_text_container">
-          <h1 class="main_blog_text">
-            I feel lucky that my first welding job was as a hand on a pipe crew.
-            The craftsmanship and mastery I witnessed there have never left me.
-            I watched my welder make an orange peel bell reducer once, and that
-            set me on the path of learning layout… Of course “Mr. Grinder” and I
-            became very good friends at that point.
-          </h1>
-          <br />
-        </div>
       </div>
       <div class="col-lg-2"></div>
     </div>
@@ -157,7 +88,7 @@
 
   <div
     class="container-fluid"
-    style="background-color: var(--main-parent-colorTwo);"
+    style="background-color: var(--main-parent-colorTwo)"
   >
     <div class="row">
       <div class="col-lg-2"></div>
@@ -212,5 +143,3 @@
     </div>
   </div>
 </div>
-
-

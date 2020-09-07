@@ -8,8 +8,10 @@ import { MainproductComponent } from './mainproduct/mainproduct.component';
 const routes: Routes = [
   {path:'',children:[
     {path:'',component:ProductComponent},
-    {path:'Allproduct',component:AllproductComponent},
-    {path:'Mainproduct',component:MainproductComponent}
+    {path:'Allproduct',children:[
+      {path:'',component:AllproductComponent},
+      {path:'Mainproduct',component:MainproductComponent},
+    ]},
   ]}
 ];
 

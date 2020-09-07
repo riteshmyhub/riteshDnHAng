@@ -27,11 +27,9 @@ import { VacanciesComponent } from './career/vacancies/vacancies.component';
 
 const routes: Routes = [
   {
-    path: 'home', component: HomeComponent,
+    path: '', component: HomeComponent,
     children: [
       { path: '', component: DashboardComponent },
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-
 
 
       // slide home component
@@ -43,18 +41,24 @@ const routes: Routes = [
       // 
 
       { path: "products", loadChildren: () => import('./product/product.module').then(m => m.ProductModule) },
-    
+      // AdminPanelComponent
+      { path: 'Admin-Panel', loadChildren: () => import('./admin-panel/admin-panel.module').then(m => m.AdminPanelModule) },
+
       // componenet IndustriesModule
       { path: "industries", loadChildren: () => import('./industries/industries.module').then(m => m.IndustriesModule) },
       // child component
 
       // componenet
-      { path: '',children:[
-        {path: 'Career', component: CareerComponent},
-        {path:'vacancies',component:VacanciesComponent},
-        { path: 'aptitude', component: AptitudetestComponent },
-      ]},
-     
+      { path: "Career", loadChildren: () => import('./career/career.module').then(m => m.CareerModule) },
+
+      {
+        path: '', children: [
+          { path: 'Career', component: CareerComponent },
+          { path: 'vacancies', component: VacanciesComponent },
+          { path: 'aptitude', component: AptitudetestComponent },
+        ]
+      },
+
       // child component
 
 
@@ -78,9 +82,7 @@ const routes: Routes = [
 
 
       // componenet
-      { path: 'blogs', component: BlogsComponent },
-      // child component
-      { path: 'blog', component: BlogComponent },
+      { path: "Dnhblogs", loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule) },
 
 
       // componenet AboutusModule

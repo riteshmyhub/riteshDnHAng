@@ -13,8 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SearchComponent } from './search/search.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { KnowlagebaseComponent } from './knowlagebase/knowlagebase.component';
-import { AptitudetestComponent } from './career/aptitudetest/aptitudetest.component';
-import { BlogComponent } from './blogs/blog/blog.component';
+
 import { FaqsComponent } from './knowlagebase/faqs/faqs.component';
 import { StudentcenterComponent } from './knowlagebase/studentcenter/studentcenter.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,8 +25,8 @@ import { Slidehome4Component } from './dashboard/slides/slidehome4/slidehome4.co
 import { Slidehome5Component } from './dashboard/slides/slidehome5/slidehome5.component';
 import { CouterPartComponent } from './dashboard/slides/slidehome2/couter-part/couter-part.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
-import { VacanciesComponent } from './career/vacancies/vacancies.component';
-import { QuestionsComponent } from './career/aptitudetest/questions/questions.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -41,8 +40,6 @@ import { QuestionsComponent } from './career/aptitudetest/questions/questions.co
     SearchComponent,
     AboutusComponent,
     KnowlagebaseComponent,
-    AptitudetestComponent,
-    BlogComponent,
     FaqsComponent,
     StudentcenterComponent,
     Slidehome1Component,
@@ -53,12 +50,11 @@ import { QuestionsComponent } from './career/aptitudetest/questions/questions.co
     FooterComponent,
     TimelineComponent,
     CouterPartComponent,
-    VacanciesComponent,
-    QuestionsComponent,],
+    AdminPanelComponent,],
   imports: [
     CommonModule,
     HomeRoutingModule,
     AngularFullpageModule
-  ]
+  ],
 })
 export class HomeModule { }

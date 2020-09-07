@@ -14,25 +14,16 @@
     <div class="col-lg-7 god_css">
       <!-- main card for logo -->
       <ng-container *ngIf="placeholder">
-        <img
-          src="../../../../../assets/certication_img/placeholder.png"
-          class="img-fluid placeholder"
-          width="300"
-          alt=""
-        />
+        <img src="../../../../../assets/certication_img/placeholder.png" class="img-fluid placeholder" width="300"
+          alt="" />
       </ng-container>
       <ng-container *ngFor="let item of allCard">
         <ng-container *ngIf="item.id == cardId">
           <div class="Certifications_main_card_bg p-3 animated fadeIn">
             <div class="row Logo_card_padding">
               <div class="col-md-3">
-                <img
-                  class="img-fluid Certifications_card_img d-block mx-auto"
-                  [src]="item.link"
-                  width="100px"
-                  alt=""
-                  srcset=""
-                />
+                <img class="img-fluid Certifications_card_img d-block mx-auto" [src]="item.link" width="100px" alt=""
+                  srcset="" />
               </div>
               <div class="col-md-9">
                 <p>{{ item.Brands }}</p>
@@ -105,20 +96,12 @@
             <div class="row p-1">
               <div class="col-md-2"></div>
               <div class="col-md-5">
-                <button
-                  type="button"
-                  (click)="popup()"
-                  class="btn btn-sm btn-block mt-2 Certifications_btn"
-                >
+                <button type="button" (click)="popup()" class="btn btn-sm btn-block mt-2 Certifications_btn">
                   DNV CERTIFICATION #1
                 </button>
               </div>
               <div class="col-md-5">
-                <button
-                  type="button"
-                  (click)="popup()"
-                  class="btn btn-sm btn-block mt-2 Certifications_btn pulse"
-                >
+                <button type="button" (click)="popup()" class="btn btn-sm btn-block mt-2 Certifications_btn pulse">
                   DNV CERTIFICATION #1
                 </button>
               </div>
@@ -133,16 +116,7 @@
 </div>
 <!--  -->
 <!-- main Certifications     -->
-<div
-  *ngIf="Certifications"
-  class="container-fluid popup animated fadeIn"
-  (click)="closed()"
->
-  <img
-    src="../../../../assets/certication_img/Main_certication.png"
-    class="img-fluid"
-    alt=""
-    srcset=""
-  />
+<div *ngIf="Certifications" class="container-fluid popup animated fadeIn" (click)="closed()">
+  <img src="../../../../assets/certication_img/Main_certication.png" class="img-fluid" alt="" srcset="" />
 </div>
 <!--  -->

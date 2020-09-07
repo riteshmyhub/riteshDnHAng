@@ -21,7 +21,7 @@ export class AllproductComponent implements OnInit {
       img: 'https://5.imimg.com/data5/RR/JF/MY-5433559/mig-mag-welding-system-250x250.jpg',
       price: 'Rs 28,000/ Piece',
       description: 'We hold specialization in offering a broad array of TIG Cold Wire Feeders, which facilitates automated TIG welding. These feeders also assist in enhancing the productivity of appropriate manual welding processes. The wire guiding parts up to the welding arc, electrical control systems and mechanical drive units are the main dff',
-      link: '../Mainproduct'
+      link: './Mainproduct'
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export class AllproductComponent implements OnInit {
       img: 'https://5.imimg.com/data5/RB/SA/MY-1036069/digital-controlled-hi-tech-welding-machines-250x250.jpg',
       price: 'Rs 2 Lakh/Piece',
       description: 'We hold specialization in offering a broad array of TIG Cold Wire Feeders, which facilitates automated TIG welding. These feeders also assist in enhancing the productivity of appropriate manual welding processes. The wire guiding parts up to the welding arc, electrical control systems and mechanical drive units are the main dff',
-      link: '../Mainproduct'
+      link: './Mainproduct'
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ export class AllproductComponent implements OnInit {
       img: 'https://5.imimg.com/data5/VJ/TP/MY-6089537/dc-portable-welding-generator-with-auxiliary-supply-250x250.jpg',
       price: 'Rs 2 Lakh/Piece',
       description: 'Since its inception in 1986, Shine Electricals India Pvt. Ltd., grown into a leading Manufacturer, Exporter, and Trader of a wide gamut of superior quality ARC Inverter Welding Machine, Plasma Cutter, Battery Charger, Butt welder, CO2 Welding Guns, Tip Holder, Cooling Fan, Mig Torch, Transformer Parts, Electric Inverter, etc.',
-      link: '../Mainproduct'
+      link: './Mainproduct'
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ export class AllproductComponent implements OnInit {
       img: 'https://5.imimg.com/data5/BI/LH/MY-6690679/trolley-mounted-welding-generator-250x250.jpg',
       price: 'Rs 3.85 Lakh/Piece',
       description: 'Since its inception in 1986, Shine Electricals India Pvt. Ltd., grown into a leading Manufacturer, Exporter, and Trader of a wide gamut of superior quality ARC Inverter Welding Machine, Plasma Cutter, Battery Charger, Butt welder, CO2 Welding Guns, Tip Holder, Cooling Fan, Mig Torch, Transformer Parts, Electric Inverter, etc.',
-      link: '../Mainproduct'
+      link: './Mainproduct'
     },
   ]
   produtname = 'Wuerth Multifunction Spot Welder Machine 0691500221, Rated Input Power: 40 Kw';

@@ -1,0 +1,133 @@
+<div class="admin_child_component" onmouseover="navBarColorBefore()">
+  <div *ngIf="!noBlogHere" style="height: 155px"></div>
+  <a *ngIf="Blogs" class="add_blog_btn" (click)="modelOpen('successfully Created new blogs !')">
+    <img src="../../../../assets/adminzone/add_red.png" alt="" />
+  </a>
+  <h2 *ngIf="!noBlogHere" class="Blogs_Controls display-3">Blogs Controls</h2>
+  <div class="container-fluid bg-light py-4">
+    <ng-container *ngIf="noBlogHere && Blogs">
+      <div class="Blogsbox god_css">
+        <span>
+          <img src="../../../../assets/adminzone/create.svg" class="img-fluid mx-auto d-block" alt="" width="200px" />
+          <h1 class="noBlogs">create a new Blog</h1>
+        </span>
+      </div>
+    </ng-container>
+    <div class="container">
+      <!-- <span>blogs available : {{Blogs.length}}</span> -->
+      <div class="row">
+        <div *ngFor="let Blog of Blogs; let i = index" class="col-12 col-md-4">
+          <div class="cards bg-light my-3">
+            <h5>
+              <span class="date">{{ Blog.date }}</span>
+              <span class="topic">topic</span>
+            </h5>
+            <div>
+              <span class="title">{{ (Blog.title.length>46)?(Blog.title.slice(0,46)+'...'):Blog.title }}</span>
+            </div>
+            <div class="description">
+              <p>
+                103{{
+                  Blog.description.length > 103
+                    ? (Blog.description | slice: 0:103) + "...."
+                    : Blog.description
+                }}
+              </p>
+            </div>
+            <a href="">read more</a>
+            <span class="curd_icons">
+              <a>
+                <img (click)="C_delete_Blogs(Blog.id)" src="../../../../assets/adminzone/delete.svg" width="25px"
+                  class="mr-2" alt="" />
+              </a>
+              <a (click)="editBlog(Blog.id)">
+                <img src="../../../../assets/adminzone/refresh.svg" width="25px" alt="" />
+              </a>
+            </span>
+            <span class="IDS">Id : {{ Blog.id }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="Blogs" [ngClass]="{ Blog_Form_popous: true, hideme: UI.formPopup, god_css: true }">
+  <div class="container-fluid" style="position: relative">
+    <form [formGroup]="BlogFrom" (ngSubmit)="submit()">
+      <div class="row">
+        <div class="col-12 col-md-1"></div>
+        <div class="col-12 col-md-10">
+          <div class="blog_form_container">
+            <h2 class="display-4">{{ UI.heading }}</h2>
+            <div class="row">
+              <!-- input id  -->
+              <div class="col-12 col-md-6"></div>
+              <!--  -->
+              <div class="col-12 col-md-12 input_aria">
+                <input type="text" class="form-control" placeholder="Blog title" formControlName="title" />
+                <span>error here</span>
+              </div>
+              <div class="col-12 input_aria">
+                <input type="text" class="form-control" placeholder="your name" formControlName="blogger" />
+                <span>error here</span>
+              </div>
+              <div class="col-12 input_aria">
+                <input class="form-control" type="date" formControlName="date" value="" />
+                <span>error here</span>
+              </div>
+
+              <div class="col-12 input_aria">
+                <input type="text" class="form-control" placeholder="image url" formControlName="Imgurl" />
+                <span>error here</span>
+              </div>
+              <div class="col-12 input_aria">
+                <textarea class="form-control" placeholder="blog description" rows="3"
+                  formControlName="description"></textarea>
+                <span>error here</span>
+              </div>
+              <div class="col-12">
+                <button type="submit" [disabled]="!BlogFrom.valid" class="btn btn-primary my-3">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-1"></div>
+      </div>
+    </form>
+    <a class="add_blog_btn" (click)="modelClose()">
+      <img src="../../../../assets/adminzone/close-button.png" alt="" />
+    </a>
+  </div>
+</div>
+
+<!-- successfully Created -->
+<div *ngIf="UI.successfully.update" class="successfully_Created">
+  <div class="popupCard">
+    <h2>notification</h2>
+    <h3>{{ UI.message }}</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div (click)="modelUpdate('blog has successfully updated')" Class="col-12 cols god_css">
+          <a class="leftBtn">Ok</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- successfully delete -->
+<div *ngIf="UI.deleteBlog" class="successfully_delete">
+  <div class="popupCard">
+    <h2>notification</h2>
+    <h3>blog successfully deleted</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div (click)="modelUpdate('blog has successfully deleted')" Class="col-12 cols god_css">
+          <a class="leftBtn">Ok</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

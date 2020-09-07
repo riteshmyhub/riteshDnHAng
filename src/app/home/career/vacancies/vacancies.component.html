@@ -100,11 +100,10 @@
     </div>
     <!-- done -->
     <div *ngIf="popupdone" class="modal-content Popup_done animated bounceIn">
-      <span class="material-icons successfully">
-        check_circle
-        </span>
-        <h1 class="successText">success</h1>
-        <button class="btn btn-success btn-lg" (click)="close()">OK</button>
+      <img src="../../../../assets/career/tick.png" class="img-fluid successfully" width="130px" alt="">
+        <h1 class="successText">Done!</h1>
+        <h3 class="my-3">application successfully submitted</h3>
+        <button class="btn btn-success" (click)="close()">OK</button>
     </div>
   </div>
 </div>

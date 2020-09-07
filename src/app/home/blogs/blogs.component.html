@@ -4,10 +4,10 @@
   <div class="top_margin_blog"></div>
   <!-- top margin -->
   <h6 class="blog_heading_path">
-    <span style="color: grey;">HOME • </span>
+    <span style="color: grey">HOME • </span>
     BLOGS
   </h6>
-  <h1 class="blog_heading mt-2">Insights</h1>
+  <h1 class="blog_heading mt-2">D&H Secheron Blogs</h1>
   <!-- blog aria -->
 
   <div class="container-fluid main_blog_aria">
@@ -18,15 +18,13 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="row god_css">
-
               <!-- todo use ngFor here -->
               <div class="col-lg-3 col-md-3 col-4">
-                <a href="" style="text-decoration: none;">
+                <a href="" style="text-decoration: none">
                   <h6 class="blog_link">Welding</h6>
                 </a>
               </div>
               <!--  -->
-
             </div>
           </div>
         </div>
@@ -34,46 +32,36 @@
       <!--  -->
 
       <!-- blog card container-->
-      <div class="card_container p-3">
+      <div class="container-fluid">
+        <!-- <span>blogs available : {{Blogs.length}}</span> -->
         <div class="row">
-          <!-- todo use ngFor card 1 -->
-          <div class="col-md-4" *ngFor="let card of blog">
-           <div class="card_ui">
-              <!-- card -->
-            <h5 class="card_date mt-3">
-
-              <a href="">{{card.date}}</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Topic</a>
-
-            </h5>
-            <h5 class="card_heading mt-3">
-             {{card.heading}}
-            </h5>
-            <!-- scroll bar -->
-            <div class="scrollbar" id="style-3">
-              <!-- blog description here  -->
-              <h6 class="card_description mt-2">
-                {{card.info}}
-              </h6>
-              <!--  -->
-              <div class="force-overflow"></div>
+          <div *ngFor="let Blog of Blogs; let i = index" class="col-12 col-md-4">
+            <div class="cards bg-light my-4 px-4">
+              <h5>
+                <span class="date">Date : {{ Blog.date }}</span>
+                <span class="topic">Topic : Welding</span>
+              </h5>
+              <div>
+                <span class="title">{{ (Blog.title.length>46)?(Blog.title.slice(0,46)+'...'):Blog.title }}</span>
+              </div>
+              <div class="description">
+                <p>
+                  {{
+                    Blog.description.length > 203
+                      ? (Blog.description | slice: 0:203) + "...."
+                      : Blog.description
+                  }}
+                </p>
+              </div>
+              <a class="btn btn-danger btn-sm moreRead" [routerLink]="[ './Blog',Blog.id]">read more</a>
+              <!-- <a [routerLink]="[ '/Blog']">name</a> -->
             </div>
-            <!-- scroll bar// -->
-            <br />
-            <a [routerLink]="[card.link]">
-              <h6 class="read_more mb-4 mt-1">{{card.linkText}}</h6>
-            </a>
-            <!--  -->
-            <!-- -->
-            <hr />
-           </div>
           </div>
-
         </div>
       </div>
       <!--  -->
     </div>
   </div>
-
 </div>
+
+<router-outlet></router-outlet>

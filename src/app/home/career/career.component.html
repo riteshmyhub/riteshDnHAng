@@ -24,7 +24,7 @@
           <div *ngFor="let Card of CareerCard" class="col-lg-4 col-6 card_padding">
             <div class="main_card god_css">
               <div class="p-4">
-                <a [routerLink]="[ '../vacancies' ]">
+                <a [routerLink]="[ './vacancies' ]">
                   <img [src]="Card.img" class="ico_img mx-auto d-block" alt="" srcset="" />
                 </a>
                 <h1 class="card_heading">
@@ -107,7 +107,7 @@
             <button type="button" (click)="submit()" class="btn btn-danger btn-block">Submit</button>
           </div>
           <div *ngIf="aptitudeBtn" class="col-12 pb-2">
-            <button routerLink='../aptitude' type="button"class="btn btn-success btn-block">getting started</button>
+            <button routerLink='./aptitude' type="button"class="btn btn-success btn-block">getting started</button>
           </div>
         </div>
       </div>

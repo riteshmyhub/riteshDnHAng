@@ -13,10 +13,19 @@ export class DashboardComponent implements OnInit {
     four: 4,
     five: 5,
   }
-  constructor() {
-  }
-
-  ngOnInit(): void {
+  scrollIcon: boolean = false;
+  constructor() {}
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.scrollIcon = true;
+      setTimeout(() => {
+        this.scrollIcon = false;
+      }, 3000);
+    }, 1500);
     
+  }
+  ngOnInit(): void {
+ 
+  
   }
 }
