@@ -1,0 +1,84 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <div class="CaseForm"> 
+                <h2 class="case_form_heading">Add your case study</h2>
+            <form [formGroup]="CaseForm" (ngSubmit)="submit()">
+                <div class="row">
+                    <div class="col-6 input_space">
+                        <select class="form-control" formControlName="industryId" >
+                        <option value="" disabled>Choose your city</option>
+                     <option *ngFor="let industry of industries" [value]="industry.id">{{industry.heading}}</option>
+                        </select>
+                    </div>
+                    <div class="col-6 input_space">
+                        <input type="email" class="form-control"        formControlName="heading" placeholder="heading">
+                    </div>
+                    <div class="col-12 input_space">
+                        <input type="email" class="form-control" formControlName="imgSolution" placeholder="image url">
+                    </div>
+                    <div class="col-6 textarea_space">
+                        <textarea class="form-control ASP" rows="3" formControlName="analysis" placeholder="analysis"></textarea>
+                    </div>
+                    <div class="col-6 textarea_space">
+                        <textarea class="form-control ASP" rows="3" formControlName="solution" placeholder="solution"></textarea>
+                    </div>
+
+                    <div class="col-6 input_space">
+                        <textarea class="form-control ASP" rows="3" formControlName="process" placeholder="process"></textarea>
+                    </div>
+                    <div class="col-6 textarea_space">
+                        <span>Choose Product Group</span><br>
+                        <div class="ml-3">
+                            <input class="form-check-input" type="radio" value="Mechanical" formControlName="productGroup">
+                            Mechanical
+                        </div>
+                        <div class="ml-3">
+                            <input class="form-check-input" type="radio" value="Electronic" formControlName="productGroup">
+                            Electronic
+                        </div>
+                    </div>
+                    <div class="col-12 textarea_space">
+                        <textarea class="form-control descrip" rows="3" formControlName="description" placeholder="description"></textarea>
+                    </div>
+                </div>
+                <button type="submit" [disabled]="!CaseForm.valid" class="btn btn-primary my-3">Submit</button>
+            </form>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="CaseControl">
+            <h2 class="case_form_heading">case study control</h2>
+            <select [(ngModel)]="caseSelected" (ngModelChange)="onCaseSelected($event)"  class="form-control">
+
+            <option value="" disabled>Choose industry sector</option>
+            <option *ngFor="let industry of industries" [value]="industry.id">{{industry.heading}}</option>
+
+            </select>
+            <div class="option_of_case">
+               <div *ngFor="let case of listCase" class="case_card center_v">
+                   <span class="num">{{case.id}}</span>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10 col-12">
+                            <a (click)="c_update_case(case.id)">
+                                <span class="title">
+                                    {{(case.heading.length>52)?(case.heading.slice(0,57))+"...":case.heading}}
+                                  </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12 p-0 god_css">
+                         <span class="case_card_id god_css">
+                             <span (click)="C_delete_case(case.id)">
+                                 <img src="../../../../../assets/adminzone/delete.svg" width="30px" alt=""> 
+                             </span>
+                         </span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

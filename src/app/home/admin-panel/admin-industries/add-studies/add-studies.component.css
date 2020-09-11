@@ -1,0 +1,74 @@
+.ASP {
+  overflow-y: scroll;
+  height: 80px;
+  resize: none;
+}
+.descrip {
+  overflow-y: scroll;
+  height: 150px;
+  resize: none;
+}
+.input_space {
+  height: 50px;
+}
+.textarea_space {
+  min-height: 100px;
+}
+.CaseForm,
+.CaseControl {
+  min-height: 570px;
+  padding: 20px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+}
+.case_form_heading {
+  padding: 10px 0px 10px 0px;
+  font-size: 30px;
+  color: rgb(100, 98, 98);
+}
+
+.case_card {
+  background: #ed3439;
+  min-height: 60px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 16px;
+  position: relative;
+}
+.case_card_id {
+  height: 50px;
+  width: 100%;
+  background: white;
+  border-radius: 7px;
+}
+.case_card_title {
+  height: 50px;
+  background: rgb(175, 175, 175);
+}
+.num {
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  color: white;
+  padding: 10px;
+  background: black;
+  border-radius: 8px;
+  top: 21px;
+  left: 5px;
+  display: none;
+  z-index: 100;
+}
+.case_card:hover > .num {
+  display: block;
+}
+.title {
+  font-weight: 500;
+  font-size: 19px;
+  color: white;
+  text-align: justify;
+}
+.case_card_id img {
+  cursor: pointer;
+}

@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="row god_css">
+    <div class="col-lg-8 industry_card_control">
+      <div [ngClass]="
+      {'industry_form_card': true,
+      'god_css':!cardForm}">
+        <ng-container *ngIf="!cardForm">
+              <span class="text-center">
+               <img src="../../../../../assets/adminzone/form.png" class="img-fluid" width="200px" alt="">
+             </span>
+        </ng-container>
+        <ng-container *ngIf="cardForm">
+          <form [formGroup]="IndustriesForm" (ngSubmit)="submit()">
+            <h1 class="industry_form_heading">Update Industries</h1>
+            <div class="input_block">
+              <label for="exampleInputEmail1">Industry name</label>
+              <input type="text" class="form-control" formControlName="heading" disabled placeholder="Industry">
+              <strong>error</strong>
+            </div>
+            <div class="input_block">
+              <label for="exampleInputEmail1">image link</label>
+              <input type="text" class="form-control" placeholder="image" formControlName="image">
+              <strong>error</strong>
+            </div>
+            <div class="input_block">
+              <label for="exampleFormControlTextarea1">Industry description </label>
+              <textarea class="form-control" rows="3" placeholder="description"
+                formControlName="description"></textarea>
+              <strong>error</strong>
+            </div>
+
+            <button type="submit" (click)="cardOpen(false)" [disabled]="IndustriesForm.invalid" class="btn btn-warning my-2">Industries
+              Update</button>
+
+          </form>
+        </ng-container>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="industry_control_card">
+        <h1 class="industry_form_heading">Industries : {{Industries.length}}</h1>
+        <div class="Industries_Row">
+          <div class="row">
+            <div *ngFor="let industry of Industries;let i = index" class="col-lg-6 col-md-4 col-sm-6 col-6 card_btn">
+              <a (click)="c_update_industries(industry.id)">
+                <div (click)="cardOpen(true)">
+                  <span class="material-icons LinkIcon">link</span>
+                  <span>{{industry.heading | uppercase}}</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

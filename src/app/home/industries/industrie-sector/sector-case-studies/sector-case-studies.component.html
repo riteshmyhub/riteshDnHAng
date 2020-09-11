@@ -3,31 +3,66 @@
   onmouseover="navBarColorBefore()"
 >
   <!-- top bar -->
-  <div style="height: 160px;"></div>
+  <div style="height: 160px"></div>
   <!-- Case_Studies heading_bar -->
   <div class="container-fluid">
-    <h1 class="Case_Studies_link mt-3">home • Power Sector • case studis</h1>
-
-    <h1 class="Case_main_heading mb-5">Power Sector Case Studies</h1>
+    <!-- dynamic heading -->
+    <h1 class="Case_main_heading mb-3">
+      <ng-container *ngFor="let case of caseStudy">
+        <ng-template [ngIf]="caseSelected == case.id">
+          {{ case.heading }}
+        </ng-template>
+      </ng-container>
+      Case Studies
+    </h1>
+    <!--  -->
   </div>
-  <!-- ------------------------------------- -->
+  <!-- ----------------- -->
   <div class="container-fluid">
-    <div class="row mt-5 mb-5">
-      <div class="col-md-4 sec_case_img_col">
-        <img
-          src="./../../assets/casestudy/sec_case_img.png"
-          class="img-fluid sec_case_img"
-          alt=""
-          srcset=""
-        />
+    <div class="row Case_studies_selection mx-2 py-2">
+      <div class="col-lg-8 col-md-6 col-12 center_v">
+       <span class="expoloreBar will_only_desktop">Explore Case Studies<i class="fa fa-chevron-right CaseArrow"></i></span>
+        <!-- case Selected ID : {{ caseSelected }} -->
+      </div> 
+      <div class="col-lg-4 col-md-6 col-12">
+        <select
+          class="form-control form-control-lg selectControl"
+          [(ngModel)]="caseSelected"
+          (ngModelChange)="onCaseSelected($event)"
+        >
+          <option *ngFor="let case of caseStudy" [value]="case.id">
+            {{ case.heading }}
+          </option>
+        </select>
       </div>
-      <div class="col-md-8">
+    </div>
+  </div>
+  <!--wrapper-->
+
+  <!-- ------------------------------------- -->
+  <div class="container-fluid animated fadeIn">
+    <ng-template [ngIf]="caseSelected">
+    <div class="row mt-5 mb-5">
+      
+      <div class="col-md-12">
         <!-- row 1 -->
         <div class="row">
+          <div class="col-md-4 sec_case_img_col">
+            <ng-container *ngFor="let item of caseStudy">
+              <ng-template [ngIf]="caseSelected == item.id">
+                <img
+                src="../../../../../assets/INDUSTRIES/{{ item.image }}"
+                class="img-fluid sec_case_img my-2 animated fadeIn"
+                alt=""
+                srcset=""
+              />
+              </ng-template> 
+            </ng-container>
+          </div>
           <!-- todo use ngFor caseStudy-->
-          <div *ngFor="let study of casedata" class="col-md-6">
+          <div *ngFor="let case of listCase" class="col-md-4">
             <!-- card 1 -->
-            <div class="p-1">
+            <div class="p-3 case_card my-2 animated fadeIn">
               <div class="btn-group" role="group" aria-label="Basic example">
                 <!-- Industry btn -->
                 <button type="button" class="btn btn-sm Case_btn">
@@ -41,39 +76,40 @@
               </div>
               <!-- text aria -->
               <!-- scroll bar -->
-              <div class="scrollbar" id="style-3">
                 <!-- blog description here  -->
                 <h6 class="card_description mt-2">
-                  {{ study.heading }}
+                  {{(case.heading.length>63)?(case.heading.slice(0,63)+"..."):case.heading}}
                 </h6>
                 <!--  -->
-                <div class="force-overflow"></div>
-              </div>
+                <p>{{(case.description.length>118)?(case.description.slice(0,118)+"...."):case.description}}</p>
+            
               <!-- scroll bar//  -->
-              <a
-                [routerLink]="['../case']"
-                style="text-decoration: none;"
-              >
+              <a [routerLink]="['../case',case.id]" style="text-decoration: none">
                 <h6 class="Read_Case_Study">Read Case Study</h6>
               </a>
-              <hr />
             </div>
             <!--  -->
           </div>
         </div>
-
+        
         <a href="" class="btn btn-sm btnForCase pl-4 pr-4"
           >View All Resources</a
         >
         <!--  -->
       </div>
     </div>
+  </ng-template>
+
+  <ng-template [ngIf]="caseSelected==null">
+    <div class="container">
+      <img src="../../../../../assets/casestudy/industrycaseBg.png" class="img-fluid mx-auto d-block" alt="">
+    </div>
+  </ng-template>
+
     <!-- top margin -->
-    <div style="height: 40px;"></div>
+    <div style="height: 40px"></div>
     <!--  -->
   </div>
   <!--  -->
 </div>
 <router-outlet></router-outlet>
-
-

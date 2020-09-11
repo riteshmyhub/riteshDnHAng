@@ -1,0 +1,68 @@
+textarea {
+  overflow-y: scroll;
+  height: 140px;
+  resize: none;
+}
+.industry_form_heading {
+  padding: 10px 0px 10px 0px;
+  font-size: 30px;
+  color: rgb(100, 98, 98);
+}
+label {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.industry_card_control {
+  padding: 20px;
+}
+/* TODO industry_card_control fix in MQ to padding: 20px;*/
+.industry_form_card,
+.industry_control_card {
+  background: white;
+  min-height: 530px;
+  padding: 20px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+}
+/* TODO industry_form_card & industry_control_card fix in MQ to padding: 20px;*/
+strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: red;
+}
+strong::before {
+  content: "*";
+}
+.input_block {
+  min-height: 98px;
+}
+.card_btn a div {
+  background: rgb(241, 241, 241);
+  text-align: center;
+  padding: 11px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.card_btn a div span {
+  display: block;
+  color: #ed3237;
+  font-weight: 500;
+}
+.card_btn_active a div {
+  background: rgb(241, 241, 241);
+  text-align: center;
+  padding: 13px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.card_btn_active a div span {
+  display: block;
+  color: #ed3237;
+}
+.LinkIcon {
+  font-size: 50px;
+}

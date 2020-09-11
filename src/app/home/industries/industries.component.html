@@ -12,20 +12,17 @@
     <!-- row 1 -->
     <div class="row">
       <div class="col-md-4 col-4 grid_first_box god_css">
-        <h4 (click)="cardNav(1)" 
-        [ngClass]="{ first_col_heading: true, active: 1 == cardId }">
+        <h4 (click)="cardNav(1)" [ngClass]="{ first_col_heading: true, active: 1 == cardId }">
           CEMENT PLANTS
         </h4>
       </div>
       <div class="col-md-4 col-4 grid_first_box god_css">
-        <h4 (click)="cardNav(2)" 
-        [ngClass]="{ first_col_heading: true, active: 2 == cardId }">
-          MARINE SECTOR
+        <h4 (click)="cardNav(2)" [ngClass]="{ first_col_heading: true, active: 2 == cardId }">
+          POWER SECTOR
         </h4>
       </div>
       <div class="col-md-4 col-4 grid_first_box god_css">
-        <h4 (click)="cardNav(3)" 
-        [ngClass]="{ first_col_heading: true, active: 3 == cardId }">
+        <h4 (click)="cardNav(3)" [ngClass]="{ first_col_heading: true, active: 3 == cardId }">
           EARTH MOVING
         </h4>
       </div>
@@ -33,17 +30,17 @@
     <!-- row 2  -->
     <div class="row">
       <div class="col-md-4 col-3 grid_first_box god_css">
-        <h4 (click)="cardNav(4)" 
-        [ngClass]="{ first_col_heading: true, active: 4 == cardId }">
-          POWER SECTOR
+        <h4 (click)="cardNav(4)" [ngClass]="{ first_col_heading: true, active: 4 == cardId }">
+          MARINE SECTOR
         </h4>
       </div>
       <div class="col-md-4 col-6 grid_first_box god_css">
         <ng-container *ngFor="let industry of Industries">
           <ng-template [ngIf]="cardId === industry.id">
-            <img [src]="industry.link" class="img-fluid industries_img" alt="" srcset="" />
-            <a [routerLink]="['./Sector']" class="industries_name">{{
-              industry.name
+            <img src="../../../assets/INDUSTRIES/{{industry.image}}" class="img-fluid industries_img" alt=""
+              srcset="" />
+            <a [routerLink]="['./Sector',industry.id]" class="industries_name">{{
+              industry.heading | uppercase
             }}</a>
           </ng-template>
         </ng-container>
@@ -52,8 +49,7 @@
         </ng-container>
       </div>
       <div class="col-md-4 col-3 grid_first_box god_css">
-        <h4 (click)="cardNav(5)" 
-        [ngClass]="{ first_col_heading: true, active: 5 == cardId }">
+        <h4 (click)="cardNav(5)" [ngClass]="{ first_col_heading: true, active: 5 == cardId }">
           RAILWAY SECTOR
         </h4>
       </div>
@@ -61,20 +57,17 @@
     <!-- row 3 -->
     <div class="row">
       <div class="col-md-4 col-4 grid_first_box god_css">
-        <h4 (click)="cardNav(6)" 
-        [ngClass]="{ first_col_heading: true, active: 6 == cardId  }">
+        <h4 (click)="cardNav(6)" [ngClass]="{ first_col_heading: true, active: 6 == cardId  }">
           STEEL INDUSTRY
         </h4>
       </div>
       <div class="col-md-4 col-4 grid_first_box god_css">
-        <h4 (click)="cardNav(7)" 
-        [ngClass]="{ first_col_heading: true, active: 7 == cardId }">
+        <h4 (click)="cardNav(7)" [ngClass]="{ first_col_heading: true, active: 7 == cardId }">
           SUGAR PLANTS
         </h4>
       </div>
       <div class="col-md-4 col-4 grid_first_box god_css">
-        <h4 (click)="cardNav(8)" 
-        [ngClass]="{ first_col_heading: true, active: 8 == cardId }">
+        <h4 (click)="cardNav(8)" [ngClass]="{ first_col_heading: true, active: 8 == cardId }">
           TRANSPORT SECTOR
         </h4>
       </div>

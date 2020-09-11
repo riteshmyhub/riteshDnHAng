@@ -26,6 +26,7 @@ import { Slidehome5Component } from './dashboard/slides/slidehome5/slidehome5.co
 import { CouterPartComponent } from './dashboard/slides/slidehome2/couter-part/couter-part.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,10 @@ import { AdminPanelComponent } from './admin-panel/admin-panel.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
+  providers: []
 })
 export class HomeModule { }

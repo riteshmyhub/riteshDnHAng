@@ -1,18 +1,17 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,7 +19,7 @@ import { HomeModule } from './home/home.module';
     FormsModule,
     CommonModule,
     HomeModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

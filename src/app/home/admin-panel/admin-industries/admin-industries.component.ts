@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AddIndustriesComponent } from './add-industries/add-industries.component';
+import { AddStudiesComponent } from './add-studies/add-studies.component';
+import { from } from 'rxjs';
 @Component({
   selector: 'app-admin-industries',
   templateUrl: './admin-industries.component.html',
   styleUrls: ['./admin-industries.component.css']
 })
 export class AdminIndustriesComponent implements OnInit {
-  sred = 'This week, we hosted our annual Best of Brand Awards during our North America Brand Summit to recognize'
+
+  loadHere;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  DyLoad(Componentholder) {
+    if (Componentholder === 'AddIndustries') {
+      this.loadHere = AddIndustriesComponent;
+    } else if (Componentholder === 'AddCaseStudies') {
+      this.loadHere = AddStudiesComponent;
+    }
+    else {
+      return null
+    }
+  }
+  closedModel(param) {
+    this.loadHere = param;
+  }
 }

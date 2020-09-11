@@ -11,7 +11,7 @@ const routes: Routes = [
     {path:'',component: IndustriesComponent},
     {path:'',children:[
         {path:'',children:[
-        { path: "Sector", loadChildren: () => import('./industrie-sector/industrie-sector.module').then(m => m.IndustrieSectorModule) },
+        { path: "Sector/:id", loadChildren: () => import('./industrie-sector/industrie-sector.module').then(m => m.IndustrieSectorModule) },
       ]},
      
     ]}

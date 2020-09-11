@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'',children:[
     {path:'',component:IndustrieSectorComponent},
     {path:'CaseStudies',component:SectorCaseStudiesComponent},
-    {path:'case',component:CaseComponent}
+    {path:'case/:id',component:CaseComponent}
   ]}
 ];
 

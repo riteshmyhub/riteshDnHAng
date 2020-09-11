@@ -40,6 +40,11 @@
 .network_bg {
   background-color: #d9d9d9;
 }
+option {
+  background: rgb(218, 215, 215);
+  font-weight: 700;
+}
+
 /* media Q */
 @media screen and (max-width: 768px) {
   .network_btn_bar {
@@ -58,4 +63,3 @@
     margin-top: 12px;
   }
 }
-

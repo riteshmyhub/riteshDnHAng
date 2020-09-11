@@ -1,7 +1,30 @@
-<div class="admin_child_component">
-    <p>admin-industries works!</p>
+<div class="admin_child_component god_css">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 god_css">
+        <div class="cards god_css" (click)="DyLoad('AddIndustries')">
+          <span>
+            <img src="../../../../assets/adminzone/casess.png" width="200px" class="mx-auto d-block" alt="">
+            <a class="industries_card_link">add industries</a>
+          </span> 
+        </div>
+      </div>
+      <div class="col-md-6 god_css">
+        <div class="cards god_css" (click)="DyLoad('AddCaseStudies')">
+          <span>
+            <img src="../../../../assets/adminzone/addiudus.png" width="200px" class="mx-auto d-block" alt="">
+            <a class="img-fluid industries_card_link">add case studies</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<br>
-<br>
-<br>
-<h1>{{sred.length}}</h1>
+<div *ngIf="loadHere" class="popup_model god_css">
+  <span style="position: relative;">
+    <span class="material-icons closedBtn" (click)="closedModel(false)">
+      cancel
+    </span>
+    <ng-container *ngComponentOutlet="loadHere"></ng-container>
+  </span>
+</div>
