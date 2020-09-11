@@ -1,8 +1,15 @@
 # Dnhsecheronui
-## Preview :
+## Home Page
 ![Visit java script App](./preview/Home.png)
-
+---
+## Others Page
 ![Visit java script App](./preview/preview.png)
+---
+## Admin Panel Page
+
+![Visit java script App](./preview/adminpanal.png)
+---
+![Visit java script App](./preview/adminpanalGroups.png)
 ---
 ## Dnhsecheronui About :
 
