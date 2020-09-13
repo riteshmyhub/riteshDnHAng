@@ -16,6 +16,7 @@ import { AdminCaseService } from './service/admin-case.service';
 import { ProductCategoryService } from './service/product-category.service';
 import { AddCategoryComponent } from './admin-products/add-category/add-category.component';
 import { AddProductsComponent } from './admin-products/add-products/add-products.component';
+import { ProductsService } from './service/products.service';
 
 
 
@@ -29,7 +30,7 @@ import { AddProductsComponent } from './admin-products/add-products/add-products
       confirmButtonType: 'danger',
     }),
   ],
-  providers: [CreateBlogsService, IndustriesService, AdminCaseService, ProductCategoryService],
+  providers: [CreateBlogsService, IndustriesService, AdminCaseService, ProductCategoryService,ProductsService],
   entryComponents: [AddIndustriesComponent, AddStudiesComponent, AddCategoryComponent, AddProductsComponent]
 })
 export class AdminPanelModule { }

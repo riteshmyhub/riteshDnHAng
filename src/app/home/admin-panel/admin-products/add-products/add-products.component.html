@@ -1,112 +1,120 @@
-<div class="container-fluid category_control_card">
-  <h1 class="add_Product_heading my-4">Add Product</h1>
+<div class="container-fluid category_control_card" onmouseover="navBarColorBefore()">
+  <h1 class="add_Product_heading my-4">Product Preview</h1>
   <div class="container-fluid">
     <div class="row">
+
+     <ng-container *ngFor="let item of Product">
       <div class="col-lg-6 col-md-12">
-        <div class="conatner-fluid porduct_card p-3">
+        <div class="conatner-fluid porduct_card p-3 my-3">
           <div class="row">
             <div class="col-md-4 col-12">
-              <img src="../../../../../assets/product/Gas_Welder.png" class="img-fluid" alt="">
+              <img [src]="item.img" class="img-fluid" alt="">
             </div>
             <div class="col-md-8 col-12 center_v">
               <span>
-                <h5 class="product_name">Wuerth MIG Welding System , Current: 20-250 A</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt beatae maiores adipisci amet
-                  ne.....</p>
+                   
+                <h5 class="product_name">
+                  {{(item.Name.length>45)?(item.Name.slice(0,45))+"...":item.Name}}</h5>
+
+                <p>{{(item.description.length>101)?(item.description.slice(0,101))+"...":item.description}}</p> 
               </span>
             </div>
             <div class="col-12">
               <div class="row">
-                <span class="col-4 items">AWS Code :
-                  <span> E6010</span></span>
+                <span class="col-4 items">AWS Code : 
+                  <span>{{item.aws}}</span></span>
                 <span class="col-4 items">Model no :
-                  <span> Wdss49s1</span></span>
+                  <span>{{item.models}}</span></span>
                 <span class="col-4 items">price :
-                  <span> 15,000</span> </span>
+                  <span>{{item.price}}</span> </span>
               </div>
             </div>
           </div>
-          <!-- icon -->
+          <!-- icon  -->
           <div class="icon_grid">
-            <span  (click)="modelToggle(true,'Update Product','success')"  class="material-icons">update</span>
-            <span class="material-icons">delete</span>
+            <span (click)="update_Product(item.id)" class="material-icons">update</span>
+            <span (click)="C_delete_Product(item.id)" class="material-icons">delete</span>
           </div>
         </div>
       </div>
+     </ng-container>  
+
     </div>
   </div>
 </div>
 
 <a class="add_category_btn">
-  <img src="../../../../assets/adminzone/add_red.png" (click)="modelToggle(true,'Add Product','danger')" width="70px" alt="" />
+  <img src="../../../../assets/adminzone/add_red.png" (click)="modelToggle(true,'Add Product','danger')" width="70px"
+    alt="" />
 </a>
 <!--  -->
 
 <div [ngClass]="{'Add_Product_popup': true,'active_model':active}" class=" god_css">
   <div class="container-fluid form_craete py-5">
     <h1 [class]="popup.toggle.text">{{popup.toggle.message}}</h1>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="https://via.placeholder.com/400" class="img-fluid my-4" alt="">
-      </div>
-      <div class="col-md-8 center_v">
-        <div class="row">
-          <div class="col-12 p-0">
-            <h2>Product Information</h2>
-            <hr>
+    <form [formGroup]="productForm" (ngSubmit)="submit()">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://via.placeholder.com/400" class="img-fluid my-4" alt="">
+        </div>
+        <div class="col-md-8 center_v">
+          <div class="row">
+            <div class="col-12 p-0">
+              <h2>Product Information</h2>
+              <hr>
+              <div class="col-12 input_control">
+                <label for="exampleFormControlSelect1">Product Category
+                </label>
+                <select [(ngModel)]="SelectedCategory" (ngModelChange)="onCategorySelected($event)" formControlName="Category" class="form-control">
+                  <option value="" disabled>select Product Category</option>
+                  <option [value]="Category.id" *ngFor="let Category of ProductCategory">{{Category.CategoryName}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-6 input_control">
+              <label for="exampleInputPassword1">Product Name</label>
+              <input formControlName="Name"  type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-6 input_control">
+              <label for="exampleInputPassword1">Brand Name</label>
+              <input formControlName="Brand"  type="text" class="form-control" placeholder="">
+            </div>
             <div class="col-12 input_control">
-              <label for="exampleFormControlSelect1">Product Category
-              </label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label for="exampleInputPassword1">Product img</label>
+              <input type="text" formControlName="img" class="form-control" placeholder="">
+            </div>
+            <div class="col-4 input_control">
+              <label for="exampleInputPassword1">AWS code</label>
+              <input type="text" formControlName="aws"  class="form-control" placeholder="">
+            </div>
+            <div class="col-4 input_control">
+              <label for="exampleInputPassword1">Model no.</label>
+              <input type="text" formControlName="models" class="form-control" placeholder="">
+            </div>
+            <div class="col-4 input_control">
+              <label for="exampleInputPassword1">Price</label>
+              <input type="text" formControlName="price" class="form-control" placeholder="">
             </div>
           </div>
-          <div class="col-6 input_control">
-            <label for="exampleInputPassword1">Product Name</label>
-            <input [(ngModel)]="name" type="text" class="form-control" placeholder="">
-          </div>
-          <div class="col-6 input_control">
-            <label for="exampleInputPassword1">Brand Name</label>
-            <input type="text" class="form-control" placeholder="">
-          </div>
-          <div class="col-12 input_control">
-            <label for="exampleInputPassword1">Product img</label>
-            <input type="text" class="form-control" placeholder="">
-          </div>
-          <div class="col-4 input_control">
-            <label for="exampleInputPassword1">AWS code</label>
-            <input type="text" class="form-control" placeholder="">
-          </div>
-          <div class="col-4 input_control">
-            <label for="exampleInputPassword1">Model no.</label>
-            <input type="text" class="form-control" placeholder="">
-          </div>
-          <div class="col-4 input_control">
-            <label for="exampleInputPassword1">Price</label>
-            <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-12">
+          <h2>Product Description</h2>
+          <hr>
+          <textarea formControlName="description" class="form-control" rows="3" placeholder="description"></textarea>
+        </div>
+        <div class="col-12 add_Product_bar">
+          <div class="row">
+            <div class="col-md-10 center_v">
+              <h3 class="font-weight-light">Wuerth MIG Welding System , Current: 20-250 A </h3>
+            </div>
+            <div class="col-md-2 god_css">
+            <button type="submit" [disabled]="productForm.invalid" [class]="popup.toggle.btn">
+              {{popup.toggle.message }}
+            </button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12">
-        <h2>Product Description</h2>
-        <hr>
-        <textarea class="form-control" rows="3" placeholder="description"></textarea>
-      </div>
-      <div class="col-12 add_Product_bar">
-        <div class="row">
-          <div class="col-md-10 center_v ">
-            <h3 class="font-weight-light">Wuerth MIG Welding System , Current: 20-250 A </h3>
-          </div>
-          <div class="col-md-2 god_css">
-            <button (click)="modelToggle(false,'Add Product','danger')"  [class]="popup.toggle.btn" >{{popup.toggle.message }}</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </form>
   </div>
 </div>

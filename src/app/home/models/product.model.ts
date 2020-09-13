@@ -1,11 +1,11 @@
-export interface product {
+export interface ProductType {
     id: number;
     Category: string;
     Name: string;
-    img: string;
     Brand: string;
-    aws: any;
-    Models: any;
+    img: string;
+    aws: string;
+    models: string;
     price: string;
     description: string;
 }

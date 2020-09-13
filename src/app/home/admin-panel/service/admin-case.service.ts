@@ -16,7 +16,7 @@ export class AdminCaseService {
   S_get_selected_case(case_Selected_Id: string): Observable<any> {
     let parmar1 = new HttpParams().set('industryId', case_Selected_Id);
     return this.http.get<casetype>(`${this.Url}/caseStudy`, { params: parmar1 })
-  }
+  } 
   // post
   S_post_selected_case(Dt: casetype): Observable<casetype[]> {
     let httpHeaders = new HttpHeaders().set('content-Types', 'application/Json');

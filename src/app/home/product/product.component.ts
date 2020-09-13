@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobleProductCategoryService } from './service/globle-product-category.service';
 
 @Component({
   selector: 'app-product',
@@ -6,17 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  categories: any[] = [
-    { id: 1, name: 'Welding Machine', img: '../../../assets/product/Gas_Welder.png' },
-    { id: 2, name: 'MIG Welding Machine', img: '../../../assets/product/MIG_Welding.png' },
-    { id: 3, name: 'Welding accessories', img: '../../../assets/product/Welding_accessories.png' },
-    { id: 4, name: 'plastic Welding Machine', img: '../../../assets/product/plastic_Welding.png' },
-    { id: 5, name: 'Gas Welder', img: '../../../assets/product/gas-welding-machine.png' },
-    { id: 6, name: 'Tig Welding Spares', img: '../../../assets/product/Tig_Welding_Spares.png' },
-  ]
-  constructor() { }
+  ProductCategory = []
+  constructor(private service: GlobleProductCategoryService) { }
 
   ngOnInit(): void {
+    this.C_Get_Product_Category()
   }
-
+  C_Get_Product_Category() {
+    this.service.S_Get_Product_Category().subscribe(res => this.ProductCategory = res)
+  }
 }
