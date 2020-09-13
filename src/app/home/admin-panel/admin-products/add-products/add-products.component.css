@@ -1,0 +1,122 @@
+.category_control_card {
+  overflow-y: scroll;
+  height: 90vh;
+  position: relative;
+}
+.add_Product_heading {
+  color: #e31e24;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 55px;
+}
+
+.category_card {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+}
+.product_name {
+  font-size: 25px;
+}
+.porduct_card {
+  background: white;
+  position: relative;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+}
+.product_card_footer {
+  background-color: white;
+}
+.items {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(146, 143, 143);
+  font-size: 14px;
+}
+.items span {
+  text-transform: unset;
+  color: #e31e24;
+  display: block;
+}
+.icon_grid {
+  position: absolute;
+  bottom: 7px;
+  right: 20px;
+}
+.icon_grid span {
+  font-size: 24px;
+  background-color: rgb(238, 234, 234);
+  margin-left: 6px;
+  padding: 9px;
+  border-radius: 30px;
+  color: black;
+  cursor: pointer;
+}
+.icon_grid span:hover {
+  background-color: black;
+  color: rgb(238, 234, 234);
+}
+.add_category_btn {
+  position: fixed;
+  right: 35px;
+  bottom: 55px;
+  cursor: pointer;
+}
+/* popup */
+.Add_Product_popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  padding: 10px;
+  display: none;
+}
+.form_craete {
+  height: 96vh;
+  background-color: rgb(235, 232, 233);
+  overflow-y: scroll;
+  position: relative;
+  animation: slideInUp;
+  animation-duration: 300ms;
+}
+/* main form */
+textarea {
+  overflow-y: scroll;
+  height: 200px;
+  resize: none;
+}
+.add_Product_bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(219, 218, 218);
+}
+.input_control {
+  min-height: 90px;
+}
+.active_model {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headind-2 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .icon_grid {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+  }
+}

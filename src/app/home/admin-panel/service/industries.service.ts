@@ -11,6 +11,9 @@ export class IndustriesService {
   target_Industries_id(IndusID: number) {
     return this.http.get<industries>(`${this.baseUrl}/industries/${IndusID}`)
   }
+  s_get_Industries(): Observable<industries[]> {
+    return this.http.get<industries[]>(`${this.baseUrl}/industries`)
+  }
   s_post_Industries(Dt: industries): Observable<industries[]> {
     return this.http.post<industries[]>(`${this.baseUrl}/industries`, Dt)
   }
@@ -21,8 +24,6 @@ export class IndustriesService {
     };
     return this.http.put<number>(`${this.baseUrl}/industries/${Dt.id}`, Dt, options)
   }
-  s_get_Industries(): Observable<industries[]> {
-    return this.http.get<industries[]>(`${this.baseUrl}/industries`)
-  }
+
 }
 

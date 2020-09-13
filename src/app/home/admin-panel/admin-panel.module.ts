@@ -13,10 +13,14 @@ import { AddIndustriesComponent } from './admin-industries/add-industries/add-in
 import { AddStudiesComponent } from './admin-industries/add-studies/add-studies.component';
 import { IndustriesService } from './service/industries.service';
 import { AdminCaseService } from './service/admin-case.service';
+import { ProductCategoryService } from './service/product-category.service';
+import { AddCategoryComponent } from './admin-products/add-category/add-category.component';
+import { AddProductsComponent } from './admin-products/add-products/add-products.component';
+
 
 
 @NgModule({
-  declarations: [AdminBlogsComponent, AdminIndustriesComponent, AdminProductsComponent, AdminCareerComponent, AddIndustriesComponent, AddStudiesComponent],
+  declarations: [AdminBlogsComponent, AdminIndustriesComponent, AdminProductsComponent, AdminCareerComponent, AddIndustriesComponent, AddStudiesComponent, AddCategoryComponent, AddProductsComponent],
   imports: [
     CommonModule,
     AdminPanelRoutingModule,
@@ -25,7 +29,7 @@ import { AdminCaseService } from './service/admin-case.service';
       confirmButtonType: 'danger',
     }),
   ],
-  providers: [CreateBlogsService, IndustriesService],
-  entryComponents: [AddIndustriesComponent, AddStudiesComponent,AdminCaseService]
+  providers: [CreateBlogsService, IndustriesService, AdminCaseService, ProductCategoryService],
+  entryComponents: [AddIndustriesComponent, AddStudiesComponent, AddCategoryComponent, AddProductsComponent]
 })
 export class AdminPanelModule { }

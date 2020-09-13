@@ -86,3 +86,11 @@ a {
 }
 /* admin css */
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.FormError {
+  animation: headShake;
+  animation-duration: 500ms;
+}

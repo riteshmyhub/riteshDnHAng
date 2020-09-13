@@ -1,3 +1,31 @@
-<div class="admin_child_component">
-  <p>admin-products works!</p>
+<div class="admin_child_component god_css">
+  <div class="container product">
+    <div class="row">
+      <div class="col-md-6 god_css my-2">
+        <div class="product__link__Card god_css">
+          <span class="card_item">
+            <img (click)="DyLoad('AddCategory')" src="../../../../assets/adminzone/menu.svg" width="100" alt="" />
+            <h5>add category</h5>
+          </span>
+        </div>
+      </div>  
+      <div class="col-md-6 god_css my-2">
+        <div class="product__link__Card god_css">
+          <span class="card_item">
+            <img (click)="DyLoad('AddProducts')" src="../../../../assets/adminzone/product.svg" width="100" alt="" />
+            <h5>add product</h5>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div *ngFor="let category of productCategories">
+    <h1>{{ category.CategoryName }}</h1>
+    <h1>{{ category.CategoryImg }}</h1>
+  </div> -->
+</div>
+<!-- dynamic model --> 
+<div *ngIf="loadHere" class="popup_model god_css">
+  <img src="../../../../assets/adminzone/iconClose.jpg" (click)="closedModel(false)" class="closeBtn" width="70px" alt="">
+    <ng-container *ngComponentOutlet="loadHere"></ng-container>
 </div>

@@ -1,0 +1,61 @@
+.admin_child_component {
+  background: url(https://mcdn.wallpapersafari.com/medium/92/69/7KWNHa.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+.product__link__Card {
+  background-color: rgb(243, 241, 241);
+  height: 290px;
+  width: 290px;
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+}
+.product__link__Card img {
+  transform: scale(0.9, 0.9);
+  transition: all;
+  cursor: pointer;
+}
+.product__link__Card img:hover {
+  transform: scale(1, 1);
+  transition-duration: 300ms;
+}
+.card_item {
+  text-align: center;
+}
+
+.card_item h5 {
+  font-size: 24px;
+  margin-top: 16px;
+  color: #ed3338;
+  text-transform: uppercase;
+}
+.popup_model {
+  min-height: 100vh;
+  background: rgb(247, 245, 245);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+}
+.closedBtn {
+  font-size: 55px;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 18px;
+  z-index: 1200;
+}
+.closeBtn {
+  position: fixed;
+  top: 22px;
+  right: 41px;
+  z-index: 1100;
+  cursor: pointer;
+}

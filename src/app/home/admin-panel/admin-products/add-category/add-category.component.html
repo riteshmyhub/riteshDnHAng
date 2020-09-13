@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="container category_control_card">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="add_category_heading my-4">Product Category</h1>
+          </div>
+
+          <div *ngFor="let Category of productCategories" class="col-lg-3 col-md-4 col-sm-6 col-12 p-3">
+            <div class="mt-3 category_card">
+              <img [src]="Category.CategoryImg" 
+              (click)="C_Update_ProductCategory(Category.id)"
+              class="img-fluid" alt="">
+              <img src="../../../../../assets/adminzone/cancel.svg" width="40px" (click)=" C_Delete_ProductCategory(Category.id)" class="deleteIco" alt="">
+              <span class="categoryName">{{(Category.CategoryName.length>16)?(Category.CategoryName.slice(0,16))+"...":Category.CategoryName}}</span>
+            </div>
+          </div>
+
+        </div>
+        <a class="add_category_btn">
+          <img (click)="modelToggle(true,'Add Category','danger')" src="../../../../assets/adminzone/add_red.png" width="70px" alt="" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- popup -->
+<div [ngClass]="{'popupModel':true,'active_model':active}" class="popupModel god_css">
+  <div class="popup_form god_css">
+    <span>
+      <form [formGroup]="productCategoriesForm" (ngSubmit)="submit()"> 
+        <h1 [class]="this.popup.toggle.text">{{popup.toggle.message }}</h1>
+        <div class="row">
+          <div class="col-12 input_Controls">
+            <label for="exampleInputPassword1">Category Name</label>
+            <input type="text" formControlName="CategoryName" class="form-control" placeholder="">
+            <small>error</small>
+          </div>
+          <div class="col-12 input_Controls">
+            <label for="exampleInputPassword1">Image Url</label>
+            <input type="text" formControlName="CategoryImg" class="form-control" placeholder="">
+            <small>error</small>
+          </div>
+          <div class="col-12 input_Controls">
+            <hr>
+            <button type="submit"
+             [disabled]="productCategoriesForm.invalid"
+            [class]="popup.toggle.btn">{{popup.toggle.message }}</button>
+          </div>
+        </div>
+      </form>
+    </span>
+  </div>
+</div>
