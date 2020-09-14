@@ -9,7 +9,7 @@
 
 ![Visit java script App](./preview/adminpanal.png)
 ---
-![Visit java script App](./preview/adminpanalGroups.png)
+![Visit java script App](./preview/adminpanalGroupimg.png)
 ---
 ## Dnhsecheronui About :
 
